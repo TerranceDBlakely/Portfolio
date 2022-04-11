@@ -47,6 +47,7 @@ body {
   font-family: var(--font-family);
 }
 
+/*Navigation*/
 nav {
   position:sticky;
   top:0;
@@ -93,6 +94,7 @@ na ul li {
   cursor: pointer;
   display: none;
 }
+/*END OF NAVIGATION */
 
 .hero {
   display:flex;
@@ -103,6 +105,8 @@ na ul li {
   max-width: 68.75rem;
   margin: auto;
 }
+
+/*HERO SECTION*/
 
   .hero img {
      height:37.5rem;
@@ -140,6 +144,9 @@ na ul li {
     padding:0.4rem;
   }
 
+	/*END OF HERO SECTION */
+	
+	/*SKILLS SECTION */
 
   .skills {
     max-width:68.75rem;
@@ -168,3 +175,5 @@ na ul li {
     padding:20px;
     margin:10px;
   }
+	
+	/* END OF SKILLS SECTION */
