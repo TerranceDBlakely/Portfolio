@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Cairo:wght@300;400;500;700&family=Poppins:wght@100;300;500;900&display=swap" rel="stylesheet">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		
+		
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
     <title>Terrance Blakely</title>
   </head>
 
@@ -21,7 +23,7 @@
 	<div id="page-Container">
 		<!-- Header Section -->
 		<header>
-			<figure>
+			<figure id="logo">
 				<img src="assets/images/Logo-1.PNG" alt="logo">
 			</figure>
 			<nav>
@@ -30,51 +32,59 @@
 					<li>Projects</li>
 					<li>Contact</li>
 				</ul>
-				<figure>
-					<img src="assets/icons/menu.png" alt="menu">
+				<figure id="menu-button">
+					<img src="assets/icons/menu.png" alt="menu-button">
 				</figure>
 			</nav>
 		</header>
 		<!-- End of Header of Section  -->
 
 		<!-- Feature About Section -->
-		<section>
-			<article>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut velit vitae temporibus incidunt consequuntur aperiam.</p>
-			</article>
+		<section id="feature-Section">
 			<figure>
 				<img src="assets/images/Profile-img-1.jpg" alt="feature-About-Image">
 			</figure>
+			<article>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut velit vitae temporibus incidunt consequuntur aperiam.</p>
+			</article>
 		</section>
 		<!-- End of Feature About Section  -->
 
 		<!-- About Section  -->
-		<section>
+		<section id="about-Section">
+			<!-- ABOUT SECTION HEADER -->
 			<hgroup>
 				<h1>About Me</h1>
 				<h2>I didn't always want to become a web developer, it grew on me..</h2>
 			</hgroup>
-			<article>
+			
+			<!-- ABOUT SECTION MAIN -->
+			<section>			
 				<hgroup>
-					<h2>Terrance Blakely</h2>
-					<h3>Septemmber 17, 1990</h3>
-					<h4>Web Developer</h4>
+						<h2>Terrance Blakely</h2>
+						<h3>Septemmber 17, 1990</h3>
+						<h4>Web Developer</h4>
 				</hgroup>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit blanditiis consequatur, esse itaque quasi accusantium consectetur error delectus. Ipsam sequi repudiandae mollitia voluptas quam velit quasi sapiente nostrum aperiam ex laborum, distinctio doloremque quae, at nesciunt earum eveniet nisi temporibus deserunt neque incidunt quas suscipit iusto? Porro, minima laborum dolores placeat, harum nostrum, magnam culpa rem vitae ab facere. Distinctio placeat reprehenderit quas sapiente beatae provident eligendi odit minima ducimus? Fuga vero magni aspernatur dolore.</p>
-			</article>
-			<figure>
-				<img src="assets/images/Profile-img-2.jpg" alt="about-Profile-Img">
-			</figure>
-			<section>
-				<h3>Past Times and Hobbies</h3>
-				<section>
-					<figure></figure>
-				</section>
-			</section>
-		</section>
-		<!-- End of the About Section  -->
+				
+				<article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit blanditiis consequatur, esse itaque quasi accusantium consectetur error delectus.</article>
 
-		<!-- Skills Sections -->
+				<figure>
+					<img src="assets/images/Profile-img-2.jpg" alt="about-Profile-Img">
+				</figure>
+			</section>
+
+			<!-- ABOUT SECTION ASIDE INFO -->
+			<aside>
+					<h3>Past Times and Hobbies</h3>
+					<section>
+						<figure></figure>
+					</section>
+			</aside>
+		</section>
+		<!-- END OF ABOUT SECTION  -->
+
+		<!-- Skills 
+		-->
 
 		<section>
 			<hgroup>

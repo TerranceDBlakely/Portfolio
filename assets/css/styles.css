@@ -1,21 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Cairo:wght@300;400;500;700&family=Poppins:wght@100;300;500;900&display=swap');
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-/* Variables */
+/* VARIABLES */
 :root {
-  --font-family: "Roboto", sans-serif;
-  --font-family: "Unbuntu", sans-serif;
-  --font-family: "Poppins", sans-serif;
-  --bg-color: #fcfcfc;
-  --primary-color: #a8a8a8;
-  --secondary-color: #2c2c2c;
+  --font-3: "Roboto", sans-serif;
+  --font-2: "Unbuntu", sans-serif;
+  --font-1: "Poppins", sans-serif;
+  --color-1: white;
+	--color-2: lightgrey;
+	--color-3: #f3E;
+	--color-4: grey;
+	--color-5: black;
 }
 
+/* END OF VARIABLES */
 
+/* GENERAL SECTION */
 
+*,html,body {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+html {
+	font-size:62.5%;
+}
+
+body {
+	background-color:var(--color-2);
+	font-family: var(--font-1);
+	font-size:1.6rem;
+	width:100%;
+	height:100%;
+}
+
+img {
+	max-width:50%;
+}
+
+#page-Container {
+	width:100%;
+	padding:0 0;
+	margin:0 auto;
+}
+
+/* END OF GENERAL SECTION */
+
+/* HEADER SECTION */
+
+	header {
+		background-color:var(--color-4);
+		align-items:center;
+		display:flex;
+		justify-content:space-between;
+	}
+	
+	header #logo {
+		max-width: 7rem;
+		margin:0 auto 0 auto;
+	}
+	
+		header figure img {
+			max-width:100%;
+		}
+		
+		header nav {
+		display:flex;
+	}
+	
+		header nav ul {
+		display:flex;
+		}
+		
+			header nav ul li {
+				list-style:none;
+			}
+	
+		header nav figure {
+			max-width:4rem;
+		}
+		
+			header nav figure img {
+				max-width:100%;
+			}
+
+/*END OF HEADER SECTION */
+
+/*FEATURE ABOUT SECTION */
+
+		#feature-Section {
+			width:100%;
+			background-color:red;
+		}
+		
+			#feature-Section figure {
+				width:100%;
+				padding:2rem; 0;
+				background-color:blue;
+				display:flex;
+				justify-content:center;
+			}
+			
+				#feature-Section figure img {
+					width:100%;
+					border-radius: 2rem;
+				}
+			
+			#feature-Section article {
+				padding: 2rem 2rem;
+				background-color:orange;
+			}
+			
+				#feature-Section article p {
+					text-align:center;
+				}
+	
+/* END OF FEATURE ABOUT SECTION */
+
+/* ABOUT OF SECTION */
+
+/* END OF ABOUT OF SECTION */	
+		
+/* SKILS SECTION */
+
+/* END OF SKILLS SECTION */
+
+/* PROJECTS SECTION */
+
+/* END OF PROJECTS SECITON */
+
+/* CONTACT SECTION */
+
+/* END OF CONTACT SECTION */
+
+/* FOOTER SECTION */
+
+/* END OF FOOTER SECTION */
 	
 	
+@media (max-width: 480px) {
 	
+/* HEADER SECTION */	
+	header nav ul {
+		display:none;
+	}
 	
+/*END OF HEADER SECTION */
+
+/*FEATURE ABOUT SECTION */
+	
+/* END OF FEATURE ABOUT SECTION */
+
+/* END OF ABOUT OF SECTION */
+
+/* SKILS SECTION */
+
+/* END OF SKILLS SECTION */
+
+/* PROJECTS SECTION */
+
+/* END OF PROJECTS SECITON */
+
+/* CONTACT SECTION */
+
+/* END OF CONTACT SECTION */
+
+/* FOOTER SECTION */
+
+/* END OF FOOTER SECTION */
+}
 	
 	
 	
