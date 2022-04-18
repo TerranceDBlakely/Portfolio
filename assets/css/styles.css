@@ -53,6 +53,7 @@ img {
 		align-items:center;
 		display:flex;
 		justify-content:space-between;
+		position:relative;
 	}
 	
 	header #logo {
@@ -77,7 +78,11 @@ img {
 			}
 	
 		header nav figure {
-			max-width:4rem;
+			position:absolute;
+			top:2rem;
+			right:0;
+			max-width:3.5rem;
+			margin-right:2rem;
 		}
 		
 			header nav figure img {
@@ -90,13 +95,11 @@ img {
 
 		#feature-Section {
 			width:100%;
-			background-color:red;
 		}
 		
 			#feature-Section figure {
 				width:100%;
 				padding:2rem; 0;
-				background-color:blue;
 				display:flex;
 				justify-content:center;
 			}
@@ -108,7 +111,6 @@ img {
 			
 			#feature-Section article {
 				padding: 2rem 2rem;
-				background-color:orange;
 			}
 			
 				#feature-Section article p {
@@ -252,12 +254,92 @@ img {
 
 /* CONTACT SECTION */
 		#contactform-Section {
-			padding:
+			padding:0 2rem;
+			width:100%;
 		}
+
+			#contactform-Section hgroup {
+				line-height: 2;
+				text-align: center;
+			}
+
+				#contactform-Section hgroup h3 {
+					font-size:1.3rem;
+					/* letter-spacing: 1px; */
+					word-wrap:break-word;
+					padding:4rem 0 0 0;
+				}
+
+				#contactform-Section hgroup blockquote {
+					font-size: 2rem;
+				}
+
+				#contactform-Section form {
+					width:100%;
+					padding: 0 0 0 0;
+					display:flex;
+					flex-wrap:wrap;
+				}
+
+					#contactform-Section form label {
+						width:100%;
+						text-align: center;
+						padding: 2rem 0 1rem 0;
+					}
+
+					.inputFields {
+						width: 100%;
+						border-radius: 1rem;
+					}
+
+						.email-InputFields {
+							height: 3rem;
+						}
+
+						.message-InputFields {
+							height: 15rem;
+						}
+
+						.Submit-Buttons {
+							padding:1rem;
+							border-radius: 1rem;
+							background-color: var(--color-3);
+							color: var(--color-1);
+							font-weight: bolder;
+							text-transform: lowercase;
+							margin:2rem auto;
+						}
+
+
+
+
 /* END OF CONTACT SECTION */
 
 /* FOOTER SECTION */
+	#footer-Section {
+		width:100%;
+		padding:4rem 0;
+	}
+	
+		#footer-Section footer {
+			width:100%;
+			display:flex;		
+			flex-wrap:wrap;
+			justify-content: center;
+		}
+		
+		#footer-Section footer figure {
+			width: 50%;
+			display: flex;
+			justify-content: center;
+		}
 
+				#footer-Section footer figure img {
+					width:100%;
+				}
+			#footer-Section footer p {
+				font-size: 1rem;
+			}
 /* END OF FOOTER SECTION */
 	
 	
