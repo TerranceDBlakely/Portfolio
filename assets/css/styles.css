@@ -402,7 +402,142 @@ hgroup {
 /* END OF FOOTER SECTION */
 	
 	
-@media (max-width: 560px) {
+@media (max-width: 480px) { /* Mobile Devices */
+	
+/* HEADER SECTION */	
+	header nav ul {
+		display:none;
+	}
+	
+/*END OF HEADER SECTION */
+
+/*FEATURE ABOUT SECTION */
+	
+/* END OF FEATURE ABOUT SECTION */
+
+/* ABOUT SECTION */
+	
+/* END OF ABOUT OF SECTION */
+
+/* SKILS SECTION */
+
+/* END OF SKILLS SECTION */
+
+/* PROJECTS SECTION */
+
+/* END OF PROJECTS SECITON */
+
+/* CONTACT SECTION */
+
+/* END OF CONTACT SECTION */
+
+/* FOOTER SECTION */
+
+/* END OF FOOTER SECTION */
+}
+
+@media (max-width: 768px) { /*Ipads,Tablets */
+/*GENERAL */
+
+/*END OF GENERAL */
+
+/* HEADER SECTION */	
+	header nav ul {
+		display:none;
+	}
+	
+/*END OF HEADER SECTION */
+
+/*FEATURE ABOUT SECTION */
+	
+	#feature-Section article p {
+		font-size:1.9rem;
+		padding:2rem 3rem;
+		line-height:2;
+	}
+	
+/* END OF FEATURE ABOUT SECTION */
+
+/* ABOUT SECTION */
+	#about-Section section article p {
+		padding:0 3rem;
+		color:var(--color-2);	
+	}
+/* END OF ABOUT OF SECTION */
+
+/* SKILS SECTION */
+
+#skills-Section section {
+	padding: 4rem 6rem;
+	column-gap:3rem;
+	
+}
+
+	#skills-Section hgroup {
+		padding: 4rem 0;
+		width:100%;
+	}
+
+/* END OF SKILLS SECTION */
+
+/* PROJECTS SECTION */
+
+	#projects-Section section {
+		padding:2rem 0 2rem 0;
+		width:100%;
+	}
+	
+	#projects-Section section figure {
+		width:80%;
+		padding: 0 0;
+		margin-bottom:20rem;
+	}
+	
+		#projects-Section section figure img {
+			max-width:100%;
+		}
+
+/* END OF PROJECTS SECITON */
+
+/* CONTACT SECTION */
+
+#contactform-Section aside {
+		padding:4rem 4rem;
+	}
+	
+	#contactform-Section hgroup {
+		padding:4rem 0;
+	}
+	
+		#contactform-Section aside blockquote {
+			padding:4rem 0;
+		}
+		
+		#contactform-Section aside h3 {
+			font-size:2rem;
+		}
+		
+		#contactform-Section aside h3 span {
+			font-size:2rem;
+			padding:0 0 4rem 0;
+		}
+	
+	#contactform-Section form {
+		padding: 3rem 6rem;
+	}
+	
+	.Submit-Buttons {
+		font-size:2rem;
+	}
+	
+/* END OF CONTACT SECTION */
+
+/* FOOTER SECTION */
+
+/* END OF FOOTER SECTION */
+}
+
+@media (max-width: 1024px) { /*Ipads,Tablets */
 	
 /* HEADER SECTION */	
 	header nav ul {
@@ -433,7 +568,8 @@ hgroup {
 
 /* END OF FOOTER SECTION */
 }
-@media (max-width: 1024px) {
+
+@media (max-width: 1200px) { /*Ipads,Tablets */
 	
 /* HEADER SECTION */	
 	header nav ul {
@@ -464,3 +600,4 @@ hgroup {
 
 /* END OF FOOTER SECTION */
 }
+
