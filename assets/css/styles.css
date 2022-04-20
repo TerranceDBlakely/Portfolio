@@ -74,7 +74,7 @@ hgroup {
 	}
 	
 	header #logo {
-		max-width: 7rem;
+		width: 7rem;
 		margin:0 auto 0 auto;
 	}
 	
@@ -98,7 +98,7 @@ hgroup {
 			position:absolute;
 			top:2rem;
 			right:0;
-			max-width:3.5rem;
+			width:3.5rem;
 			margin-right:2rem;
 		}
 		
@@ -180,7 +180,7 @@ hgroup {
 			padding: 4rem 0 4rem 0;
 			display:flex;
 			justify-content: center;
-			max-width:20rem;
+			width:60%;
 			margin:0 auto;
 		}
 			#about-Section figure> img {
@@ -370,11 +370,11 @@ hgroup {
 
 /* MEDIA QUERRY SECTIONSv*/
 
-@media (min-width: 320px) and (max-width:480px) { /* Mobile Devices */
+@media (max-width:480px) { /* Mobile Devices */
 	
 /*GENERAL SECTION */
 	hgroup {
-	
+
 	}
 	hgroup h1 {
 
@@ -383,6 +383,7 @@ hgroup {
 	hgroup blockquote  {
 	
 	}
+	
 /*END OF GENERAL SECTION*/
 	
 /* HEADER SECTION */	
@@ -393,15 +394,28 @@ hgroup {
 /*END OF HEADER SECTION */
 
 /*FEATURE ABOUT SECTION */
-
+	
 /* END OF FEATURE ABOUT SECTION */
 
 /* ABOUT SECTION */
+	#about-Section section article {
+		padding:0 2rem;	
+	}
 	
+		#about-Section section article p {
+			font-size:1.7rem;
+			/*color:red;*/
+		}
 /* END OF ABOUT OF SECTION */
 
 /* SKILS SECTION */
+	#skills-Section hgroup {
+		padding:3rem 2rem;
+	}
 
+		#skills-Section hgroup blockquote {
+			font-size:2rem;
+		} 
 /* END OF SKILLS SECTION */
 
 /* PROJECTS SECTION */
@@ -409,7 +423,13 @@ hgroup {
 /* END OF PROJECTS SECITON */
 
 /* CONTACT SECTION */
-
+	#contactform-Section hgroup {
+		padding:4rem 2rem;
+	}
+	
+		#contactform-Section aside blockquote {
+			padding:0 2rem 2rem 2rem;
+		}
 /* END OF CONTACT SECTION */
 
 /* FOOTER SECTION */
@@ -417,167 +437,157 @@ hgroup {
 /* END OF FOOTER SECTION */
 }
 
-@media (min-width: 480px) and (max-width: 768px) { /*Ipads,Tablets */
+@media (min-width: 768px) { /*Tablet Devices*/
 /*GENERAL SECTION */
-	hgroup {
+	header #logo {
+		width: 10rem;
+		margin:0 auto 0 auto;
+	}
 	
+	header nav figure {
+			top:3rem;
+			right:0;
+			width:5rem;
+			margin-right:2rem;
+		}
+
+	header nav ul {
+		display:none;
+	}
+
+	hgroup {
+		
 	}
 	hgroup h1 {
-
+		font-size:5rem;
 	}
 	
 	hgroup blockquote  {
-	
+		font-size:4rem;
+		padding:2rem;
 	}
-	
-
 /* HEADER SECTION */	
-header nav ul {
-		display:none;
-	}
+
 /*END OF HEADER SECTION */
 	
 /*FEATURE ABOUT SECTION */
-
+	#feature-Section figure {
+		width: 70%;
+		display:flex;
+		margin:5rem auto 0 auto;
+	}
+	
+	#feature-Section article {
+		font-size:3rem;
+	}
+	
+		#feature-Section article p {
+			padding:4rem 4rem 2rem 4rem;
+		}
 /* END OF FEATURE ABOUT SECTION */
 
 /* ABOUT SECTION */
+	#about-Section hgroup {
+
+	}
+	
+		#about-Section section aside {
+			font-size: 3rem;
+			padding: 4rem 0;
+		}
+		
+		#about-Section article p {
+			font-size: 3rem;
+			padding: 0 4rem;	
+		}
+		
+	#about-Section section figure {
+		width:50%;
+	}
+	
+		#about-Section section figure img {
+			max-width:100%;
+		}
 		
 /* END OF ABOUT OF SECTION */
 
 /* SKILS SECTION */
-
-/* END OF SKILLS SECTION */
-
-/* PROJECTS SECTION */
-
-/* END OF PROJECTS SECITON */
-
-/* CONTACT SECTION */
-
-/* END OF CONTACT SECTION */
-
-/* FOOTER SECTION */
-
-/* END OF FOOTER SECTION */
-}
-
-
-@media (min-width:768px) and (max-width: 1024px) { /*Ipads,Tablets */
-/*GENERAL SECTION */
-	hgroup {
-		;
+	#skills-Section hgroup {
+		width: 100%;
 	}
-	hgroup h1 {
 		
+		#skills-Section hgroup blockquote {
+			font-size:e
+		}
+	
+	#skills-Section section {
+		column-gap:4rem;
+		padding: 10rem 0 15rem 0;
+	}	
+		
+	#skills-Section section figure {
+		max-width:20rem;
 	}
-	
-	hgroup blockquote  {
-	
-	}
-	
-/* HEADER SECTION */	
-	header nav ul {
-		display:none;
-	}
-	
-/*END OF HEADER SECTION */
-
-/*FEATURE ABOUT SECTION */
-	
-/* END OF FEATURE ABOUT SECTION */
-
-/* END OF ABOUT OF SECTION */
-
-/* SKILS SECTION */
 
 /* END OF SKILLS SECTION */
 
 /* PROJECTS SECTION */
-
+	#projects-Section section {
+		padding: 10rem 0;
+		column-gap:4rem;
+	}
+	
+		#projects-Section section figure {
+			width:50%;
+			margin-bottom:20rem;
+		}
+		
+			#projects-Section section figure figcaption {
+				font-size:4rem;
+			}
 /* END OF PROJECTS SECITON */
 
 /* CONTACT SECTION */
+	#contactform-Section aside blockquote {
+		font-size:4.5rem;
+		padding:4rem 4rem;
+	}
+		#contactform-Section aside h3 {
+			font-size:3rem;
+		}
+		
+		#contactform-Section aside h3 span {
+			font-size:3rem;
+		}
+	
+	#contactform-Section form {
+		padding: 6rem 10rem;
+	}	
+	
+		#contactform-Section label {
+			font-size: 4rem;
+		}
+		
+	.email-InputFields {
+		height:6rem;
+	}
+	
+	.message-InputFields {
+		height:25rem;
+	}
+		
+	.Submit-Buttons {
+		margin-top:6rem;
+		height:10rem;
+		width:20rem;
+		font-size:3rem;
+	}
 
 /* END OF CONTACT SECTION */
-
+	#footer-Section footer p {
+		font-size: 3.5rem;
+	}
 /* FOOTER SECTION */
 
 /* END OF FOOTER SECTION */
 }
-
-
-@media (min-width: 1024px)(max-width: 1200px) { /*Small Screens and Laptops */
-	
-/*GENERAL SECTION */
-	hgroup {
-	
-	}
-	hgroup h1 {
-
-	}
-	
-	hgroup blockquote  {
-	
-	}
-	
-/* HEADER SECTION */	
-	header nav ul {
-		display:none;
-	}
-	
-/*END OF HEADER SECTION */
-
-/*FEATURE ABOUT SECTION */
-	
-/* END OF FEATURE ABOUT SECTION */
-
-/* END OF ABOUT OF SECTION */
-
-/* SKILS SECTION */
-
-/* END OF SKILLS SECTION */
-
-/* PROJECTS SECTION */
-
-/* END OF PROJECTS SECITON */
-
-/* CONTACT SECTION */
-
-/* END OF CONTACT SECTION */
-
-/* FOOTER SECTION */
-
-/* END OF FOOTER SECTION */
-}
-
-
-@media (min-width: 1200px) { /*Desktops, Larger Screens */
-	
-/* HEADER SECTION */	
-
-/*END OF HEADER SECTION */
-
-/*FEATURE ABOUT SECTION */
-	
-/* END OF FEATURE ABOUT SECTION */
-
-/* END OF ABOUT OF SECTION */
-
-/* SKILS SECTION */
-
-/* END OF SKILLS SECTION */
-
-/* PROJECTS SECTION */
-
-/* END OF PROJECTS SECITON */
-
-/* CONTACT SECTION */
-
-/* END OF CONTACT SECTION */
-
-/* FOOTER SECTION */
-
-/* END OF FOOTER SECTION */
-}
-
