@@ -144,7 +144,7 @@ hgroup {
 
 		#about-Section section {
 			width:100%;
-			padding:0 0;
+			padding:4rem 0 8rem 0;
 		}
 
 		#about-Section section aside {
@@ -313,6 +313,7 @@ hgroup {
 					color: var(--color-5);
 					padding:0 0 0 0;
 					font-size:1.2rem;
+					letter-spacing: 2px;
 				}
 				
 				#contactform-Section blockquote {
