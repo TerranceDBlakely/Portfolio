@@ -51,6 +51,9 @@ hgroup {
 			background-color:var(--color-1);
 			color: var(--color-3);
 }
+	hgroup h1 {
+		text-shadow: 1rem .8rem 1.4rem rgb(197, 205, 212);
+	}
 
 /* END OF GENERAL SECTION */
 
