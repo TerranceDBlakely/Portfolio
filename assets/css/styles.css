@@ -45,7 +45,7 @@ img {
 }
 
 hgroup {
-			padding:4rem 2rem;
+			padding:8rem 2rem;
 			text-align: center;
 			line-height: 2;
 			background-color:var(--color-1);
@@ -398,7 +398,38 @@ hgroup {
 /* END OF FOOTER SECTION */
 	
 	
-@media (max-width: 480px) {
+@media (max-width: 560px) {
+	
+/* HEADER SECTION */	
+	header nav ul {
+		display:none;
+	}
+	
+/*END OF HEADER SECTION */
+
+/*FEATURE ABOUT SECTION */
+	
+/* END OF FEATURE ABOUT SECTION */
+
+/* END OF ABOUT OF SECTION */
+
+/* SKILS SECTION */
+
+/* END OF SKILLS SECTION */
+
+/* PROJECTS SECTION */
+
+/* END OF PROJECTS SECITON */
+
+/* CONTACT SECTION */
+
+/* END OF CONTACT SECTION */
+
+/* FOOTER SECTION */
+
+/* END OF FOOTER SECTION */
+}
+@media (max-width: 1024px) {
 	
 /* HEADER SECTION */	
 	header nav ul {
