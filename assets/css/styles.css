@@ -595,50 +595,60 @@ hgroup {
 
 @media (min-width:1024px) {
 	/*GENERAL SECTION */
+
+	hgroup {
+		
+	}
+	hgroup h1 {
+		font-size:3.5rem;
+	}
+	
+	hgroup blockquote  {
+		font-size:3rem;
+		padding:2rem;
+	}
+/* HEADER SECTION */	
 	header #logo {
-		width: 20rem;
+		width: 15rem;
 		margin:0 auto 0 auto;
 	}
 	
 	header nav figure {
-			top:6rem;
+			top:3rem;
 			right:0;
-			width:10rem;
+			widows: 5rem;
 			margin-right:6rem;
 		}
 
 	header nav ul {
 		display:none;
 	}
-
-	hgroup {
-		
-	}
-	hgroup h1 {
-		font-size:5rem;
-	}
-	
-	hgroup blockquote  {
-		font-size:4rem;
-		padding:2rem;
-	}
-/* HEADER SECTION */	
-
 /*END OF HEADER SECTION */
 	
 /*FEATURE ABOUT SECTION */
+#feature-Section {
+	display: flex;
+	padding:10rem 4rem;
+	align-items:center;
+}
+
 	#feature-Section figure {
-		width: 90%;
-		display:flex;
-		margin:10rem auto 0 auto;
+		flex:1;
+		display:flex;	
+		min-width:30rem;
 	}
+		
+		#feature-Section figure img {
+			max-width:100%;
+		}
 	
 	#feature-Section article {
-		font-size:4rem;
+		flex:2;
 	}
 	
 		#feature-Section article p {
-			padding:4rem 4rem 2rem 4rem;
+				line-height: 2;
+ 				font-size:2.8rem;
 		}
 /* END OF FEATURE ABOUT SECTION */
 
@@ -655,20 +665,27 @@ hgroup {
 		padding:4rem 6rem;
 	}
 	
+	#about-Section section {
+		display:flex;
+		/*flex-wrap:wrap;*/
+	}
+
 		#about-Section section aside {
-			font-size: 5rem;
+			font-size: 3rem;
 			padding: 4rem 0;
+			flex:2;
 		}
 		
 		#about-Section article p {
-			font-size: 4rem;
+			font-size: 3rem;
 			padding: 3rem 10rem;	
+			flex:1;
 		}
 		
 	#about-Section section figure {
 		width:50%;
-	}
-	
+ 	}
+		
 		#about-Section section figure img {
 			max-width:100%;
 		}
@@ -767,11 +784,12 @@ hgroup {
 }
 }
 
-@media (min-width:1024px) {
+@media (min-width:1280px) {
 	/*GENERAL SECTION */
 	header #logo {
-		width: 20rem;
+		width: 15rem;
 		margin:0 auto 0 auto;
+		background-color:red;
 	}
 	
 	header nav figure {
@@ -801,19 +819,26 @@ hgroup {
 /*END OF HEADER SECTION */
 	
 /*FEATURE ABOUT SECTION */
-	#feature-Section figure {
-		width: 90%;
+	#feature-Section {
+		width:100%;
+		background-color:var(--color-4);
+		padding:4rem 0;
 		display:flex;
-		margin:10rem auto 0 auto;
 	}
-	
-	#feature-Section article {
-		font-size:4rem;
-	}
-	
-		#feature-Section article p {
-			padding:4rem 4rem 2rem 4rem;
+
+		#feature-Section figure {
+			width: 90%;
+			display:flex;
+			margin:10rem auto 0 auto;
 		}
+		
+		#feature-Section article {
+			font-size:4rem;
+		}
+		
+			#feature-Section article p {
+				padding:4rem 4rem 2rem 4rem;
+			}
 /* END OF FEATURE ABOUT SECTION */
 
 /* ABOUT SECTION */
