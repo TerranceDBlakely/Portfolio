@@ -440,15 +440,15 @@ hgroup {
 @media (min-width: 768px) { /*Tablet Devices*/
 /*GENERAL SECTION */
 	header #logo {
-		width: 10rem;
+		width: 15rem;
 		margin:0 auto 0 auto;
 	}
 	
 	header nav figure {
-			top:3rem;
+			top:4rem;
 			right:0;
-			width:5rem;
-			margin-right:2rem;
+			width:8rem;
+			margin-right:4rem;
 		}
 
 	header nav ul {
@@ -472,7 +472,7 @@ hgroup {
 	
 /*FEATURE ABOUT SECTION */
 	#feature-Section figure {
-		width: 70%;
+		width: 80%;
 		display:flex;
 		margin:5rem auto 0 auto;
 	}
@@ -517,7 +517,7 @@ hgroup {
 	}
 		
 		#skills-Section hgroup blockquote {
-			font-size:e
+			
 		}
 	
 	#skills-Section section {
@@ -539,7 +539,7 @@ hgroup {
 	
 		#projects-Section section figure {
 			width:50%;
-			margin-bottom:20rem;
+			margin-bottom:25rem;
 		}
 		
 			#projects-Section section figure figcaption {
@@ -590,4 +590,353 @@ hgroup {
 /* FOOTER SECTION */
 
 /* END OF FOOTER SECTION */
+}
+
+
+@media (min-width:1024px) {
+	/*GENERAL SECTION */
+	header #logo {
+		width: 20rem;
+		margin:0 auto 0 auto;
+	}
+	
+	header nav figure {
+			top:6rem;
+			right:0;
+			width:10rem;
+			margin-right:6rem;
+		}
+
+	header nav ul {
+		display:none;
+	}
+
+	hgroup {
+		
+	}
+	hgroup h1 {
+		font-size:5rem;
+	}
+	
+	hgroup blockquote  {
+		font-size:4rem;
+		padding:2rem;
+	}
+/* HEADER SECTION */	
+
+/*END OF HEADER SECTION */
+	
+/*FEATURE ABOUT SECTION */
+	#feature-Section figure {
+		width: 90%;
+		display:flex;
+		margin:10rem auto 0 auto;
+	}
+	
+	#feature-Section article {
+		font-size:4rem;
+	}
+	
+		#feature-Section article p {
+			padding:4rem 4rem 2rem 4rem;
+		}
+/* END OF FEATURE ABOUT SECTION */
+
+/* ABOUT SECTION */
+	#about-Section hgroup {
+		padding:8rem 4rem;
+	}
+	
+	#about-Section section {
+		padding:5rem 0 10rem 0;
+	}
+	
+	#about-Section hgroup blockquote {
+		padding:4rem 6rem;
+	}
+	
+		#about-Section section aside {
+			font-size: 5rem;
+			padding: 4rem 0;
+		}
+		
+		#about-Section article p {
+			font-size: 4rem;
+			padding: 3rem 10rem;	
+		}
+		
+	#about-Section section figure {
+		width:50%;
+	}
+	
+		#about-Section section figure img {
+			max-width:100%;
+		}
+		
+/* END OF ABOUT OF SECTION */
+
+/* SKILLS SECTION */
+	#skills-Section hgroup {
+		width: 100%;
+	}
+		
+		#skills-Section hgroup blockquote {
+			font-size:4rem;
+		}
+	
+	#skills-Section section {
+		column-gap:6rem;
+		row-gap:8rem;
+		padding: 10rem 0 15rem 0;
+	}	
+		
+	#skills-Section section figure {
+		max-width:25rem;
+		padding:2.5rem;
+	}
+
+/* END OF SKILLS SECTION */
+
+/* PROJECTS SECTION */
+	#projects-Section section {
+		padding: 10rem 0;
+		column-gap:4rem;
+	}
+	
+	#projects-Section hgroup blockquote {
+		padding:4rem 8rem;
+	}
+	
+		#projects-Section section figure {
+			width:80%;
+			margin-bottom:55rem;
+		}
+		
+			#projects-Section section figure figcaption {
+				font-size:4rem;
+			}
+/* END OF PROJECTS SECITON */
+
+/* CONTACT SECTION */
+	#contactform-Section aside {
+		padding:8rem 0;	
+	}
+	
+	#contactform-Section aside blockquote {
+		font-size:4.5rem;
+		padding:4rem 8rem;
+	}
+		#contactform-Section aside h3 {
+			font-size:3rem;
+		}
+		
+		#contactform-Section aside h3 span {
+			font-size:3rem;
+		}
+	
+	#contactform-Section form {
+		padding: 6rem 15rem;
+	}	
+	
+		#contactform-Section label {
+			font-size: 4rem;
+		}
+		
+	.email-InputFields {
+		height:6rem;
+	}
+	
+	.message-InputFields {
+		height:25rem;
+	}
+		
+	.Submit-Buttons {
+		margin-top:6rem;
+		height:10rem;
+		width:20rem;
+		font-size:3rem;
+	}
+
+/* END OF CONTACT SECTION */
+	#footer-Section footer p {
+		font-size: 3.5rem;
+	}
+/* FOOTER SECTION */
+
+/* END OF FOOTER SECTION */
+}
+}
+
+@media (min-width:1024px) {
+	/*GENERAL SECTION */
+	header #logo {
+		width: 20rem;
+		margin:0 auto 0 auto;
+	}
+	
+	header nav figure {
+			top:6rem;
+			right:0;
+			width:10rem;
+			margin-right:6rem;
+		}
+
+	header nav ul {
+		display:none;
+	}
+
+	hgroup {
+		
+	}
+	hgroup h1 {
+		font-size:5rem;
+	}
+	
+	hgroup blockquote  {
+		font-size:4rem;
+		padding:2rem;
+	}
+/* HEADER SECTION */	
+
+/*END OF HEADER SECTION */
+	
+/*FEATURE ABOUT SECTION */
+	#feature-Section figure {
+		width: 90%;
+		display:flex;
+		margin:10rem auto 0 auto;
+	}
+	
+	#feature-Section article {
+		font-size:4rem;
+	}
+	
+		#feature-Section article p {
+			padding:4rem 4rem 2rem 4rem;
+		}
+/* END OF FEATURE ABOUT SECTION */
+
+/* ABOUT SECTION */
+	#about-Section hgroup {
+		padding:8rem 4rem;
+	}
+	
+	#about-Section section {
+		padding:5rem 0 10rem 0;
+	}
+	
+	#about-Section hgroup blockquote {
+		padding:4rem 6rem;
+	}
+	
+		#about-Section section aside {
+			font-size: 5rem;
+			padding: 4rem 0;
+		}
+		
+		#about-Section article p {
+			font-size: 4rem;
+			padding: 3rem 10rem;	
+		}
+		
+	#about-Section section figure {
+		width:50%;
+	}
+	
+		#about-Section section figure img {
+			max-width:100%;
+		}
+		
+/* END OF ABOUT OF SECTION */
+
+/* SKILLS SECTION */
+	#skills-Section hgroup {
+		width: 100%;
+	}
+		
+		#skills-Section hgroup blockquote {
+			font-size:4rem;
+		}
+	
+	#skills-Section section {
+		column-gap:6rem;
+		row-gap:8rem;
+		padding: 10rem 0 15rem 0;
+	}	
+		
+	#skills-Section section figure {
+		max-width:25rem;
+		padding:2.5rem;
+	}
+
+/* END OF SKILLS SECTION */
+
+/* PROJECTS SECTION */
+	#projects-Section section {
+		padding: 10rem 0;
+		column-gap:4rem;
+	}
+	
+	#projects-Section hgroup blockquote {
+		padding:4rem 8rem;
+	}
+	
+		#projects-Section section figure {
+			width:80%;
+			margin-bottom:55rem;
+		}
+		
+			#projects-Section section figure figcaption {
+				font-size:4rem;
+			}
+/* END OF PROJECTS SECITON */
+
+/* CONTACT SECTION */
+	#contactform-Section aside {
+		padding:8rem 0;	
+	}
+	
+	#contactform-Section aside blockquote {
+		font-size:4.5rem;
+		padding:4rem 8rem;
+	}
+		#contactform-Section aside h3 {
+			font-size:3rem;
+		}
+		
+		#contactform-Section aside h3 span {
+			font-size:3rem;
+		}
+	
+	#contactform-Section form {
+		padding: 6rem 15rem;
+	}	
+	
+		#contactform-Section label {
+			font-size: 4rem;
+		}
+		
+	.email-InputFields {
+		height:6rem;
+	}
+	
+	.message-InputFields {
+		height:25rem;
+	}
+		
+	.Submit-Buttons {
+		margin-top:6rem;
+		height:10rem;
+		width:20rem;
+		font-size:3rem;
+	}
+
+/* END OF CONTACT SECTION */
+	#footer-Section footer p {
+		font-size: 3.5rem;
+	}
+/* FOOTER SECTION */
+
+/* END OF FOOTER SECTION */
+}
 }
