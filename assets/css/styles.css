@@ -438,6 +438,10 @@ hgroup {
 }
 
 @media (min-width: 600px) {
+	header nav ul {
+		display:none;
+	}
+	
 	#feature-Section {
 		display:flex;
 		padding:4rem 2rem;
@@ -467,33 +471,92 @@ hgroup {
 		#about-Section section {
 			display:flex;
 			width:100%;
+			padding: 0 2rem;
+			flex-wrap:wrap;
+			align-items: center;
 		}
 
 		#about-Section section aside {
 			/* flex:1; */
-			font-size: 1rem;
-			padding: 4rem 0;
+			font-size: 1.5rem;
+			padding: 2rem 0 2rem 0;
 			width:100%;
 		}
 		
-		#about-Section article {
-
+		#about-Section section article {
+			width:65%;
+			padding:0 1rem;
 		}
 		
-		#about-Section article p {
-			font-size: 2rem;
-			padding: 0 4rem;	
+		#about-Section section article p {
+			font-size: 1.3rem;
+			line-height: 1.8;
+			padding: 0 0;
+			text-align: right;	
 		}
 		
 		#about-Section section figure {
-			/* flex:2; */
-			/* width:50%; */
+			width:10rem;
 	}
 	
 		#about-Section section figure img {
 			max-width:100%;
 		}
 	
+
+		#skills-Section hgroup {
+		padding:8rem 2rem;
+		width:100%;
+	}
+
+		#skills-Section hgroup blockquote {
+			font-size:2rem;
+		} 
+
+		#skills-Section {
+
+	}
+	
+		#skills-Section section {
+			column-gap: 4rem;
+			row-gap:3rem;
+		}
+			#skills-Section section figure {
+			}
+
+				#skills-Section section figure img {
+				}
+
+		
+		#projects-Section section {
+		display:flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+		padding:8rem 0 6rem 0;
+	}
+	
+		#projects-Section section figure {
+			margin:0 0 16rem 0;
+			height:10rem;
+			width:30rem;
+			background-color: var(--color-4);
+			border-radius: 1rem;
+			box-shadow: 0 2rem 1rem 0 #555;
+		}
+	
+			#projects-Section section figure img {
+				max-width: 100%;
+				border-radius: 1rem;
+			}
+	
+			#projects-Section section figure figcaption {
+				text-align: center;
+				padding:1rem 0 2rem 0;
+				font-weight: bold;
+				color: var(--color-2);
+			}
+
 }
 
 @media (min-width: 768px) { /*Tablet Devices*/
