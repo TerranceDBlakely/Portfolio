@@ -437,6 +437,65 @@ hgroup {
 /* END OF FOOTER SECTION */
 }
 
+@media (min-width: 600px) {
+	#feature-Section {
+		display:flex;
+		padding:4rem 2rem;
+	}
+	
+	#feature-Section figure {
+		display:flex;
+		flex:1;
+	}
+		#feature-Section figure img {
+			max-width:100%;
+		}
+	
+	#feature-Section article {
+		flex:2;
+		font-size:1.2rem;
+	}
+	
+		#feature-Section article p {
+			padding:4rem 0 2rem 0;
+		}
+
+
+	#about-Section hgroup {
+
+	}
+		#about-Section section {
+			display:flex;
+			width:100%;
+		}
+
+		#about-Section section aside {
+			/* flex:1; */
+			font-size: 1rem;
+			padding: 4rem 0;
+			width:100%;
+		}
+		
+		#about-Section article {
+
+		}
+		
+		#about-Section article p {
+			font-size: 2rem;
+			padding: 0 4rem;	
+		}
+		
+		#about-Section section figure {
+			/* flex:2; */
+			/* width:50%; */
+	}
+	
+		#about-Section section figure img {
+			max-width:100%;
+		}
+	
+}
+
 @media (min-width: 768px) { /*Tablet Devices*/
 /*GENERAL SECTION */
 	header #logo {
@@ -606,6 +665,7 @@ hgroup {
 	hgroup blockquote  {
 		font-size:3rem;
 		padding:2rem;
+		
 	}
 /* HEADER SECTION */	
 	header #logo {
@@ -644,11 +704,14 @@ hgroup {
 	
 	#feature-Section article {
 		flex:2;
+		
 	}
 	
 		#feature-Section article p {
 				line-height: 2;
- 				font-size:2.8rem;
+ 				font-size:2rem;
+				font-weight:500;
+				text-align: left;
 		}
 /* END OF FEATURE ABOUT SECTION */
 
@@ -667,23 +730,33 @@ hgroup {
 	
 	#about-Section section {
 		display:flex;
-		/*flex-wrap:wrap;*/
+		flex-wrap:wrap;
+		align-items: center;
+		flex-direction: row-reverse;
+		padding: 8rem 3rem;
 	}
 
 		#about-Section section aside {
 			font-size: 3rem;
 			padding: 4rem 0;
-			flex:2;
+			width:100%;
+			
 		}
+
+			#about-Section article {
+				width:65%;
+			}
 		
-		#about-Section article p {
-			font-size: 3rem;
-			padding: 3rem 10rem;	
-			flex:1;
-		}
+			#about-Section article p {
+				font-size: 2.2rem;
+				text-align: left;
+			}
 		
 	#about-Section section figure {
-		width:50%;
+		width:25%;
+		/* max-height:40rem; */
+		/* max-width: 25rem; */
+		margin:0 0;
  	}
 		
 		#about-Section section figure img {
@@ -698,7 +771,7 @@ hgroup {
 	}
 		
 		#skills-Section hgroup blockquote {
-			font-size:4rem;
+			font-size:3rem;
 		}
 	
 	#skills-Section section {
@@ -722,11 +795,12 @@ hgroup {
 	
 	#projects-Section hgroup blockquote {
 		padding:4rem 8rem;
+		font-size: 2.2rem;
 	}
 	
 		#projects-Section section figure {
 			width:80%;
-			margin-bottom:55rem;
+			margin-bottom:45rem;
 		}
 		
 			#projects-Section section figure figcaption {
@@ -736,7 +810,7 @@ hgroup {
 
 /* CONTACT SECTION */
 	#contactform-Section aside {
-		padding:8rem 0;	
+		padding:2rem 0 8rem 0;	
 	}
 	
 	#contactform-Section aside blockquote {
@@ -806,14 +880,14 @@ hgroup {
 	hgroup {
 		
 	}
-	hgroup h1 {
-		font-size:5rem;
-	}
-	
-	hgroup blockquote  {
-		font-size:4rem;
-		padding:2rem;
-	}
+		hgroup h1 {
+			font-size:5rem;
+		}
+		
+		hgroup blockquote  {
+			font-size:4rem;
+			padding:2rem;
+		}
 /* HEADER SECTION */	
 
 /*END OF HEADER SECTION */
