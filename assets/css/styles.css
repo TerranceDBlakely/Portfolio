@@ -384,18 +384,15 @@ hgroup {
 	
 	}
 	
-/*END OF GENERAL SECTION*/
 	
 /* HEADER SECTION */	
 	header nav ul {
 		display:none;
 	}
 	
-/*END OF HEADER SECTION */
-
+	
 /*FEATURE ABOUT SECTION */
 	
-/* END OF FEATURE ABOUT SECTION */
 
 /* ABOUT SECTION */
 	#about-Section section article {
@@ -406,8 +403,7 @@ hgroup {
 			font-size:1.7rem;
 			/*color:red;*/
 		}
-/* END OF ABOUT OF SECTION */
-
+		
 /* SKILS SECTION */
 	#skills-Section hgroup {
 		padding:3rem 2rem;
@@ -416,11 +412,9 @@ hgroup {
 		#skills-Section hgroup blockquote {
 			font-size:2rem;
 		} 
-/* END OF SKILLS SECTION */
-
+		
 /* PROJECTS SECTION */
 
-/* END OF PROJECTS SECITON */
 
 /* CONTACT SECTION */
 	#contactform-Section hgroup {
@@ -430,12 +424,142 @@ hgroup {
 		#contactform-Section aside blockquote {
 			padding:0 2rem 2rem 2rem;
 		}
-/* END OF CONTACT SECTION */
-
+		
 /* FOOTER SECTION */
 
-/* END OF FOOTER SECTION */
 }
+
+/*IPHONE LANDSCAPE */
+@media (min-width:480px) {
+	#feature-Section {
+		display:flex;
+		padding:4rem 1rem;
+	}
+	
+	#feature-Section figure {
+		display:flex;
+		flex:2;	
+		max-height:20rem;
+	}
+		#feature-Section figure img {
+			max-width:100%;
+		}
+	
+	#feature-Section article {
+		flex:3;
+	}
+	
+		#feature-Section article p {
+			padding:2rem 0 2rem 0;
+			font-size:1.4rem;
+			line-height:1.8;
+			text-align: left;
+		}
+
+
+	#about-Section hgroup {
+
+	}
+		#about-Section section {
+			display:flex;
+			width:100%;
+			padding: 4rem 2rem;
+			flex-wrap:wrap;
+			align-items: center;
+		}
+
+		#about-Section section aside {
+			/* flex:1; */
+			font-size: 1.5rem;
+			padding: 2rem 0 2rem 0;
+			width:100%;
+		}
+		
+		#about-Section section article {
+			flex:1;
+			padding:0 1rem;
+		}
+		
+		#about-Section section article p {
+			font-size: 1.5rem;
+			line-height: 1.8;
+			padding: 0 2rem 0 0;
+			text-align: right;	
+		}
+		
+		#about-Section section figure {
+			width:10rem;
+			flex:1;
+	}
+	
+		#about-Section section figure img {
+			max-width:100%;
+		}
+	
+
+		#skills-Section hgroup {
+		padding:8rem 2rem;
+		width:100%;
+	}
+
+		#skills-Section hgroup blockquote {
+			font-size:1.8rem;
+		} 
+
+		#skills-Section {
+
+	}
+	
+		#skills-Section section {
+			column-gap: 4rem;
+			row-gap:3rem;
+		}
+			#skills-Section section figure {
+			}
+
+				#skills-Section section figure img {
+				}
+
+		
+		#projects-Section section {
+		display:flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+		padding:8rem 0 6rem 0;
+	}
+		
+		#projects-Section hgroup blockquote {
+			font-size:1.5rem;
+		}
+	
+		#projects-Section section figure {
+			margin:0 0 16rem 0;
+			height:10rem;
+			width:30rem;
+			background-color: var(--color-4);
+			border-radius: 1rem;
+			box-shadow: 0 2rem 1rem 0 #555;
+		}
+	
+			#projects-Section section figure img {
+				max-width: 100%;
+				border-radius: 1rem;
+			}
+	
+			#projects-Section section figure figcaption {
+				text-align: center;
+				padding:1rem 0 2rem 0;
+				font-weight: bold;
+				color: var(--color-2);
+				}
+				
+		#contactform-Section form {
+			padding:0 8rem;
+		}
+		
+}
+
 
 @media (min-width: 600px) {
 	header nav ul {
@@ -559,7 +683,8 @@ hgroup {
 
 }
 
-@media (min-width: 768px) { /*Tablet Devices*/
+/*TABLET PORTRAITS*/
+@media (min-width: 768px) { 
 /*GENERAL SECTION */
 	header #logo {
 		width: 15rem;
@@ -590,8 +715,7 @@ hgroup {
 	}
 /* HEADER SECTION */	
 
-/*END OF HEADER SECTION */
-	
+
 /*FEATURE ABOUT SECTION */
 	#feature-Section figure {
 		width: 80%;
@@ -606,8 +730,7 @@ hgroup {
 		#feature-Section article p {
 			padding:4rem 4rem 2rem 4rem;
 		}
-/* END OF FEATURE ABOUT SECTION */
-
+		
 /* ABOUT SECTION */
 	#about-Section hgroup {
 
@@ -631,8 +754,7 @@ hgroup {
 			max-width:100%;
 		}
 		
-/* END OF ABOUT OF SECTION */
-
+		
 /* SKILS SECTION */
 	#skills-Section hgroup {
 		width: 100%;
@@ -651,8 +773,7 @@ hgroup {
 		max-width:20rem;
 	}
 
-/* END OF SKILLS SECTION */
-
+	
 /* PROJECTS SECTION */
 	#projects-Section section {
 		padding: 10rem 0;
@@ -667,8 +788,7 @@ hgroup {
 			#projects-Section section figure figcaption {
 				font-size:4rem;
 			}
-/* END OF PROJECTS SECITON */
-
+			
 /* CONTACT SECTION */
 	#contactform-Section aside blockquote {
 		font-size:4.5rem;
@@ -705,16 +825,14 @@ hgroup {
 		font-size:3rem;
 	}
 
-/* END OF CONTACT SECTION */
 	#footer-Section footer p {
 		font-size: 3.5rem;
 	}
 /* FOOTER SECTION */
 
-/* END OF FOOTER SECTION */
 }
 
-
+/* SMALL SCREENS */
 @media (min-width:1024px) {
 	/*GENERAL SECTION */
 
