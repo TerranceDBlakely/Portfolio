@@ -681,6 +681,7 @@ hgroup {
 		column-gap:10rem;
 		row-gap:8rem;
 		padding: 10rem 0 15rem 0;
+		flex-wrap: wrap;
 		
 	}	
 		
