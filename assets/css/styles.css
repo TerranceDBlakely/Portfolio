@@ -681,7 +681,7 @@ hgroup {
 		column-gap:10rem;
 		row-gap:8rem;
 		padding: 10rem 0 15rem 0;
-		flex-wrap: wrap;
+		
 		
 	}	
 		
@@ -859,9 +859,10 @@ hgroup {
 		}
 	
 	#skills-Section section {
-		column-gap:8rem;
+		column-gap:12rem;
 		row-gap:8rem;
 		padding: 10rem 0 15rem 0;
+		flex-wrap: wrap;
 	}	
 		
 	#skills-Section section figure {
