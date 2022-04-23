@@ -522,7 +522,7 @@ hgroup {
 	}
 	
 		#skills-Section section {
-			column-gap: 4rem;
+			column-gap: 8rem;
 			row-gap:3rem;
 		}
 			#skills-Section section figure {
