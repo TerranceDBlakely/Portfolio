@@ -952,7 +952,7 @@ hgroup {
 	header {
 		justify-content:space-between;
 		width:100%;
-		padding:0 4rem;
+		padding:0 16rem;
 	}
 
 	header #logo {
@@ -978,31 +978,47 @@ hgroup {
 		}
 	
 		header nav ul li  {
-			padding: 0 2rem;
+			padding: 1rem 2rem;
+			font-weight: 600;
+		}
+
+		header nav ul li:hover {
+			/* color: var(--color-2); */
+			cursor:pointer;
+			border:2px solid var(--color-2);
+			border-radius: 1rem;
 		}
 
 /*FEATURE ABOUT SECTION */
 #feature-Section {
-	padding:8rem 10em;
+	width: 100%;
+	padding:8rem 20em;
 	align-items:center;
+	justify-content: center;
 }	
 
 #feature-Section figure {
-		flex:1;
 		display:flex;
-		
 	}
-		#feature-Section figure img {
-			max-width:80%;
-		}
+		#feature-Section figure figure {
+			max-width: 70%;
+		} 
+	
+			#feature-Section figure figure img {
+				width:100%;
+			}
 	
 	#feature-Section article {
-		flex:3;
+		width:60%;
+		padding:0 0;
 	}
 	
 		#feature-Section article p {
-			padding:4rem 8rem 2rem 8rem;
-			font-size:2.4rem;
+			padding:4rem 12rem 2rem 12rem;
+			font-weight:300;
+			font-size:2rem;
+			width:80%;
+			margin:0 auto;
 		}
 		
 /* ABOUT SECTION */
@@ -1014,8 +1030,12 @@ hgroup {
 		width:100%;
 	}
 	
+		#about-Section hgroup h1 {
+			font-size:3rem;
+		}
+	
 		#about-Section hgroup blockquote {
-			font-size:4rem;
+			font-size:2.5rem;
 			padding:4rem 8rem;
 		}
 	
@@ -1028,22 +1048,23 @@ hgroup {
 			}
 			
 			#about-Section section blockquote  {
-				font-size: 3rem;	
+				font-size: 2rem;	
 			}
 		
 		#about-Section section article {
-			flex:2;
 		}
 		
 		#about-Section section article p {
-			font-size: 2.4rem;
-			padding: 0 8rem 0 4rem;	
+			width:70%;
+			margin:0 auto;
+			font-weight: 400;
+			font-size: 2.6rem;
 			line-height: 2;
 			text-align: right;
 		}
 		
 	#about-Section section figure {
-		flex: 1;
+		width:30rem;
 	}
 	
 		#about-Section section figure img {
@@ -1056,7 +1077,7 @@ hgroup {
 	}
 		
 		#skills-Section hgroup blockquote {
-			font-size:4rem;
+			font-size:2.5rem;
 			padding:4rem 8rem;
 		}
 	
@@ -1075,17 +1096,17 @@ hgroup {
 	
 /* PROJECTS SECTION */
 	#projects-Section hgroup blockquote {
-		font-size:4rem;
+		font-size:2.5rem;
 		padding:4rem 8rem;
 	}
 
 	#projects-Section section {
-		padding: 20rem 5rem;
+		padding: 10rem 5rem 30rem 5rem;
 		column-gap:12rem;
 	}
 	
 		#projects-Section section figure {
-			flex: 1;
+			max-width:50rem;
 			margin-bottom:10rem;
 		}
 		
@@ -1097,6 +1118,7 @@ hgroup {
 	#contactform-Section aside blockquote {
 		font-size:2.5rem;
 		padding:4rem 4rem;
+		font-weight: 300;
 	}
 		#contactform-Section aside h3 {
 			font-size:2.5rem;
@@ -1108,25 +1130,32 @@ hgroup {
 	
 	#contactform-Section form {
 		padding: 6rem 40rem;
+		display:flex;
+		flex-direction: column;
 	}	
 	
 		#contactform-Section label {
-			font-size: 3rem;
+			font-size: 2rem;
 		}
 		
+	.inputFields {
+		width: 30rem;
+		margin:2rem auto;
+	}
+		
 	.email-InputFields {
-		height:6rem;
+		height:4rem;
 	}
 	
 	.message-InputFields {
-		height:20rem;
+		height:10rem;
 	}
 		
 	.Submit-Buttons {
 		margin-top:6rem;
-		height:8rem;
-		width:15rem;
-		font-size:3rem;
+		height:4rem;
+		width:7.5rem;
+		font-size:1.5rem;
 	}
 	
 	
