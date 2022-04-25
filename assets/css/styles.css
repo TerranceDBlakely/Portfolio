@@ -1,23 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Cairo:wght@300;400;500;700&family=Poppins:wght@100;300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Roboto+Slab:wght@300;400;900&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
 /* VARIABLES */
 :root {
-  --font-3: "Roboto", sans-serif;
-  --font-2: "Unbuntu", sans-serif;
   --font-1: "Poppins", sans-serif;
   --color-1: white;
 	--color-2: lightgrey;
 	--color-3: rgb(141, 62, 231);
 	--color-4: grey;
 	--color-5: black;
+	--Font-1:"Roboto Slab", serif;
+	--Font-2:'Comfortaa', cursive;
 }
-
 /* END OF VARIABLES */
 
 /* GENERAL SECTION */
-
 *,html,body {
 	box-sizing: border-box;
 	margin:0;
@@ -30,7 +27,7 @@ html {
 
 body {
 	background-color:var(--color-2);
-	font-family: var(--font-1);
+	font-family: var(--Font-2);
 	font-size:1.6rem;
 	width:100%;
 	height:100%;
@@ -53,12 +50,26 @@ hgroup {
 }
 	hgroup h1 {
 		text-shadow: 1rem .8rem 1.4rem rgb(197, 205, 212);
+		font-family: var(--Font-1);
 	}
 	
 	hgroup blockquote  {
 		color:var(--color-4);
+		font-family: var(--Font-2);
+		text-align: center;
 	}
 	
+	/* NAVIGATION LINKS */
+	header nav ul li {
+		color:var(--color-2);
+		letter-spacing: 1px;
+		font-weight:600;
+		font-family: var(--Font-1);
+		font-size:2rem;
+	}
+		header nav ul li:hover {
+			color:var(--color-2);
+		}
 
 /* END OF GENERAL SECTION */
 
@@ -130,6 +141,7 @@ hgroup {
 			
 			#feature-Section article {
 				padding: 4rem 2rem;
+				
 			}
 			
 				#feature-Section article p {
@@ -286,10 +298,7 @@ hgroup {
 				}
 				
 				#contactform-Section blockquote {
-					padding:2rem 2rem;
-					font-size: 2.5rem;
-					text-align: center;
-					color: var(--color-1);
+					
 				}
 
 				#contactform-Section form {
@@ -408,11 +417,11 @@ hgroup {
 		
 /* SKILS SECTION */
 	#skills-Section hgroup {
-		padding:3rem 2rem;
+		
 	}
 
 		#skills-Section hgroup blockquote {
-			font-size:2rem;
+			
 		} 
 		
 /* PROJECTS SECTION */
@@ -420,7 +429,7 @@ hgroup {
 
 /* CONTACT SECTION */
 	#contactform-Section hgroup {
-		padding:4rem 2rem;
+
 	}
 	
 		#contactform-Section aside blockquote {
@@ -509,12 +518,9 @@ hgroup {
 	
 
 		#skills-Section hgroup {
-		padding:8rem 2rem;
-		width:100%;
-	}
+		}
 
 		#skills-Section hgroup blockquote {
-			font-size:1.8rem;
 		} 
 
 		#skills-Section {
@@ -541,7 +547,7 @@ hgroup {
 	}
 		
 		#projects-Section hgroup blockquote {
-			font-size:1.5rem;
+			
 		}
 	
 		#projects-Section section figure {
@@ -597,12 +603,9 @@ hgroup {
 		
 	}
 	hgroup h1 {
-		font-size:5rem;
 	}
 	
 	hgroup blockquote  {
-		font-size:4rem;
-		padding:2rem;
 	}
 /* HEADER SECTION */	
 
@@ -639,11 +642,11 @@ hgroup {
 	}
 
 	#about-Section hgroup {
-		width:100%;
+
 	}
 	
 		#about-Section blockquote {
-			font-size:1.3rem;
+
 		}
 	
 		#about-Section section aside h2 {
@@ -771,12 +774,9 @@ hgroup {
 		
 	}
 	hgroup h1 {
-		font-size:3rem;
 	}
 	
 	hgroup blockquote  {
-		font-size:4rem;
-		padding:2rem;
 	}
 /* HEADER SECTION */	
 
@@ -815,7 +815,6 @@ hgroup {
 	}
 	
 		#about-Section hgroup blockquote {
-			font-size:2rem;
 		}
 	
 		#about-Section section aside {
@@ -885,39 +884,54 @@ hgroup {
 			}
 			
 /* CONTACT SECTION */
+#contactform-Section aside {
+	text-align:center;
+	padding:2.5rem 5rem;
+	
+}
+
 	#contactform-Section aside blockquote {
-		font-size:5rem;
-		padding:4rem 4rem;
+		font-size:4.5rem;
+		color:white;
 	}
-		#contactform-Section aside h3 {
-			font-size:3rem;
-		}
+	#contactform-Section aside h3 {
+		font-size:2rem;
+	}
 		
 		#contactform-Section aside h3 span {
-			font-size:3rem;
+		font-size:2.5rem;
 		}
 	
-	#contactform-Section form {
-		padding: 6rem 20rem;
+#contactform-Section {
+	padding: 2rem 0;
+}
+		
+		#contactform-Section form {
+		width:50%;
+		margin:0 auto 2rem auto;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		border-radius:1rem;
 	}	
 	
 		#contactform-Section label {
-			font-size: 4rem;
+			font-size: 2rem;
 		}
 		
 	.email-InputFields {
-		height:6rem;
+		height:4rem;
 	}
 	
 	.message-InputFields {
-		height:25rem;
+		height:15rem;
 	}
 		
 	.Submit-Buttons {
-		margin-top:6rem;
-		height:10rem;
+		height:5rem;
 		width:20rem;
-		font-size:3rem;
+		margin:2rem auto;
+		font-size:2rem;
 	}
 	
 	
@@ -945,14 +959,13 @@ hgroup {
 	}
 	
 	hgroup blockquote {
-		font-size:20rem;
 	}
 
 /* HEADER SECTION */	
 	header {
 		justify-content:space-between;
 		width:100%;
-		padding:0 4rem;
+		padding:1rem 12rem;
 	}
 
 	header #logo {
@@ -979,35 +992,39 @@ hgroup {
 	
 		header nav ul li  {
 			padding: 0 2rem;
+			font-weight:500;
 		}
 
 /*FEATURE ABOUT SECTION */
 #feature-Section {
-	padding:8rem 10em;
+	padding:8rem 12rem;
 	align-items:center;
+	justify-content: flex-end;
 }	
 
 #feature-Section figure {
 		flex:1;
 		display:flex;
-		
+		max-width:20rem;
 	}
 		#feature-Section figure img {
-			max-width:80%;
+			max-width:100%;
 		}
 	
 	#feature-Section article {
-		flex:3;
+		flex:2;
 	}
 	
 		#feature-Section article p {
-			padding:4rem 8rem 2rem 8rem;
-			font-size:2.4rem;
+			font-family: var(--Font-1);
+			padding:4rem 4rem 2rem 4rem;
+			font-size:3.6rem;
+			font-weight:400;
 		}
 		
 /* ABOUT SECTION */
 	#about-Section section {
-		padding: 8rem 12em;
+		padding: 8rem 8rem;
 	}
 
 	#about-Section hgroup {
@@ -1015,8 +1032,6 @@ hgroup {
 	}
 	
 		#about-Section hgroup blockquote {
-			font-size:4rem;
-			padding:4rem 8rem;
 		}
 	
 		#about-Section section aside {
@@ -1024,26 +1039,33 @@ hgroup {
 		}
 		
 			#about-Section section aside h2 {
-				font-size: 4rem;	
+				font-size: 3rem;	
+			}
+			
+			#about-Section section aside blockquote {
+				font-weight: 400;
 			}
 			
 			#about-Section section blockquote  {
-				font-size: 3rem;	
+
 			}
 		
 		#about-Section section article {
-			flex:2;
+			width:80%;
+			padding-right:10rem;
 		}
 		
 		#about-Section section article p {
-			font-size: 2.4rem;
-			padding: 0 8rem 0 4rem;	
+			font-size: 3rem;
 			line-height: 2;
 			text-align: right;
+			width: 100%;
+			padding:0 0;			
+			font-weight:400;
 		}
 		
 	#about-Section section figure {
-		flex: 1;
+		max-width:25rem;
 	}
 	
 		#about-Section section figure img {
@@ -1052,12 +1074,11 @@ hgroup {
 		
 /* SKILLS SECTION */
 	#skills-Section hgroup {
-		width: 100%;
+		
 	}
 		
 		#skills-Section hgroup blockquote {
-			font-size:4rem;
-			padding:4rem 8rem;
+			
 		}
 	
 	#skills-Section section {
@@ -1075,18 +1096,16 @@ hgroup {
 	
 /* PROJECTS SECTION */
 	#projects-Section hgroup blockquote {
-		font-size:4rem;
-		padding:4rem 8rem;
+		
 	}
 
 	#projects-Section section {
-		padding: 20rem 5rem;
-		column-gap:12rem;
+		padding: 10rem 5rem 15rem 5rem;
+		/*column-gap:12rem;*/
 	}
 	
 		#projects-Section section figure {
-			flex: 1;
-			margin-bottom:10rem;
+			max-width: 50rem;
 		}
 		
 			#projects-Section section figure figcaption {
@@ -1103,11 +1122,11 @@ hgroup {
 		}
 		
 		#contactform-Section aside h3 span {
-			font-size:3rem;
+			font-size:2.5rem;	
 		}
 	
 	#contactform-Section form {
-		padding: 6rem 40rem;
+		
 	}	
 	
 		#contactform-Section label {
@@ -1120,6 +1139,10 @@ hgroup {
 	
 	.message-InputFields {
 		height:20rem;
+	}
+	
+	.InputFields {
+		max-width:10rem;
 	}
 		
 	.Submit-Buttons {
