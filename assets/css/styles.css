@@ -3,8 +3,7 @@
 
 /* VARIABLES */
 :root {
-  --font-1: "Poppins", sans-serif;
-  --color-1: white;
+	--color-1: white;
 	--color-2: lightgrey;
 	--color-3: rgb(141, 62, 231);
 	--color-4: grey;
@@ -146,7 +145,8 @@ hgroup {
 			
 				#feature-Section article p {
 					text-align:center;
-					color: var(--color-2);
+					color: var(--color-1);
+					font-family: var(--Font-1);
 				}
 	
 /* END OF FEATURE ABOUT SECTION */
@@ -403,7 +403,7 @@ hgroup {
 	
 	
 /*FEATURE ABOUT SECTION */
-	
+/*END OF FEATURE SECTION */
 
 /* ABOUT SECTION */
 	#about-Section section article {
@@ -434,6 +434,7 @@ hgroup {
 	
 		#contactform-Section aside blockquote {
 			padding:0 2rem 2rem 2rem;
+			text-align: center;
 		}
 		
 /* FOOTER SECTION */
@@ -1016,7 +1017,6 @@ hgroup {
 	}
 	
 		#feature-Section article p {
-			font-family: var(--Font-1);
 			padding:4rem 4rem 2rem 4rem;
 			font-size:3.6rem;
 			font-weight:400;
