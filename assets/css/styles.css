@@ -3,15 +3,33 @@
 
 /* VARIABLES */
 :root {
-	--color-1: white;
-	--color-2: lightgrey;
-	--color-3: rgb(141, 62, 231);
-	--color-4: grey;
-	--color-5: black;
-	--Font-1:"Roboto Slab", serif;
-	--Font-2:'Comfortaa', cursive;
+	/*COLORS*/
+	--color1: white;
+	--color2: lightgrey;
+	--color3: rgb(141, 62, 231);
+	--color4: grey;
+	--color5: black;
+	
+	/*FONTS*/
+	--Font-Family1:"Roboto Slab", serif;
+	--Font-Family2:'Comfortaa', cursive;
+	
+	/*FONTS SIZES*/
+	--Font-Display1: 3rem;
+	--Font-Display2: 6rem;
+	--Font-Display3: 9rem;
+	
+	--Font-Copy1: 1.2rem;
+	--Font-Copy2: 2.4rem;
+	--Font-Copy3: 3.2rem;	
+	
+	/*MISC*/
+	--Font-line-Height1: 1.5;
+	--Font-line-Height2: 2;
 }
 /* END OF VARIABLES */
+
+/* -------------------------------------------*/
 
 /* GENERAL SECTION */
 *,html,body {
@@ -25,9 +43,8 @@ html {
 }
 
 body {
-	background-color:var(--color-2);
-	font-family: var(--Font-2);
-	font-size:1.6rem;
+	font-family: var(--Font-Family2);
+	font-size:var(--Font-Copy1);
 	width:100%;
 	height:100%;
 }
@@ -39,6 +56,16 @@ img {
 #page-Container {
 	width:100%;
 }
+	
+	/* NAVIGATION LINKS */
+	header nav ul li {
+		color:var(--color-2);
+		letter-spacing: 1px;
+		font-family: var(--Font-Family1);
+	}
+		header nav ul li:hover {
+			color:var(--color-2);
+		}
 
 hgroup {
 			padding:8rem 2rem;
@@ -49,28 +76,20 @@ hgroup {
 }
 	hgroup h1 {
 		text-shadow: 1rem .8rem 1.4rem rgb(197, 205, 212);
-		font-family: var(--Font-1);
+		font-family: var(--Font-Family1);
 	}
 	
 	hgroup blockquote  {
 		color:var(--color-4);
-		font-family: var(--Font-2);
+		font-weight:bold;
+		font-family: var(--Font-Family2);
+		font-size: var(--Font-Display);
 		text-align: center;
-	}
-	
-	/* NAVIGATION LINKS */
-	header nav ul li {
-		color:var(--color-2);
-		letter-spacing: 1px;
-		font-weight:600;
-		font-family: var(--Font-1);
-		font-size:2rem;
-	}
-		header nav ul li:hover {
-			color:var(--color-2);
-		}
-
+	}		
+		
 /* END OF GENERAL SECTION */
+
+/* -------------------------------------------*/
 
 /* HEADER SECTION */
 
@@ -118,11 +137,12 @@ hgroup {
 
 /*END OF HEADER SECTION */
 
+/* -------------------------------------------*/
+
 /*FEATURE ABOUT SECTION */
 
 		#feature-Section {
 			width:100%;
-			background-color:var(--color-4);
  			padding:4rem 0;
 		}
 		
@@ -145,11 +165,12 @@ hgroup {
 			
 				#feature-Section article p {
 					text-align:center;
-					color: var(--color-1);
-					font-family: var(--Font-1);
+					font-family: var(--Font-Family1);
 				}
 	
 /* END OF FEATURE ABOUT SECTION */
+
+/* -------------------------------------------*/
 
 /* ABOUT OF SECTION */
 	#about-Section {
@@ -201,8 +222,10 @@ hgroup {
 				border-radius: 3rem;
 			}
 /* END OF ABOUT OF SECTION */	
-		
-/* SKILS SECTION */
+
+/* -------------------------------------------*/
+
+/* SKILLS SECTION */
 	#skills-Section {
 		padding:0 0;
 		display:flex;
@@ -236,6 +259,8 @@ hgroup {
 
 		
 /* END OF SKILLS SECTION */
+
+/* -------------------------------------------*/
 
 /* PROJECTS SECTION */
 #projects-Section {
@@ -272,6 +297,8 @@ hgroup {
 			}
 
 /* END OF PROJECTS SECITON */
+
+/* -------------------------------------------*/
 
 /* CONTACT SECTION */
 		#contactform-Section {
@@ -343,6 +370,8 @@ hgroup {
 
 /* END OF CONTACT SECTION */
 
+/* -------------------------------------------*/
+
 /* FOOTER SECTION */
 	#footer-Section {
 		color:var(--color-1);
@@ -378,60 +407,40 @@ hgroup {
 	
 /* -------------------------------------------*/
 /* -------------------------------------------*/
+/* -------------------------------------------*/
+/* -------------------------------------------*/
 
 /* MEDIA QUERRY SECTIONSv*/
 
 @media (max-width:480px) { /* Mobile Devices */
 	
 /*GENERAL SECTION */
-	hgroup {
-
-	}
-	hgroup h1 {
-
-	}
-	
-	hgroup blockquote  {
-	
-	}
-	
 	
 /* HEADER SECTION */	
 	header nav ul {
 		display:none;
 	}
 	
-	
 /*FEATURE ABOUT SECTION */
-/*END OF FEATURE SECTION */
+	#feature-Section article p {
 
+	}
+	
 /* ABOUT SECTION */
 	#about-Section section article {
 		padding:0 2rem;	
 	}
 	
 		#about-Section section article p {
-			font-size:1.7rem;
-			/*color:red;*/
+
 		}
 		
 /* SKILS SECTION */
-	#skills-Section hgroup {
-		
-	}
 
-		#skills-Section hgroup blockquote {
-			
-		} 
-		
 /* PROJECTS SECTION */
 
-
 /* CONTACT SECTION */
-	#contactform-Section hgroup {
 
-	}
-	
 		#contactform-Section aside blockquote {
 			padding:0 2rem 2rem 2rem;
 			text-align: center;
@@ -448,7 +457,6 @@ hgroup {
 	header nav ul {
 		display:none;
 	}
-
 	
 	#feature-Section {
 		display:flex;
@@ -471,11 +479,8 @@ hgroup {
 	
 		#feature-Section article p {
 			padding:2rem 0 2rem 0;
-			font-size:1.4rem;
-			line-height:1.8;
 			text-align: left;
 		}
-
 
 	#about-Section hgroup {
 
@@ -489,8 +494,6 @@ hgroup {
 		}
 
 		#about-Section section aside {
-			/* flex:1; */
-			font-size: 1.5rem;
 			padding: 2rem 0 2rem 0;
 			width:100%;
 		}
@@ -501,11 +504,8 @@ hgroup {
 		}
 		
 		#about-Section section article p {
-			font-size: 1.1rem;
-			line-height: 1.8;
 			padding: 0 2rem 0 0;
 			text-align: right;	
-			word-break:keep-all;
 		}
 		
 		#about-Section section figure {
@@ -569,8 +569,7 @@ hgroup {
 				text-align: center;
 				margin-top:4rem;
 				padding:1rem 0 2rem 0;
-				font-weight: bold;
-				color: var(--color-2);
+				
 			}
 				
 		#contactform-Section form {
@@ -781,7 +780,6 @@ hgroup {
 	}
 /* HEADER SECTION */	
 
-
 /*FEATURE ABOUT SECTION */
 #feature-Section {
 	padding:6rem 6em;
@@ -803,7 +801,6 @@ hgroup {
 	
 		#feature-Section article p {
 			padding:4rem 4rem 2rem 4rem;
-			font-size:2.5rem;
 		}
 		
 /* ABOUT SECTION */
@@ -815,19 +812,10 @@ hgroup {
 		width:100%;
 	}
 	
-		#about-Section hgroup blockquote {
-		}
-	
-		#about-Section section aside {
-			
-		}
-		
-			#about-Section section aside h2 {
-				font-size: 4rem;	
-			}
+	#about-Section section aside h2 {
+	}
 			
 			#about-Section section blockquote  {
-				font-size: 3rem;	
 			}
 		
 		#about-Section section article {
@@ -835,9 +823,7 @@ hgroup {
 		}
 		
 		#about-Section section article p {
-			font-size: 2.5rem;
 			padding: 0 4rem 0 2rem;	
-			line-height: 2;
 			text-align: right;
 		}
 		
@@ -881,7 +867,7 @@ hgroup {
 		}
 		
 			#projects-Section section figure figcaption {
-				font-size:2.5rem;
+
 			}
 			
 /* CONTACT SECTION */
@@ -891,18 +877,6 @@ hgroup {
 	
 }
 
-	#contactform-Section aside blockquote {
-		font-size:4.5rem;
-		color:white;
-	}
-	#contactform-Section aside h3 {
-		font-size:2rem;
-	}
-		
-		#contactform-Section aside h3 span {
-		font-size:2.5rem;
-		}
-	
 #contactform-Section {
 	padding: 2rem 0;
 }
@@ -917,35 +891,32 @@ hgroup {
 	}	
 	
 		#contactform-Section label {
-			font-size: 2rem;
+
 		}
 		
-	.email-InputFields {
-		height:4rem;
-	}
-	
-	.message-InputFields {
-		height:15rem;
-	}
+		.email-InputFields {
+			height:4rem;
+		}
 		
-	.Submit-Buttons {
-		height:5rem;
-		width:20rem;
-		margin:2rem auto;
-		font-size:2rem;
-	}
+		.message-InputFields {
+			height:15rem;
+		}
+			
+		.Submit-Buttons {
+			height:5rem;
+			width:20rem;
+			margin:2rem auto;
+		}
 	
 	
 	/* FOOTER SECTION */
 	#footer-Section footer figure {
 		width: 20%;
 	}
-			#footer-Section footer figure img {
-			}
-			
-			#footer-Section footer p {
-				font-size:2rem;
-			}
+		
+		#footer-Section footer p {
+
+		}
 		
 }
 
@@ -956,7 +927,7 @@ hgroup {
 	
 	/*GENERAL SECTION */
 	hgroup h1 {
-		font-size:4rem;
+
 	}
 	
 	hgroup blockquote {
@@ -993,7 +964,6 @@ hgroup {
 	
 		header nav ul li  {
 			padding: 0 2rem;
-			font-weight:500;
 		}
 
 /*FEATURE ABOUT SECTION */
@@ -1018,8 +988,6 @@ hgroup {
 	
 		#feature-Section article p {
 			padding:4rem 4rem 2rem 4rem;
-			font-size:3.6rem;
-			font-weight:400;
 		}
 		
 /* ABOUT SECTION */
@@ -1030,38 +998,16 @@ hgroup {
 	#about-Section hgroup {
 		width:100%;
 	}
-	
-		#about-Section hgroup blockquote {
-		}
-	
-		#about-Section section aside {
-			
-		}
-		
-			#about-Section section aside h2 {
-				font-size: 3rem;	
-			}
-			
-			#about-Section section aside blockquote {
-				font-weight: 400;
-			}
-			
-			#about-Section section blockquote  {
 
-			}
-		
-		#about-Section section article {
+	#about-Section section article {
 			width:80%;
 			padding-right:10rem;
 		}
 		
 		#about-Section section article p {
-			font-size: 3rem;
-			line-height: 2;
 			text-align: right;
 			width: 100%;
 			padding:0 0;			
-			font-weight:400;
 		}
 		
 	#about-Section section figure {
@@ -1101,7 +1047,7 @@ hgroup {
 
 	#projects-Section section {
 		padding: 10rem 5rem 15rem 5rem;
-		/*column-gap:12rem;*/
+	
 	}
 	
 		#projects-Section section figure {
@@ -1109,28 +1055,16 @@ hgroup {
 		}
 		
 			#projects-Section section figure figcaption {
-				font-size:2.5rem;
+
 			}
 			
 /* CONTACT SECTION */
 	#contactform-Section aside blockquote {
-		font-size:2.5rem;
 		padding:4rem 4rem;
 	}
-		#contactform-Section aside h3 {
-			font-size:2.5rem;
-		}
-		
-		#contactform-Section aside h3 span {
-			font-size:2.5rem;	
-		}
-	
-	#contactform-Section form {
-		
-	}	
 	
 		#contactform-Section label {
-			font-size: 3rem;
+
 		}
 		
 	.email-InputFields {
@@ -1149,7 +1083,6 @@ hgroup {
 		margin-top:6rem;
 		height:8rem;
 		width:15rem;
-		font-size:3rem;
 	}
 	
 	
@@ -1161,7 +1094,6 @@ hgroup {
 			}
 			
 			#footer-Section footer p {
-				font-size:2rem;
 			}
 			
 }
