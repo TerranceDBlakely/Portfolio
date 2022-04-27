@@ -1,37 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Roboto+Slab:wght@300;400;900&display=swap');
 
 
-/* VARIABLES */
+/* VARIABLES /* -------------------------------------------*/
 :root {
-	/*COLORS*/
+/*FONTS SIZES*/
+	--font1: 1rem;
+	--font2: 1.2rem;
+	--font3-Base: 1.6rem;
+	--font4: 2.4rem;
+	--font5: 3.6rem;
+	
+/*FONT FAMILIES*/
+	--font-Family1:"Roboto Slab", serif;
+	--font-Family2:'Comfortaa', cursive;
+	
+/*FONT WEIGHTS*/
+--font-Weight1: lighter;
+--font-weight2: bolder;
+	
+
+/* WEBSITE COLORS*/
 	--color1: white;
 	--color2: lightgrey;
 	--color3: rgb(141, 62, 231);
 	--color4: grey;
 	--color5: black;
 	
-	/*FONTS*/
-	--Font-Family1:"Roboto Slab", serif;
-	--Font-Family2:'Comfortaa', cursive;
-	
-	/*FONTS SIZES*/
-	--Font-Display1: 3rem;
-	--Font-Display2: 6rem;
-	--Font-Display3: 9rem;
-	
-	--Font-Copy1: 1.2rem;
-	--Font-Copy2: 2.4rem;
-	--Font-Copy3: 3.2rem;	
-	
-	/*MISC*/
-	--Font-line-Height1: 1.5;
-	--Font-line-Height2: 2;
+/*MISC*/
+
 }
-/* END OF VARIABLES */
 
-/* -------------------------------------------*/
+/*GENERALS /* -------------------------------------------*/
 
-/* GENERAL SECTION */
 *,html,body {
 	box-sizing: border-box;
 	margin:0;
@@ -43,897 +43,277 @@ html {
 }
 
 body {
-	font-family: var(--Font-Family2);
-	font-size:var(--Font-Copy1);
+	font-family: var(--font-Family2);
+	font-size:var(--font3-Base);
 	width:100%;
 	height:100%;
 }
 
 img {
-	max-width:50%;
+	max-width:100%;
+	height:auto;
 }
+
+header nav ul li {
+	color:var(--color-3);
+}
+	header nav ul li:hover {
+		color:var(--color-2);
+	}
+
+hgroup {
+	padding:1rem 1rem;
+	color: var(--color-1);
+	text-shadow: 1rem .8rem 1.4rem rgb(197, 205, 212);
+	text-align: center;
+	font-family: var(--font-Family1);
+}
+	hgroup h1 {
+		
+	}
+	
+	hgroup blockquote  {
+
+	}
+	
+h1 {
+	font-family: var(--font-Family1);
+}
+
+blockquote {
+	font-family: var(--font-Family1);
+}
+	
+figcaption {
+	padding:1rem 1rem;
+	color: var(--color-1);
+	text-shadow: 1rem .8rem 1.4rem rgb(197, 205, 212);
+	text-align: center;
+	font-family: var(--font-Family1);
+}
+		
+/* - GLOBAL- ID's and Classes -------------------------------------------*/
 
 #page-Container {
 	width:100%;
 }
-	
-	/* NAVIGATION LINKS */
-	header nav ul li {
-		color:var(--color-2);
-		letter-spacing: 1px;
-		font-family: var(--Font-Family1);
-	}
-		header nav ul li:hover {
-			color:var(--color-2);
-		}
 
-hgroup {
-			padding:8rem 2rem;
-			text-align: center;
-			line-height: 2;
-			background-color:var(--color-1);
-			color: var(--color-3);
+.sections {
+	padding:0 0;
+	background-color:var(--color2);
+}	
+
+.buttons {
+	height:5rem;
+	width:10rem;
+	border-radius: 1rem;
+	border:0;
 }
-	hgroup h1 {
-		text-shadow: 1rem .8rem 1.4rem rgb(197, 205, 212);
-		font-family: var(--Font-Family1);
-	}
-	
-	hgroup blockquote  {
-		color:var(--color-4);
-		font-weight:bold;
-		font-family: var(--Font-Family2);
-		font-size: var(--Font-Display);
-		text-align: center;
-	}		
-		
-/* END OF GENERAL SECTION */
 
 /* -------------------------------------------*/
-
-/* HEADER SECTION */
-
-	header {
-		background-color:var(--color-4);
-		align-items:center;
-		display:flex;
-		justify-content:space-between;
-		position:sticky;
-		box-shadow: 0 1rem 1rem 0 #555;
-	}
-	
-	header #logo {
-		width: 7rem;
-		margin:0 auto 0 auto;
-	}
-	
-		header figure img {
-			max-width:100%;
-		}
-		
-		header nav {
-		display:flex;
-	}
-	
-		header nav ul {
-		display:flex;
-		}
-		
-			header nav ul li {
-				list-style:none;
-			}
-	
-		header nav figure {
-			position:absolute;
-			top:2rem;
-			right:0;
-			width:3.5rem;
-			margin-right:2rem;
-		}
-		
-			header nav figure img {
-				max-width:100%;
-			}
-
-/*END OF HEADER SECTION */
-
+/* -------------------------------------------*/
+/* -------------------------------------------*/
 /* -------------------------------------------*/
 
-/*FEATURE ABOUT SECTION */
+/* HEADER SECTION -------------------------------------------*/
 
-		#feature-Section {
-			width:100%;
- 			padding:4rem 0;
-		}
-		
-			#feature-Section figure {
-				width:100%;
-				display:flex;
-				justify-content:center;
-			}
-			
-				#feature-Section figure img {
-					width:100%;
-					border-radius: 2rem;
-					box-shadow: 0 2rem 1rem 0 #555;
-				}
-			
-			#feature-Section article {
-				padding: 4rem 2rem;
-				
-			}
-			
-				#feature-Section article p {
-					text-align:center;
-					font-family: var(--Font-Family1);
-				}
-	
-/* END OF FEATURE ABOUT SECTION */
+header {
+align-items:center;
+display:flex;
+justify-content:space-between;
+position:sticky;
+box-shadow: 0 1rem 1rem 0 #555;
+}
 
-/* -------------------------------------------*/
+header #logo {
+width: 7rem;
+margin:0 auto 0 auto;
+}
 
-/* ABOUT OF SECTION */
-	#about-Section {
+header nav {
+display:flex;
+}
+
+header nav ul {
+display:flex;
+}
+
+	header nav ul li {
+		list-style:none;
+	}
+
+header nav figure {
+	position:absolute;
+	top:2rem;
+	right:0;
+	width:3.5rem;
+	margin-right:2rem;
+}
+
+/*FEATURE ABOUT SECTION -------------------------------------------*/
+
+#feature-Section {
+
+}
+
+/* ABOUT OF SECTION -------------------------------------------*/
+#about-Section {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+/* SKILLS SECTION -------------------------------------------*/
+#skills-Section {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+	#skills-Section section {
 		display:flex;
 		flex-wrap:wrap;
-		width:100%;
-		background-color:var(--color-4);
-	}
-	
-		#about-Section section {
-			width:100%;
-			padding:4rem 0 8rem 0;
-		}
-
-		#about-Section section aside {
-			line-height: 1.8;
-			font-size:1.6rem;
-			letter-spacing: 1px;
-			text-align: center;
-			padding: 4rem 2rem 2rem 2rem;
-		}
-
-			#about-Section section aside blockquote {
-				font-weight: bold;
-				color: var(--color-2);
-			}
-			
-			#about-Section section aside span {
-				color: var(--color-1);
-			}
-		
-		#about-Section section article {
-			line-height: 2;
-			text-align: center;
-			padding:0 2rem; 
-			color: var(--color-5);
-		}
-			
-		#about-Section figure {
-			padding: 4rem 0 4rem 0;
-			display:flex;
-			justify-content: center;
-			width:60%;
-			margin:0 auto;
-		}
-			#about-Section figure> img {
-				box-shadow: 0 2rem 1rem 0 #555;
-				max-width:100%;
-				border-radius: 3rem;
-			}
-/* END OF ABOUT OF SECTION */	
-
-/* -------------------------------------------*/
-
-/* SKILLS SECTION */
-	#skills-Section {
-		padding:0 0;
-		display:flex;
-		flex-wrap: wrap;
+		column-gap: 1rem;
+		row-gap:3rem;
 		justify-content: center;
-		background-color:var(--color-4);
 	}
-	
-		#skills-Section section {
-			display:flex;
-			flex-wrap:wrap;
-			column-gap: 1rem;
-			row-gap:3rem;
-			width:100%;
-			justify-content: center;
-			padding:4rem 2rem;
-		}
-			#skills-Section section figure {
-				max-width: 10rem;
-				width:fit-content;
-				background-color:var(--color-5);
-				border-radius: 3rem;
-				display:flex;
-				justify-content: center;
-				padding:1rem;
-			}
 
-				#skills-Section section figure img {
-					width:100%;
-				}
-
-		
-/* END OF SKILLS SECTION */
-
-/* -------------------------------------------*/
-
-/* PROJECTS SECTION */
+/* PROJECTS SECTION -------------------------------------------*/
 #projects-Section {
-	padding: 0 0;
-	background-color:var(--color-4);
+
 }
 	#projects-Section section {
 		display:flex;
 		flex-wrap: wrap;
 		width: 100%;
 		justify-content: center;
-		padding:2rem 0 6rem 0;
 	}
 	
-		#projects-Section section figure {
-			margin:4rem 0;
-			height:10rem;
-			width:20rem;
-			background-color: var(--color-4);
-			border-radius: 1rem;
-			box-shadow: 0 2rem 1rem 0 #555;
-		}
-	
-			#projects-Section section figure img {
-				max-width: 100%;
-				border-radius: 1rem;
-			}
-	
-			#projects-Section section figure figcaption {
-				text-align: center;
-				padding:1rem 0 2rem 0;
-				font-weight: bold;
-				color: var(--color-2);
-			}
-
-/* END OF PROJECTS SECITON */
-
-/* -------------------------------------------*/
-
-/* CONTACT SECTION */
-		#contactform-Section {
-			width:100%;
-			background-color:var(--color-4);
-		}
-			#contactform-Section aside {
-				padding:4rem 0 4rem 0;
-			}
-			
-				#contactform-Section h3 {
-					color: var(--color-2);
-					padding:0 0 1rem 0;
-					font-size:1.5rem;
-					text-align: center;
-					overflow-wrap: break-word;
-				}
-				
-				#contactform-Section h3 span {
-					color: var(--color-5);
-					padding:0 0 0 0;
-					font-size:1.2rem;
-					letter-spacing: 2px;
-				}
-				
-				#contactform-Section blockquote {
-					
-				}
-
-				#contactform-Section form {
-					width:100%;
-					padding: 1.5rem 3rem 4rem 3rem;
-					display:flex;
-					flex-wrap:wrap;
-					background-color: var(--color-2);
-				}
-
-					#contactform-Section form label {
-						width:100%;
-						text-align: center;
-						padding: 2rem 0 1rem 0;
-					}
-
-					.inputFields {
-						width: 100%;
-						border-radius: 1rem;
-						border:0;
-					}
-
-						.email-InputFields {
-							height: 3rem;
-						}
-
-						.message-InputFields {
-							height: 15rem;
-						}
-
-						.Submit-Buttons {
-							height:5rem;
-							width:10rem;
-							border-radius: 1rem;
-							border:0;
-							background-color: var(--color-3);
-							color: var(--color-1);
-							font-weight: bolder;
-							text-transform: lowercase;
-							margin:2rem auto;
-						}
-
-/* END OF CONTACT SECTION */
-
-/* -------------------------------------------*/
-
-/* FOOTER SECTION */
-	#footer-Section {
-		color:var(--color-1);
-		widows: 95%;
-		padding:4rem 0;
-		border-top-right-radius: 1px;
-		border-top-left-radius: 1px;
-		background-color:var(--color-5);
-	}
-	
-		#footer-Section footer {
-			width:100%;
-			display:flex;		
-			flex-wrap:wrap;
-			justify-content: center;
-		}
-		
-		#footer-Section footer figure {
-			width: 50%;
-			display: flex;
-			justify-content: center;
-		}
-
-				#footer-Section footer figure img {
-					width:100%;
-				}
-			#footer-Section footer p {
-				text-align: center;
-				font-size: 1rem;
-				width:100%;
-			}
-/* END OF FOOTER SECTION */	
-	
-/* -------------------------------------------*/
-/* -------------------------------------------*/
-/* -------------------------------------------*/
-/* -------------------------------------------*/
-
-/* MEDIA QUERRY SECTIONSv*/
-
-@media (max-width:480px) { /* Mobile Devices */
-	
-/*GENERAL SECTION */
-	
-/* HEADER SECTION */	
-	header nav ul {
-		display:none;
-	}
-	
-/*FEATURE ABOUT SECTION */
-	#feature-Section article p {
-
-	}
-	
-/* ABOUT SECTION */
-	#about-Section section article {
-		padding:0 2rem;	
-	}
-	
-		#about-Section section article p {
-
-		}
-		
-/* SKILS SECTION */
-
-/* PROJECTS SECTION */
-
-/* CONTACT SECTION */
-
-		#contactform-Section aside blockquote {
-			padding:0 2rem 2rem 2rem;
-			text-align: center;
-		}
-		
-/* FOOTER SECTION */
+/* CONTACT SECTION -------------------------------------------*/
+#contactform-Section {
 
 }
-
-/* -------------------------------------------*/
-
-/*IPHONE LANDSCAPE */
-@media (min-width:568px) {
-	header nav ul {
-		display:none;
-	}
-	
-	#feature-Section {
-		display:flex;
-		padding:4rem 6rem;
-		align-items: center;
-	}
-	
-	#feature-Section figure {
-		display:flex;
-		flex:1;
-		max-height: 15rem;
-	}
-		#feature-Section figure img {
-			max-width:100%;
-		}
-	
-	#feature-Section article {
-		flex:2;
-	}
-	
-		#feature-Section article p {
-			padding:2rem 0 2rem 0;
-			text-align: left;
-		}
-
-	#about-Section hgroup {
+	#contactform-Section aside {
 
 	}
-		#about-Section section {
-			display:flex;
-			width:100%;
-			padding: 4rem 2rem;
-			flex-wrap:wrap;
-			align-items: center;
-		}
-
-		#about-Section section aside {
-			padding: 2rem 0 2rem 0;
-			width:100%;
-		}
-		
-		#about-Section section article {
-			flex:1;
-			padding:0 1rem;
-		}
-		
-		#about-Section section article p {
-			padding: 0 2rem 0 0;
-			text-align: right;	
-		}
-		
-		#about-Section section figure {
-			width:10rem;
-			flex:1;
-	}
-	
-		#about-Section section figure img {
-			max-width:100%;
-		}
-	
-
-		#skills-Section hgroup {
-		}
-
-		#skills-Section hgroup blockquote {
-		} 
-
-		#skills-Section {
-
-	}
-	
-		#skills-Section section {
-			column-gap: 8rem;
-			row-gap:3rem;
-		}
-			#skills-Section section figure {
-			}
-
-				#skills-Section section figure img {
-				}
-
-		
-		#projects-Section section {
-		display:flex;
-		flex-wrap:nowrap;
-		width: 100%;
-		justify-content: center;
-		padding:2rem 2rem 10rem 2rem;
-	}
-		
-		#projects-Section hgroup blockquote {
-			
-		}
-	
-		#projects-Section section figure {
-			background-color: var(--color-4);
-			padding:0;
-			border-radius: 1rem;
-			box-shadow: 0 2rem 1rem 0 #555;
-			margin:2rem 1rem;
-			max-width: 25rem;
-		}
-		
-		#projects-Section section figure img {
-				max-width: 100%;
-				border-radius: 1rem;
-			}
-	
-			#projects-Section section figure figcaption {
-				text-align: center;
-				margin-top:4rem;
-				padding:1rem 0 2rem 0;
-				
-			}
-				
-		#contactform-Section form {
-			padding:0 8rem;
-		}
-		
-}
-
-/* -------------------------------------------*/
-
-/*TABLET PORTRAITS*/
-@media (min-width: 768px) { 
-/*GENERAL SECTION */
-	header #logo {
-		width: 10rem;
-		margin:0 auto 0 auto;
-	}
-	
-	header nav figure {
-			top:3rem;
-			right:0;
-			width:5rem;
-			margin-right:4rem;
-		}
-
-	header nav ul {
-		display:none;
-	}
-
-	hgroup {
-		
-	}
-	hgroup h1 {
-	}
-	
-	hgroup blockquote  {
-	}
-/* HEADER SECTION */	
-
-
-/*FEATURE ABOUT SECTION */
-#feature-Section {
-	padding:6rem 4em;
-	align-items:center;
-}	
-
-#feature-Section figure {
-		flex:1;
-		display:flex;
-		max-height:30rem;
-		
-	}
-		#feature-Section figure img {
-			max-width:100%;
-		}
-	
-	#feature-Section article {
-		flex:2;
-		font-size:3rem;
-	}
-	
-		#feature-Section article p {
-			padding:4rem 4rem 2rem 4rem;
-			font-size:1.7rem;
-		}
-		
-/* ABOUT SECTION */
-	#about-Section section {
-		padding: 4rem 4rem;
-	}
-
-	#about-Section hgroup {
-
-	}
-	
-		#about-Section blockquote {
-
-		}
-	
-		#about-Section section aside h2 {
-			font-size: 2rem;
-		}
-		
-		#about-Section section article {
-			flex:2;
-		}
-		
-		#about-Section section article p {
-			font-size: 2rem;
-			padding: 0 4rem;	
-		}
-		
-	#about-Section section figure {
-		flex:1;
-	}
-	
-		#about-Section section figure img {
-			max-width:100%;
-		}
-		
-		
-/* SKILS SECTION */
-	#skills-Section hgroup {
-		width: 100%;
-	}
-		
-		#skills-Section hgroup blockquote {
-			
-		}
-	
-	#skills-Section section {
-		column-gap:10rem;
-		row-gap:8rem;
-		padding: 10rem 0 15rem 0;
-		
-		
-	}	
-		
-	#skills-Section section figure {
-		max-width:20rem;
-	}
-
-	
-/* PROJECTS SECTION */
-	#projects-Section section {
-		padding: 10rem 0;
-		column-gap:4rem;
-	}
-	
-		#projects-Section section figure {
-			width:50%;
-			margin-bottom:25rem;
-		}
-		
-			#projects-Section section figure figcaption {
-				font-size:4rem;
-			}
-			
-/* CONTACT SECTION */
-	#contactform-Section aside blockquote {
-		font-size:4.5rem;
-		padding:4rem 4rem;
-	}
-		#contactform-Section aside h3 {
-			font-size:3rem;
-		}
-		
-		#contactform-Section aside h3 span {
-			font-size:3rem;
-		}
 	
 	#contactform-Section form {
-		padding: 6rem 10rem;
-	}	
-	
-		#contactform-Section label {
-			font-size: 4rem;
+			width:100%;
+			display:flex;
+			flex-wrap:wrap;
 		}
-		
-	.email-InputFields {
-		height:6rem;
-	}
-	
-	.message-InputFields {
-		height:25rem;
-	}
-		
-	.Submit-Buttons {
-		margin-top:6rem;
-		height:10rem;
-		width:20rem;
-		font-size:3rem;
-	}
 
-	#footer-Section footer p {
-		font-size: 3.5rem;
-	}
-/* FOOTER SECTION */
+			#contactform-Section form label {
+				width:100%;
+				text-align: center;
+				padding: 2rem 0 1rem 0;
+			}
 
+			.inputFields {
+				width: 100%;
+				border-radius: 1rem;
+				border:0;
+			}
+
+				.email-InputFields {
+					height: 3rem;
+				}
+
+				.message-InputFields {
+					height: 15rem;
+				}
+
+				.Submit-Button {
+					margin:2rem auto;
+				}
+
+/* FOOTER SECTION -------------------------------------------*/
+#footer-Section {
+	border-top-right-radius: 1px;
+	border-top-left-radius: 1px;
 }
-/* -------------------------------------------*/
-/* SMALL SCREENS */
-@media (min-width:1024px) {
-/*GENERAL SECTION */
-	header #logo {
-		width: 6rem;
-		margin:0 auto 0 auto;
+
+	#footer-Section footer {
+		display:flex;		
+		flex-wrap:wrap;
+		flex-direction:column;	
+		align-items:center;
 	}
 	
-	header nav figure {
-			top:1rem;
-			right:0;
-			width:5rem;
-			margin-right:4rem;
-		}
+	#footer-Section footer figure {
+	}
+	
+/* -------------------------------------------*/
+/* -------------------------------------------*/
+/* -------------------------------------------*/
 
+
+/* MEDIA QUERRY SECTIONS ------------------------------------------- */
+@media (max-width:480px) { /* Mobile Devices */
+	
+/*GENERAL SECTION -------------------------------------------*/
+	
+/* HEADER SECTION -------------------------------------------*/	
 	header nav ul {
 		display:none;
 	}
+	
+/*FEATURE ABOUT SECTION -------------------------------------------*/
+	#feature-Section {
+		padding:2rem 1rem;
+	}
+	
+		#feature-Section figure {
+			max-width: 
+		}
+	
+/* ABOUT SECTION -------------------------------------------*/
 
-	hgroup {
-		
-	}
-	hgroup h1 {
-	}
-	
-	hgroup blockquote  {
-	}
-/* HEADER SECTION */	
+/* SKILS SECTION -------------------------------------------*/
 
-/*FEATURE ABOUT SECTION */
-#feature-Section {
-	padding:6rem 6em;
-	align-items:center;
-}	
+/* PROJECTS SECTION -------------------------------------------*/
 
-#feature-Section figure {
-		flex:1;
-		display:flex;
-		
-	}
-		#feature-Section figure img {
-			max-width:100%;
-		}
-	
-	#feature-Section article {
-		flex:3;
-	}
-	
-		#feature-Section article p {
-			padding:4rem 4rem 2rem 4rem;
-		}
-		
-/* ABOUT SECTION */
-	#about-Section section {
-		padding: 4rem 8rem;
-	}
+/* CONTACT SECTION -------------------------------------------*/
 
-	#about-Section hgroup {
-		width:100%;
-	}
-	
-	#about-Section section aside h2 {
-	}
-			
-			#about-Section section blockquote  {
-			}
-		
-		#about-Section section article {
-			flex:2;
-		}
-		
-		#about-Section section article p {
-			padding: 0 4rem 0 2rem;	
-			text-align: right;
-		}
-		
-	#about-Section section figure {
-		float: 2;
-	}
-	
-		#about-Section section figure img {
-			max-width:100%;
-		}
-		
-/* SKILLS SECTION */
-	#skills-Section hgroup {
-		width: 100%;
-	}
-		
-		#skills-Section hgroup blockquote {
-			
-		}
-	
-	#skills-Section section {
-		column-gap:20rem;
-		row-gap:8rem;
-		padding: 10rem 0 15rem 0;
-		flex-wrap:no-wrap;
-	}	
-		
-	#skills-Section section figure {
-		max-width:15rem;
-	}
-	
-/* PROJECTS SECTION */
-	#projects-Section section {
-		padding: 10rem 5rem;
-		column-gap:8rem;
-	}
-	
-		#projects-Section section figure {
-			flex: 1;
-			margin-bottom:10rem;
-		}
-		
-			#projects-Section section figure figcaption {
+/* FOOTER SECTION -------------------------------------------*/
 
-			}
-			
-/* CONTACT SECTION */
-#contactform-Section aside {
-	text-align:center;
-	padding:2.5rem 5rem;
+/* -------------------------------------------*/
+/* -------------------------------------------*/
+
+
+/*IPHONE LANDSCAPE -------------------------------------------*/
+@media (min-width:568px) {
 	
 }
 
-#contactform-Section {
-	padding: 2rem 0;
+
+/* -------------------------------------------*/
+/* -------------------------------------------*/
+
+
+/*TABLET PORTRAITS -------------------------------------------*/
+@media (min-width: 768px) { 
+/*GENERAL SECTION */
+
 }
-		
-		#contactform-Section form {
-		width:50%;
-		margin:0 auto 2rem auto;
-		display:flex;
-		flex-direction:column;
-		justify-content:center;
-		border-radius:1rem;
-	}	
-	
-		#contactform-Section label {
 
-		}
-		
-		.email-InputFields {
-			height:4rem;
-		}
-		
-		.message-InputFields {
-			height:15rem;
-		}
-			
-		.Submit-Buttons {
-			height:5rem;
-			width:20rem;
-			margin:2rem auto;
-		}
-	
-	
-	/* FOOTER SECTION */
-	#footer-Section footer figure {
-		width: 20%;
-	}
-		
-		#footer-Section footer p {
 
-		}
-		
+/* -------------------------------------------*/
+/* -------------------------------------------*/
+
+
+/* SMALL SCREENS -------------------------------------------*/
+@media (min-width:1024px) {
+	
 }
 
 /* -------------------------------------------*/
+/* -------------------------------------------*/
 
-/* LARGER DESKTOPS AND BEYOND */
+
+/* LARGER DESKTOPS AND BEYOND -------------------------------------------*/
 @media (min-width:1280px) {
-	
-	/*GENERAL SECTION */
-	hgroup h1 {
-
-	}
-	
-	hgroup blockquote {
-	}
-
-/* HEADER SECTION */	
+		
+/* HEADER SECTION -------------------------------------------*/	
 	header {
 		justify-content:space-between;
 		width:100%;
@@ -945,11 +325,7 @@ hgroup {
 		margin:0;	
 	}
 	
-		header nav {
-			
-		} 
-	
-		header nav figure {
+	header nav figure {
 			top:3rem;
 			right:0;
 			width:2rem;
@@ -966,134 +342,4 @@ hgroup {
 			padding: 0 2rem;
 		}
 
-/*FEATURE ABOUT SECTION */
-#feature-Section {
-	padding:8rem 12rem;
-	align-items:center;
-	justify-content: flex-end;
-}	
-
-#feature-Section figure {
-		flex:1;
-		display:flex;
-		max-width:20rem;
-	}
-		#feature-Section figure img {
-			max-width:100%;
-		}
-	
-	#feature-Section article {
-		flex:2;
-	}
-	
-		#feature-Section article p {
-			padding:4rem 4rem 2rem 4rem;
-		}
-		
-/* ABOUT SECTION */
-	#about-Section section {
-		padding: 8rem 8rem;
-	}
-
-	#about-Section hgroup {
-		width:100%;
-	}
-
-	#about-Section section article {
-			width:80%;
-			padding-right:10rem;
-		}
-		
-		#about-Section section article p {
-			text-align: right;
-			width: 100%;
-			padding:0 0;			
-		}
-		
-	#about-Section section figure {
-		max-width:25rem;
-	}
-	
-		#about-Section section figure img {
-			max-width:100%;
-		}
-		
-/* SKILLS SECTION */
-	#skills-Section hgroup {
-		
-	}
-		
-		#skills-Section hgroup blockquote {
-			
-		}
-	
-	#skills-Section section {
-		column-gap:10rem;
-		flex-wrap:wrap;
-		padding: 10rem 5rem;
-		align-items:center;
-		display:flex;
-	}	
-		
-	#skills-Section section figure {
-		/*max-width:20rem;*/
-		flex:1;
-	}
-	
-/* PROJECTS SECTION */
-	#projects-Section hgroup blockquote {
-		
-	}
-
-	#projects-Section section {
-		padding: 10rem 5rem 15rem 5rem;
-	
-	}
-	
-		#projects-Section section figure {
-			max-width: 50rem;
-		}
-		
-			#projects-Section section figure figcaption {
-
-			}
-			
-/* CONTACT SECTION */
-	#contactform-Section aside blockquote {
-		padding:4rem 4rem;
-	}
-	
-		#contactform-Section label {
-
-		}
-		
-	.email-InputFields {
-		height:6rem;
-	}
-	
-	.message-InputFields {
-		height:20rem;
-	}
-	
-	.InputFields {
-		max-width:10rem;
-	}
-		
-	.Submit-Buttons {
-		margin-top:6rem;
-		height:8rem;
-		width:15rem;
-	}
-	
-	
-	/* FOOTER SECTION */
-	#footer-Section footer figure {
-		width: 20%;
-	}
-			#footer-Section footer figure img {
-			}
-			
-			#footer-Section footer p {
-			}
-			
 }
