@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Roboto+Slab:wght@300;400;900&display=swap');
 
 
+
 /* VARIABLES /* -------------------------------------------*/
 :root {
 /*FONTS SIZES*/
@@ -29,6 +30,7 @@
 /*MISC*/
 
 }
+
 
 /*GENERALS /* -------------------------------------------*/
 
@@ -62,18 +64,21 @@ header nav ul li {
 	}
 
 hgroup {
-	padding:1rem 1rem;
+	width:100%;
+	padding:2rem 1rem;
 	color: var(--color-1);
 	text-shadow: 1rem .8rem 1.4rem rgb(197, 205, 212);
 	text-align: center;
 	font-family: var(--font-Family1);
+	background-color:var(--color1);
+	line-height: 2;
 }
 	hgroup h1 {
 		
 	}
 	
 	hgroup blockquote  {
-
+		
 	}
 	
 h1 {
@@ -91,16 +96,21 @@ figcaption {
 	text-align: center;
 	font-family: var(--font-Family1);
 }
-		
-/* - GLOBAL- ID's and Classes -------------------------------------------*/
 
+p {
+	line-height: 1.5;
+	padding:0 2rem;
+}
+		
+
+/* - GLOBAL- ID's, Classes -------------------------------------------*/
 #page-Container {
 	width:100%;
 }
 
 .sections {
-	padding:0 0;
-	background-color:var(--color2);
+	padding:0 1rem;
+	background-color:var(--color1);
 }	
 
 .buttons {
@@ -115,8 +125,8 @@ figcaption {
 /* -------------------------------------------*/
 /* -------------------------------------------*/
 
-/* HEADER SECTION -------------------------------------------*/
 
+/* HEADER SECTION -------------------------------------------*/
 header {
 align-items:center;
 display:flex;
@@ -127,7 +137,10 @@ box-shadow: 0 1rem 1rem 0 #555;
 
 header #logo {
 width: 7rem;
-margin:0 auto 0 auto;
+margin:1rem auto 1rem auto;
+padding:1rem;
+background-color:var(--color2);
+border-radius:5rem;
 }
 
 header nav {
@@ -152,23 +165,112 @@ header nav figure {
 
 /*FEATURE ABOUT SECTION -------------------------------------------*/
 
-#feature-Section {
-
-}
-
 /* ABOUT OF SECTION -------------------------------------------*/
-#about-Section {
-	display:flex;
-	flex-wrap:wrap;
-}
 
 /* SKILLS SECTION -------------------------------------------*/
-#skills-Section {
-	display:flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
 
+/* PROJECTS SECTION -------------------------------------------*/
+	
+/* CONTACT SECTION -------------------------------------------*/
+#contactform-Section form {
+			width:100%;
+			display:flex;
+			flex-wrap:wrap;
+		}
+	
+			#contactform-Section form label {
+				width:100%;
+				text-align: center;
+				padding: 2rem 0 1rem 0;
+			}
+	
+			.inputFields {
+				width: 100%;
+				border-radius: 1rem;
+				border:0;
+			}
+	
+				.email-InputFields {
+					height: 3rem;
+				}
+	
+				.message-InputFields {
+					height: 15rem;
+				}
+	
+				.Submit-Button {
+					margin:2rem auto;
+				}
+
+/* FOOTER SECTION -------------------------------------------*/
+#footer-Section footer {
+		flex-direction:column;	
+		align-items:center;
+	}
+	
+		#footer-Section footer figure {
+			width:50%;
+			margin:0 auto;
+		}		
+
+
+
+
+/* -------------------------------------------*/
+/* -------------------------------------------*/
+/* -------------------------------------------*/
+/* MEDIA QUERRY SECTIONS ------------------------------------------- */
+@media (max-width:480px) { /* Mobile Devices */
+	
+/*GENERAL SECTION -------------------------------------------*/
+	.sections {
+		text-align: center;
+		display:flex;
+		flex-wrap:wrap;	
+	}
+	
+	h1 {
+		font-size: var(--font3);
+	}
+	
+	hgroup {
+			
+	}
+	
+		hgroup h1 {
+			
+		}
+		
+		hgroup blockquote  {
+			font-size: var(--font3);
+		}
+	
+/* HEADER SECTION -------------------------------------------*/	
+	header nav ul {
+		display:none;
+	}
+	
+	#feature-Section p {
+			padding:2rem 2rem;
+		}	
+	
+/*FEATURE ABOUT SECTION -------------------------------------------*/
+	#feature-Section {
+		padding:2rem 0;
+		justify-content:center;
+	}
+	
+		#feature-Section figure {
+			max-width:90%;
+		}
+		
+/* ABOUT SECTION -------------------------------------------*/
+	#about-Section aside {
+		margin: 0 auto;
+		line-height: 1.5;
+	}
+	
+/* SKILLS SECTION -------------------------------------------*/
 	#skills-Section section {
 		display:flex;
 		flex-wrap:wrap;
@@ -178,99 +280,6 @@ header nav figure {
 	}
 
 /* PROJECTS SECTION -------------------------------------------*/
-#projects-Section {
-
-}
-	#projects-Section section {
-		display:flex;
-		flex-wrap: wrap;
-		width: 100%;
-		justify-content: center;
-	}
-	
-/* CONTACT SECTION -------------------------------------------*/
-#contactform-Section {
-
-}
-	#contactform-Section aside {
-
-	}
-	
-	#contactform-Section form {
-			width:100%;
-			display:flex;
-			flex-wrap:wrap;
-		}
-
-			#contactform-Section form label {
-				width:100%;
-				text-align: center;
-				padding: 2rem 0 1rem 0;
-			}
-
-			.inputFields {
-				width: 100%;
-				border-radius: 1rem;
-				border:0;
-			}
-
-				.email-InputFields {
-					height: 3rem;
-				}
-
-				.message-InputFields {
-					height: 15rem;
-				}
-
-				.Submit-Button {
-					margin:2rem auto;
-				}
-
-/* FOOTER SECTION -------------------------------------------*/
-#footer-Section {
-	border-top-right-radius: 1px;
-	border-top-left-radius: 1px;
-}
-
-	#footer-Section footer {
-		display:flex;		
-		flex-wrap:wrap;
-		flex-direction:column;	
-		align-items:center;
-	}
-	
-	#footer-Section footer figure {
-	}
-	
-/* -------------------------------------------*/
-/* -------------------------------------------*/
-/* -------------------------------------------*/
-
-
-/* MEDIA QUERRY SECTIONS ------------------------------------------- */
-@media (max-width:480px) { /* Mobile Devices */
-	
-/*GENERAL SECTION -------------------------------------------*/
-	
-/* HEADER SECTION -------------------------------------------*/	
-	header nav ul {
-		display:none;
-	}
-	
-/*FEATURE ABOUT SECTION -------------------------------------------*/
-	#feature-Section {
-		padding:2rem 1rem;
-	}
-	
-		#feature-Section figure {
-			max-width: 
-		}
-	
-/* ABOUT SECTION -------------------------------------------*/
-
-/* SKILS SECTION -------------------------------------------*/
-
-/* PROJECTS SECTION -------------------------------------------*/
 
 /* CONTACT SECTION -------------------------------------------*/
 
@@ -278,8 +287,6 @@ header nav figure {
 
 /* -------------------------------------------*/
 /* -------------------------------------------*/
-
-
 /*IPHONE LANDSCAPE -------------------------------------------*/
 @media (min-width:568px) {
 	
