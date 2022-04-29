@@ -5,11 +5,9 @@
 /* VARIABLES /* -------------------------------------------*/
 :root {
 /*FONTS SIZES*/
-	--font1: 1rem;
-	--font2: 1.2rem;
-	--font3-Base: 1.6rem;
-	--font4: 2.4rem;
-	--font5: 3.6rem;
+	--font1: 1.6rem;
+	--font2: 2.4rem;
+	--font3: 3.6rem;
 	
 /*FONT FAMILIES*/
 	--font-Family1:"Roboto Slab", serif;
@@ -46,7 +44,7 @@ html {
 
 body {
 	font-family: var(--font-Family2);
-	font-size:var(--font3-Base);
+	font-size:var(--font1);
 	width:100%;
 	height:100%;
 }
@@ -102,10 +100,18 @@ p {
 	padding:0 2rem;
 }
 		
+header {
+
+}
 
 /* - GLOBAL- ID's, Classes -------------------------------------------*/
 #page-Container {
 	width:100%;
+}
+
+#page-Container header, #page-Container footer {
+	background-color:var(--color4);
+	padding:2rem 0;
 }
 
 .sections {
@@ -137,9 +143,7 @@ box-shadow: 0 1rem 1rem 0 #555;
 
 header #logo {
 width: 7rem;
-margin:1rem auto 1rem auto;
-padding:1rem;
-background-color:var(--color2);
+margin:0 auto 0 auto;
 border-radius:5rem;
 }
 
@@ -157,25 +161,39 @@ display:flex;
 
 header nav figure {
 	position:absolute;
-	top:2rem;
+	top:4rem;
 	right:0;
 	width:3.5rem;
 	margin-right:2rem;
 }
 
 /*FEATURE ABOUT SECTION -------------------------------------------*/
+#feature-Section figure img {
+	box-shadow: 0 1rem 1rem 0 #555;
+}
 
 /* ABOUT OF SECTION -------------------------------------------*/
+#about-Section figure img {
+	box-shadow: 0 1rem 1rem 0 #555;
+}
 
 /* SKILLS SECTION -------------------------------------------*/
 
 /* PROJECTS SECTION -------------------------------------------*/
-	
+
+
 /* CONTACT SECTION -------------------------------------------*/
+#contactform-Section {
+	padding:2rem 1rem;
+}
+
 #contactform-Section form {
 			width:100%;
 			display:flex;
 			flex-wrap:wrap;
+			padding:2rem 2rem;
+			background-color:var(--color2);
+			border-radius:2rem;
 		}
 	
 			#contactform-Section form label {
@@ -203,13 +221,13 @@ header nav figure {
 				}
 
 /* FOOTER SECTION -------------------------------------------*/
-#footer-Section footer {
+footer {
 		flex-direction:column;	
 		align-items:center;
 	}
 	
-		#footer-Section footer figure {
-			width:50%;
+	footer figure {
+			width:25%;
 			margin:0 auto;
 		}		
 
@@ -226,65 +244,106 @@ header nav figure {
 	.sections {
 		text-align: center;
 		display:flex;
-		flex-wrap:wrap;	
+		flex-wrap:wrap;			
 	}
+	
+	#feature-Section,#about-Section,#skills-Section,#projects-Section,#contactform-Section {
+		padding:4rem 2rem;
+	} 
 	
 	h1 {
 		font-size: var(--font3);
 	}
 	
-	hgroup {
-			
-	}
-	
-		hgroup h1 {
-			
+		hgroup blockquote  {
+			font-size: var(--font1);
+			padding:0 1rem;
 		}
 		
-		hgroup blockquote  {
-			font-size: var(--font3);
-		}
+	p {
+		padding: 2rem 2rem;
+	}
 	
 /* HEADER SECTION -------------------------------------------*/	
 	header nav ul {
 		display:none;
-	}
-	
-	#feature-Section p {
-			padding:2rem 2rem;
-		}	
+	}	
 	
 /*FEATURE ABOUT SECTION -------------------------------------------*/
 	#feature-Section {
-		padding:2rem 0;
 		justify-content:center;
 	}
 	
-		#feature-Section figure {
-			max-width:90%;
+		figure {
+			max-width:50%;
 		}
 		
+		#feature-Section figure img, #about-Section figure img {
+			border-radius: 2rem;
+		}
+			
 /* ABOUT SECTION -------------------------------------------*/
 	#about-Section aside {
 		margin: 0 auto;
 		line-height: 1.5;
 	}
 	
+		#about-Section aside h1 {
+			font-size:var(--font2);
+		}
+		
+	#about-Section figure {
+		margin:0 auto;
+	}
+	
 /* SKILLS SECTION -------------------------------------------*/
 	#skills-Section section {
 		display:flex;
 		flex-wrap:wrap;
-		column-gap: 1rem;
-		row-gap:3rem;
-		justify-content: center;
+		column-gap: 3rem;
+		row-gap:2rem;
+		margin:0 auto;
+		width:100%;
+		justify-content:center;
+	}
+	
+	#skills-Section figure {
+		max-width: 40%;
 	}
 
 /* PROJECTS SECTION -------------------------------------------*/
+#projects-Section {
+}
+
+	#projects-Section section {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+	}
+
+#projects-Section figure {
+	max-width:70%;	
+	margin-bottom:4rem;
+}
 
 /* CONTACT SECTION -------------------------------------------*/
+	#contactform-Section form {
+		margin-top: 2rem;
+	}
+
+	hgroup h1 span a {
+		font-size:var(--font1);
+	}
+	
+	#contactform-Section h1 {
+		font-size:var(--font1);
+		margin:0 auto;
+	}
 
 /* FOOTER SECTION -------------------------------------------*/
-
+	footer aside p {
+		padding:0;
+	}
 /* -------------------------------------------*/
 /* -------------------------------------------*/
 /*IPHONE LANDSCAPE -------------------------------------------*/
