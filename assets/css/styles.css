@@ -5,6 +5,7 @@
 /* VARIABLES /* -------------------------------------------*/
 :root {
 /*FONTS SIZES*/
+	--font0: 1.2rem;
 	--font1: 1.6rem;
 	--font2: 2.4rem;
 	--font3: 3.6rem;
@@ -14,8 +15,8 @@
 	--font-Family2:'Comfortaa', cursive;
 	
 /*FONT WEIGHTS*/
---font-Weight1: lighter;
---font-weight2: bolder;
+	--font-Weight1: lighter;
+	--font-weight2: bolder;
 	
 
 /* WEBSITE COLORS*/
@@ -30,7 +31,7 @@
 }
 
 
-/*GENERALS /* -------------------------------------------*/
+/*GENERAL ELEMENTS /* -------------------------------------------*/
 
 *,html,body {
 	box-sizing: border-box;
@@ -64,11 +65,11 @@ header nav ul li {
 hgroup {
 	width:100%;
 	padding:2rem 1rem;
-	color: var(--color-1);
+	color: var(--color5);
 	text-shadow: 1rem .8rem 1.4rem rgb(197, 205, 212);
 	text-align: center;
 	font-family: var(--font-Family1);
-	background-color:var(--color1);
+	background-color:var(--color2);
 	line-height: 2;
 }
 	hgroup h1 {
@@ -97,21 +98,16 @@ figcaption {
 
 p {
 	line-height: 1.5;
-	padding:0 2rem;
-}
-		
-header {
-
-}
-
-/* - GLOBAL- ID's, Classes -------------------------------------------*/
-#page-Container {
-	width:100%;
 }
 
 #page-Container header, #page-Container footer {
-	background-color:var(--color4);
-	padding:2rem 0;
+	background-color: var(--color4);
+	color:var(--color1)
+;}
+		
+/* - GLOBAL- ID's, CLASSES -------------------------------------------*/
+#page-Container {
+	width:100%;
 }
 
 .sections {
@@ -124,13 +120,9 @@ header {
 	width:10rem;
 	border-radius: 1rem;
 	border:0;
+	background-color: var(--color3);
+	color:var(--color1);
 }
-
-/* -------------------------------------------*/
-/* -------------------------------------------*/
-/* -------------------------------------------*/
-/* -------------------------------------------*/
-
 
 /* HEADER SECTION -------------------------------------------*/
 header {
@@ -161,13 +153,17 @@ display:flex;
 
 header nav figure {
 	position:absolute;
-	top:4rem;
+	top:2rem;
 	right:0;
 	width:3.5rem;
 	margin-right:2rem;
 }
 
 /*FEATURE ABOUT SECTION -------------------------------------------*/
+#feature-Section p {
+	padding: 2rem 0;
+}
+
 #feature-Section figure img {
 	box-shadow: 0 1rem 1rem 0 #555;
 }
@@ -188,51 +184,42 @@ header nav figure {
 }
 
 #contactform-Section form {
-			width:100%;
-			display:flex;
-			flex-wrap:wrap;
-			padding:2rem 2rem;
-			background-color:var(--color2);
-			border-radius:2rem;
-		}
-	
-			#contactform-Section form label {
-				width:100%;
-				text-align: center;
-				padding: 2rem 0 1rem 0;
-			}
-	
-			.inputFields {
-				width: 100%;
-				border-radius: 1rem;
-				border:0;
-			}
-	
-				.email-InputFields {
-					height: 3rem;
-				}
-	
-				.message-InputFields {
-					height: 15rem;
-				}
-	
-				.Submit-Button {
-					margin:2rem auto;
-				}
-
-/* FOOTER SECTION -------------------------------------------*/
-footer {
-		flex-direction:column;	
-		align-items:center;
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	padding:2rem 2rem;
+	background-color:var(--color2);
+	border-radius:2rem;
 	}
 	
-	footer figure {
-			width:25%;
-			margin:0 auto;
-		}		
+		#contactform-Section form label {
+			width:100%;
+			text-align: center;
+			padding: 2rem 0 1rem 0;
+		}
 
+		.inputFields {
+			width: 100%;
+			border-radius: 1rem;
+			border:0;
+		}
 
+			.email-InputFields {
+				height: 3rem;
+			}
 
+			.message-InputFields {
+				height: 15rem;
+			}
+
+			.Submit-Button {
+				margin:2rem auto;
+			}
+
+/* FOOTER SECTION -------------------------------------------*/	
+	#page-Container footer {
+		padding: 2rem 1rem;
+	}
 
 /* -------------------------------------------*/
 /* -------------------------------------------*/
@@ -252,18 +239,18 @@ footer {
 	} 
 	
 	h1 {
-		font-size: var(--font3);
+		font-size: var(--font2);
 	}
 	
 		hgroup blockquote  {
 			font-size: var(--font1);
 			padding:0 1rem;
 		}
-		
-	p {
-		padding: 2rem 2rem;
+
+	figure {
+		max-width:80%;
 	}
-	
+		
 /* HEADER SECTION -------------------------------------------*/	
 	header nav ul {
 		display:none;
@@ -273,10 +260,6 @@ footer {
 	#feature-Section {
 		justify-content:center;
 	}
-	
-		figure {
-			max-width:50%;
-		}
 		
 		#feature-Section figure img, #about-Section figure img {
 			border-radius: 2rem;
@@ -287,9 +270,14 @@ footer {
 		margin: 0 auto;
 		line-height: 1.5;
 	}
+
+		#about-Section article p {
+		padding: 2rem 0;
+		font-size: var(--font1);
+		}
 	
 		#about-Section aside h1 {
-			font-size:var(--font2);
+			font-size:var(--font1);
 		}
 		
 	#about-Section figure {
@@ -312,19 +300,16 @@ footer {
 	}
 
 /* PROJECTS SECTION -------------------------------------------*/
-#projects-Section {
-}
-
 	#projects-Section section {
 		display:flex;
 		flex-wrap:wrap;
 		justify-content:center;
 	}
 
-#projects-Section figure {
-	max-width:70%;	
-	margin-bottom:4rem;
-}
+		#projects-Section figure {
+			max-width:70%;	
+			margin-bottom:4rem;
+		}
 
 /* CONTACT SECTION -------------------------------------------*/
 	#contactform-Section form {
@@ -341,10 +326,21 @@ footer {
 	}
 
 /* FOOTER SECTION -------------------------------------------*/
-	footer aside p {
-		padding:0;
+	footer aside {
+		margin: 0 auto;
 	}
-/* -------------------------------------------*/
+
+	footer figure {
+		width:25%;
+		margin:0 auto;
+	}	
+
+		footer aside p {
+			font-size: var(--font0);
+		}
+
+
+	/* -------------------------------------------*/
 /* -------------------------------------------*/
 /*IPHONE LANDSCAPE -------------------------------------------*/
 @media (min-width:568px) {
@@ -397,7 +393,7 @@ footer {
 			width:2rem;
 			margin-right:4rem;
 			display:none;
-		}
+	}
 	
 		header nav ul {
 		display:block;
