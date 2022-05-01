@@ -227,7 +227,7 @@ header nav figure {
 /* -------------------------------------------*/
 /* -------------------------------------------*/
 /* MEDIA QUERRY SECTIONS ------------------------------------------- */
-@media (max-width:480px) { /* Mobile Devices */
+@media (min-width:320px) { /* Mobile Devices */
 	
 /*GENERAL SECTION -------------------------------------------*/
 	.sections {
