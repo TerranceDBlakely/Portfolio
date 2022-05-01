@@ -245,8 +245,8 @@ header nav figure {
 	}
 	
 		hgroup blockquote  {
-			font-size: var(--font1);
-			padding:0 1rem;
+			font-size: var(--font0);
+
 		}
 
 	figure {
@@ -369,9 +369,12 @@ header nav figure {
 		font-size: var(--font4);
 	}
 	
+	hgroup {
+		padding: 4rem 2rem;
+	}
+	
 		hgroup blockquote  {
 			font-size: var(--font2);
-			padding:0 1rem;
 		}
 
 	figure {
@@ -386,14 +389,17 @@ header nav figure {
 /*FEATURE ABOUT SECTION -------------------------------------------*/
 	#feature-Section {
 		align-items:center;
+		flex-wrap: nowrap;
 	}	
 	
 	#feature-Section p {
 		font-size: var(--font2);
+		text-align: left;
 	}
 
 	#feature-Section figure {
 		margin-right:4rem;
+		max-width:40%;
 	}
 			
 /* ABOUT SECTION -------------------------------------------*/
@@ -412,7 +418,7 @@ header nav figure {
 		}
 		
 	#about-Section article {
-			padding: 2rem 0;
+			padding: 4rem 0;
 			font-size: var(--font2);
 			display:flex;
 			flex-direction:row-reverse;
@@ -420,9 +426,10 @@ header nav figure {
 		}
 	
 	#about-Section article p {
-		line-height: 1.5;
+		line-height: 1.8;
 		font-size: var(--font2);
-		padding:0 0 0 3rem;
+		padding:0 0 0 4rem;
+		text-align: left;
 	}
 		
 	#about-Section figure {
@@ -432,15 +439,15 @@ header nav figure {
 	#skills-Section section {
 		display:flex;
 		flex-wrap:wrap;
-		column-gap: 3rem;
-		row-gap:2rem;
+		column-gap: 8rem;
+		row-gap:6rem;
 		margin:0 auto;
 		width:100%;
 		justify-content:center;
 	}
 	
 	#skills-Section figure {
-		max-width: 30%;
+		max-width: 20%;
 	}
 
 /* PROJECTS SECTION -------------------------------------------*/
@@ -507,28 +514,34 @@ header nav figure {
 
 /* SMALL SCREENS -------------------------------------------*/
 @media (min-width:1024px) {
-	/*GENERAL SECTION -------------------------------------------*/
+	/*GENERAL SECTION
+ -------------------------------------------*/
 	.sections {
-		text-align: center;
 		display:flex;
-		flex-wrap:wrap;			
 	}
 	
 	#feature-Section,#about-Section,#skills-Section,#projects-Section,#contactform-Section {
-		padding:4rem 2rem;
+		padding:12rem 4rem;
 	} 
 	
+	#feature-Section figure img, #about-Section figure img {
+			border-radius: 2rem;
+		}
+	
 	h1 {
-		font-size: var(--font2);
+		font-size: var(--font4);
+	}
+	
+	hgroup {
+		padding: 4rem 4rem;
 	}
 	
 		hgroup blockquote  {
-			font-size: var(--font1);
-			padding:0 1rem;
+			font-size: var(--font2);
 		}
 
 	figure {
-		max-width:80%;
+		max-width:50%;
 	}
 		
 /* HEADER SECTION -------------------------------------------*/	
@@ -538,45 +551,67 @@ header nav figure {
 	
 /*FEATURE ABOUT SECTION -------------------------------------------*/
 	#feature-Section {
-		justify-content:center;
-	}
-		
-		#feature-Section figure img, #about-Section figure img {
-			border-radius: 2rem;
-		}
-			
-/* ABOUT SECTION -------------------------------------------*/
-	#about-Section aside {
-		margin: 0 auto;
-		line-height: 1.5;
+		align-items:center;
+		flex-wrap: nowrap;
+	}	
+	
+	#feature-Section p {
+		font-size: var(--font3);
+		text-align: left;
 	}
 
-		#about-Section article p {
-			padding: 2rem 0;
-			font-size: var(--font1);
-		}
+	#feature-Section figure {
+		margin-right:4rem;
+		max-width:40%;
+	}
+			
+/* ABOUT SECTION -------------------------------------------*/
+	#about-Section {
+		flex-wrap:wrap;
+		align-items:center;
+	}
+
+	#about-Section aside {
+		margin:0 auto;
+		text-align: center;
+		font-size: var(--font2);
+	}
 	
 		#about-Section aside h1 {
-			font-size:var(--font1);
+			font-size:var(--font3);
 		}
 		
+	#about-Section article {
+			padding: 10rem 0;
+			font-size: var(--font2);
+			display:flex;
+			flex-direction:row-reverse;
+			align-items:center;
+		}
+	
+	#about-Section article p {
+		line-height: 1.8;
+		font-size: var(--font2);
+		padding:0 0 0 4rem;
+		text-align: left;
+	}
+		
 	#about-Section figure {
-		margin:0 auto;
 	}
 	
 /* SKILLS SECTION -------------------------------------------*/
 	#skills-Section section {
 		display:flex;
 		flex-wrap:wrap;
-		column-gap: 3rem;
-		row-gap:2rem;
+		column-gap: 8rem;
+		row-gap:6rem;
 		margin:0 auto;
 		width:100%;
 		justify-content:center;
 	}
 	
 	#skills-Section figure {
-		max-width: 40%;
+		max-width: 20%;
 	}
 
 /* PROJECTS SECTION -------------------------------------------*/
@@ -588,12 +623,23 @@ header nav figure {
 
 		#projects-Section figure {
 			max-width:70%;	
-			margin-bottom:4rem;
+			margin-bottom:8rem;
 		}
+		
+			#projects-Section figure figcaption {
+				font-size:var(--font3);
+				margin:1rem 0;
+			}
 
 /* CONTACT SECTION -------------------------------------------*/
+	#contactform-Section {
+		padding: 4rem 0 4rem 0;
+	}
+
 	#contactform-Section form {
-		margin-top: 2rem;
+		width:50%;
+		margin:4rem auto;
+		flex-direction: column;
 	}
 
 	hgroup h1 span a {
@@ -601,8 +647,26 @@ header nav figure {
 	}
 	
 	#contactform-Section h1 {
-		font-size:var(--font1);
+		font-size:var(--font2);
 		margin:0 auto;
+	}
+	
+	#contactform-Section form label {
+		font-size: var(--font2);
+		padding:2rem 0;
+	}	
+	
+	.inputFields {
+			width: 80%;
+			margin:0 auto;
+			border-radius: 1rem;
+			border:0;
+	}
+		
+	.Submit-Button {
+			font-size:var(--font2);
+			width:15rem;
+			margin-top: 4rem;
 	}
 
 /* FOOTER SECTION -------------------------------------------*/
@@ -619,10 +683,9 @@ header nav figure {
 			}
 	
 		footer figure {
-			width:25%;
+			width:10%;
 			margin:0 auto;
 			}
-	
 }
 
 /* -------------------------------------------*/
@@ -631,76 +694,127 @@ header nav figure {
 
 /* LARGER DESKTOPS AND BEYOND -------------------------------------------*/
 @media (min-width:1280px) {
-/*GENERAL SECTION -------------------------------------------*/
+/*GENERAL SECTION
+ -------------------------------------------*/
 	.sections {
-		text-align: center;
 		display:flex;
-		flex-wrap:wrap;			
 	}
 	
 	#feature-Section,#about-Section,#skills-Section,#projects-Section,#contactform-Section {
-		padding:4rem 2rem;
+		padding:12rem 4rem;
 	} 
 	
+	#feature-Section figure img, #about-Section figure img {
+			border-radius: 2rem;
+		}
+	
 	h1 {
-		font-size: var(--font2);
+		font-size: var(--font4);
+	}
+	
+	hgroup {
+		padding: 4rem 4rem;
 	}
 	
 		hgroup blockquote  {
-			font-size: var(--font1);
-			padding:0 1rem;
+			font-size: var(--font3);
 		}
 
 	figure {
-		max-width:80%;
+		max-width:50%;
+	}
+	
+	#page-Container header, #page-Container footer {
+		padding:2rem 0;
 	}
 		
 /* HEADER SECTION -------------------------------------------*/	
-	header nav ul {
-		display:none;
-	}	
+	#page-Container header {
+		background-color:red;
+	}
 	
+	header #logo {
+	}
+	
+	header nav {
+	}
+	
+	header nav ul {
+		display:inline-block;
+		display:flex;
+	}
+	
+		header nav ul li {
+		}
+	
+	header nav figure {
+		display:none;
+	}
+		
 /*FEATURE ABOUT SECTION -------------------------------------------*/
 	#feature-Section {
-		justify-content:center;
-	}
-		
-		#feature-Section figure img, #about-Section figure img {
-			border-radius: 2rem;
-		}
-			
-/* ABOUT SECTION -------------------------------------------*/
-	#about-Section aside {
-		margin: 0 auto;
-		line-height: 1.5;
+		align-items:center;
+		flex-wrap: nowrap;
+	}	
+	
+	#feature-Section p {
+		font-size: var(--font3);
+		text-align: left;
+		padding:0 8rem;
 	}
 
-		#about-Section article p {
-			padding: 2rem 0;
-			font-size: var(--font1);
-		}
+	#feature-Section figure {
+		margin-right:4rem;
+		max-width:30%;
+	}
+			
+/* ABOUT SECTION -------------------------------------------*/
+	#about-Section {
+		flex-wrap:wrap;
+		align-items:center;
+	}
+
+	#about-Section aside {
+		margin:0 auto;
+		text-align: center;
+		font-size: var(--font2);
+	}
 	
 		#about-Section aside h1 {
-			font-size:var(--font1);
+			font-size:var(--font3);
 		}
 		
+	#about-Section article {
+			padding: 10rem 0;
+			font-size: var(--font2);
+			display:flex;
+			flex-direction:row-reverse;
+			align-items:center;
+		}
+	
+	#about-Section article p {
+		line-height: 1.8;
+		font-size: var(--font2);
+		padding:0 0 0 4rem;
+		text-align: left;
+	}
+		
 	#about-Section figure {
-		margin:0 auto;
 	}
 	
 /* SKILLS SECTION -------------------------------------------*/
 	#skills-Section section {
 		display:flex;
 		flex-wrap:wrap;
-		column-gap: 3rem;
-		row-gap:2rem;
+		column-gap: 8rem;
+		row-gap:6rem;
 		margin:0 auto;
 		width:100%;
 		justify-content:center;
 	}
 	
 	#skills-Section figure {
-		max-width: 40%;
+		max-width: 20%;
 	}
 
 /* PROJECTS SECTION -------------------------------------------*/
@@ -712,12 +826,23 @@ header nav figure {
 
 		#projects-Section figure {
 			max-width:70%;	
-			margin-bottom:4rem;
+			margin-bottom:8rem;
 		}
+		
+			#projects-Section figure figcaption {
+				font-size:var(--font3);
+				margin:1rem 0;
+			}
 
 /* CONTACT SECTION -------------------------------------------*/
+	#contactform-Section {
+		padding: 4rem 0 4rem 0;
+	}
+
 	#contactform-Section form {
-		margin-top: 2rem;
+		width:50%;
+		margin:4rem auto;
+		flex-direction: column;
 	}
 
 	hgroup h1 span a {
@@ -725,8 +850,26 @@ header nav figure {
 	}
 	
 	#contactform-Section h1 {
-		font-size:var(--font1);
+		font-size:var(--font2);
 		margin:0 auto;
+	}
+	
+	#contactform-Section form label {
+		font-size: var(--font2);
+		padding:2rem 0;
+	}	
+	
+	.inputFields {
+			width: 80%;
+			margin:0 auto;
+			border-radius: 1rem;
+			border:0;
+	}
+		
+	.Submit-Button {
+			font-size:var(--font2);
+			width:15rem;
+			margin-top: 4rem;
 	}
 
 /* FOOTER SECTION -------------------------------------------*/
@@ -743,10 +886,8 @@ header nav figure {
 			}
 	
 		footer figure {
-			width:25%;
+			width:10%;
 			margin:0 auto;
-			}
-		
-		
-
+		}
+			
 }
