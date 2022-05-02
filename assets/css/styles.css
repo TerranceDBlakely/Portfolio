@@ -897,21 +897,20 @@ header nav figure {
 	}
 	
 		#contactform-Section aside {
-			flex:1;
+				flex:1;
 		}
 		
 		#contactform-Section aside h1 {
-		font-size:var(--font2);
+				font-size:var(--font2);
 		}
 		
 		#contactform-Section aside hgroup h1 span a {
-			font-size:var(--font1);
+			max-width: 90%;
 		}
 		
 		#contactform-Section aside p {
 			font-size: var(--font3);
 			text-align: center;
-			padding: 2rem 4rem;
 			line-height:1.8;
 		}
 		
