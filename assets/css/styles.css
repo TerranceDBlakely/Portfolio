@@ -326,6 +326,10 @@ header nav figure {
 		font-size:var(--font1);
 		margin:0 auto;
 	}
+	
+	#contactform-Section aside p {
+		padding:2rem 0;
+	}
 
 /* FOOTER SECTION -------------------------------------------*/
 	footer {
@@ -464,13 +468,34 @@ header nav figure {
 
 /* CONTACT SECTION -------------------------------------------*/
 	#contactform-Section {
-		padding: 4rem 0 4rem 0;
-	}
-
-	#contactform-Section form {
-		width:70%;
-		margin:2rem auto;
+		padding: 8rem 4rem 4rem 4rem;
 		flex-direction: column;
+		flex-direction: row-reverse;
+		align-items:center;
+	}
+	
+		#contactform-Section aside {
+			max-width:50%;
+		}
+		
+		#contactform-Section aside h1 {
+		font-size:var(--font1);
+		}
+		
+		#contactform-Section aside hgroup h1 span a {
+			font-size:var(--font1);
+		}
+		
+		#contactform-Section aside p {
+			font-size: var(--font2);
+			text-align: left;
+			padding: 2rem 4rem;
+			line-height:1.8;
+		}
+		
+	#contactform-Section form {
+		flex-direction: column;	
+		max-width: 50%;	
 	}
 
 	hgroup h1 span a {
@@ -556,13 +581,14 @@ header nav figure {
 	}	
 	
 	#feature-Section p {
-		font-size: var(--font3);
+		max-width:50%;
+		font-size: var(--font2);
 		text-align: left;
 	}
 
 	#feature-Section figure {
 		margin-right:4rem;
-		max-width:40%;
+		max-width:25%;
 	}
 			
 /* ABOUT SECTION -------------------------------------------*/
@@ -581,22 +607,24 @@ header nav figure {
 			font-size:var(--font3);
 		}
 		
-	#about-Section article {
-			padding: 10rem 0;
+		#about-Section article {
+			padding: 10rem 4rem;
 			font-size: var(--font2);
 			display:flex;
 			flex-direction:row-reverse;
 			align-items:center;
 		}
 	
-	#about-Section article p {
-		line-height: 1.8;
-		font-size: var(--font2);
-		padding:0 0 0 4rem;
-		text-align: left;
-	}
+		#about-Section article p {
+			max-width:50%;
+			line-height: 1.8;
+			font-size: var(--font2);
+			padding:0 0 0 0;
+			text-align: left;
+		}
 		
 	#about-Section figure {
+		max-width:30%;
 	}
 	
 /* SKILLS SECTION -------------------------------------------*/
@@ -617,29 +645,51 @@ header nav figure {
 /* PROJECTS SECTION -------------------------------------------*/
 	#projects-Section section {
 		display:flex;
-		flex-wrap:wrap;
+		flex-wrap:nowrap;
 		justify-content:center;
 	}
 
 		#projects-Section figure {
-			max-width:70%;	
-			margin-bottom:8rem;
+			max-width:50%;	
+			margin:4rem 2rem 4rem 2rem;
 		}
 		
 			#projects-Section figure figcaption {
-				font-size:var(--font3);
+				font-size:var(--font2);
 				margin:1rem 0;
 			}
 
 /* CONTACT SECTION -------------------------------------------*/
 	#contactform-Section {
-		padding: 4rem 0 4rem 0;
+		padding: 8rem 4rem 4rem 4rem;
+		flex-direction: row;
+		flex-direction: row-reverse;
+		align-items:center;
 	}
-
+	
+		#contactform-Section aside {
+			flex:1;
+		}
+		
+		#contactform-Section aside h1 {
+		font-size:var(--font2);
+		}
+		
+		#contactform-Section aside hgroup h1 span a {
+			font-size:var(--font1);
+		}
+		
+		#contactform-Section aside p {
+			font-size: var(--font2);
+			text-align: center;
+			padding: 2rem 4rem;
+			line-height:1.8;
+		}
+		
 	#contactform-Section form {
-		width:50%;
-		margin:4rem auto;
-		flex-direction: column;
+		flex:2;
+		flex-direction: column;	
+		max-width: 50%;	
 	}
 
 	hgroup h1 span a {
@@ -697,7 +747,7 @@ header nav figure {
 /*GENERAL SECTION
  -------------------------------------------*/
 	.sections {
-		display:flex;
+		
 	}
 	
 	#feature-Section,#about-Section,#skills-Section,#projects-Section,#contactform-Section {
@@ -709,7 +759,7 @@ header nav figure {
 		}
 	
 	h1 {
-		font-size: var(--font4);
+		font-size: var(--font3);
 	}
 	
 	hgroup {
@@ -717,11 +767,11 @@ header nav figure {
 	}
 	
 		hgroup blockquote  {
-			font-size: var(--font3);
+			font-size: var(--font2);
 		}
 
 	figure {
-		max-width:50%;
+		max-width:100%;
 	}
 	
 	#page-Container header, #page-Container footer {
@@ -730,22 +780,25 @@ header nav figure {
 		
 /* HEADER SECTION -------------------------------------------*/	
 	#page-Container header {
-		background-color:red;
+		padding:2rem;
 	}
 	
 	header #logo {
+		margin:0 0;
 	}
 	
 	header nav {
+
 	}
 	
-	header nav ul {
-		display:inline-block;
-		display:flex;
-	}
-	
-		header nav ul li {
+		header nav ul {
+			display:inline-block;
+			display:flex;
 		}
+	
+			header nav ul li {
+				padding: 0 2rem;
+			}
 	
 	header nav figure {
 		display:none;
@@ -757,16 +810,16 @@ header nav figure {
 		flex-wrap: nowrap;
 	}	
 	
-	#feature-Section p {
-		font-size: var(--font3);
-		text-align: left;
-		padding:0 8rem;
-	}
-
-	#feature-Section figure {
-		margin-right:4rem;
-		max-width:30%;
-	}
+		#feature-Section p {
+			font-size: var(--font2);
+			text-align: left;
+			padding:0 2rem;
+		}
+	
+		#feature-Section figure {
+			margin-right:1rem;
+			max-width:20%;
+		}
 			
 /* ABOUT SECTION -------------------------------------------*/
 	#about-Section {
@@ -784,28 +837,29 @@ header nav figure {
 			font-size:var(--font3);
 		}
 		
-	#about-Section article {
+		#about-Section article {
 			padding: 10rem 0;
 			font-size: var(--font2);
 			display:flex;
-			flex-direction:row-reverse;
 			align-items:center;
+			justify-content:center;
 		}
 	
-	#about-Section article p {
-		line-height: 1.8;
-		font-size: var(--font2);
-		padding:0 0 0 4rem;
-		text-align: left;
-	}
+			#about-Section article p {
+				line-height: 1.8;
+				font-size: var(--font2);
+				padding:0 0 0 4rem;
+				text-align: left;
+			}
 		
 	#about-Section figure {
+		margin:0 0;
 	}
 	
 /* SKILLS SECTION -------------------------------------------*/
 	#skills-Section section {
 		display:flex;
-		flex-wrap:wrap;
+		flex-wrap:nowrap;
 		column-gap: 8rem;
 		row-gap:6rem;
 		margin:0 auto;
@@ -820,7 +874,7 @@ header nav figure {
 /* PROJECTS SECTION -------------------------------------------*/
 	#projects-Section section {
 		display:flex;
-		flex-wrap:wrap;
+		flex-wrap:nowrap;
 		justify-content:center;
 	}
 
@@ -836,41 +890,54 @@ header nav figure {
 
 /* CONTACT SECTION -------------------------------------------*/
 	#contactform-Section {
-		padding: 4rem 0 4rem 0;
-	}
-
-	#contactform-Section form {
-		width:50%;
-		margin:4rem auto;
-		flex-direction: column;
-	}
-
-	hgroup h1 span a {
-		font-size:var(--font1);
+		padding: 8rem 4rem 8rem 4rem;
+		flex-direction: row;
+		flex-direction: row-reverse;
+		align-items:center;
 	}
 	
-	#contactform-Section h1 {
-		font-size:var(--font2);
-		margin:0 auto;
-	}
-	
-	#contactform-Section form label {
-		font-size: var(--font2);
-		padding:2rem 0;
-	}	
-	
-	.inputFields {
-			width: 80%;
-			margin:0 auto;
-			border-radius: 1rem;
-			border:0;
-	}
+		#contactform-Section aside {
+			flex:1;
+		}
 		
-	.Submit-Button {
-			font-size:var(--font2);
-			width:15rem;
-			margin-top: 4rem;
+		#contactform-Section aside h1 {
+		font-size:var(--font2);
+		}
+		
+		#contactform-Section aside hgroup h1 span a {
+			font-size:var(--font1);
+		}
+		
+		#contactform-Section aside p {
+			font-size: var(--font3);
+			text-align: center;
+			padding: 2rem 4rem;
+			line-height:1.8;
+		}
+		
+	#contactform-Section form {
+		flex:2;
+		flex-direction: column;	
+		max-width: 40%;	
 	}
+	
+		#contactform-Section form label {
+			font-size: var(--font2);
+			padding:2rem 0;
+		}	
+	
+		.inputFields {
+				width: 80%;
+				margin:0 auto;
+				border-radius: 1rem;
+				border:0;
+		}
+			
+		.Submit-Button {
+				font-size:var(--font2);
+				width:15rem;
+				margin-top: 4rem;
+		}
 
 /* FOOTER SECTION -------------------------------------------*/
 	footer {
@@ -886,7 +953,7 @@ header nav figure {
 			}
 	
 		footer figure {
-			width:10%;
+			width:5%;
 			margin:0 auto;
 		}
 			
