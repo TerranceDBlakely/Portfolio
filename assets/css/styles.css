@@ -21,10 +21,17 @@
 	
 
 /* WEBSITE COLORS*/
-	--color1: white;
-	--color2: lightgrey;
-	--color3: rgb(141, 62, 231);
-	--color4: grey;
+	--color1: rgb(59, 2, 43, 1); /* Dark purple - 60% */ 
+	--color1-5: rgb(59, 2, 43, .5);
+	
+	--color2: rgb(128, 41, 148, 1); /* Dark Magenta - 30% */ 
+	--color2a: rgb(101, 61, 110, 1); /* English Coffee - 30% */ 
+	--color2-5: rgb(128, 41, 148, .5);
+	 
+	--color3: rgb(224, 38, 106, 1); /* Razzmataz - 10% */ 
+	--color3-5: rgb(224, 38, 106, .5);
+	
+	--color4: white;
 	--color5: black;
 	
 /*MISC*/
@@ -47,6 +54,8 @@ html {
 body {
 	font-family: var(--font-Family2);
 	font-size:var(--font1);
+	background-color:var(--color2a);
+	color:var(--color4);
 	width:100%;
 	height:100%;
 }
@@ -56,25 +65,27 @@ img {
 	height:auto;
 }
 
-header nav ul li {
-	color:var(--color-3);
+header nav ul li a {
+	font-family: var(--font-Family1);
+	font-size: var(--font2);
+	font-weight: 500;
+	color: var(--color3);
+	letter-spacing: 1px;
 }
-	header nav ul li:hover {
-		color:var(--color-2);
+	header nav ul li a:hover {
+		color: var(--color3-5);
 	}
 
 hgroup {
 	width:100%;
 	padding:2rem 1rem;
-	color: var(--color5);
-	text-shadow: 1rem .8rem 1.4rem rgb(197, 205, 212);
 	text-align: center;
 	font-family: var(--font-Family1);
-	background-color:var(--color2);
+	background-color:var(--color5);
 	line-height: 2;
 }
 	hgroup h1 {
-		
+		color:var(--color2);
 	}
 	
 	hgroup blockquote  {
@@ -91,8 +102,6 @@ blockquote {
 	
 figcaption {
 	padding:1rem 1rem;
-	color: var(--color-1);
-	text-shadow: 1rem .8rem 1.4rem rgb(197, 205, 212);
 	text-align: center;
 	font-family: var(--font-Family1);
 }
@@ -102,9 +111,14 @@ p {
 }
 
 #page-Container header, #page-Container footer {
-	background-color: var(--color4);
-	color:var(--color1)
-;}
+	background-color: var(--color5);
+}
+
+a {
+	color:var(--color5);
+	text-decoration: none;
+	cursor:pointer;
+}
 		
 /* - GLOBAL- ID's, CLASSES -------------------------------------------*/
 #page-Container {
@@ -113,7 +127,6 @@ p {
 
 .sections {
 	padding:0 1rem;
-	background-color:var(--color1);
 }	
 
 .buttons {
@@ -122,7 +135,6 @@ p {
 	border-radius: 1rem;
 	border:0;
 	background-color: var(--color3);
-	color:var(--color1);
 }
 
 /* HEADER SECTION -------------------------------------------*/
@@ -131,7 +143,6 @@ align-items:center;
 display:flex;
 justify-content:space-between;
 position:sticky;
-box-shadow: 0 1rem 1rem 0 #555;
 }
 
 header #logo {
@@ -161,67 +172,70 @@ header nav figure {
 }
 
 /*FEATURE ABOUT SECTION -------------------------------------------*/
-#feature-Section p {
-	padding: 2rem 0;
-}
+	#feature-Section p {
+		padding: 2rem 0;
+	}
 
-#feature-Section figure img {
-	box-shadow: 0 1rem 1rem 0 #555;
-}
+	#feature-Section figure img {
+	}
 
 /* ABOUT OF SECTION -------------------------------------------*/
-#about-Section figure img {
-	box-shadow: 0 1rem 1rem 0 #555;
-}
+	#about-Section figure img {
+	}
 
 /* SKILLS SECTION -------------------------------------------*/
 
 /* PROJECTS SECTION -------------------------------------------*/
-
+	
 
 /* CONTACT SECTION -------------------------------------------*/
-#contactform-Section {
-	padding:2rem 1rem;
-	flex-direction: column;
-}
-
-#contactform-Section form {
-	width:100%;
-	display:flex;
-	flex-wrap:wrap;
-	padding:2rem 2rem;
-	background-color:var(--color2);
-	border-radius:2rem;
+	#contactform-Section {
+		padding:2rem 1rem;
+		flex-direction: column;
 	}
 	
-		#contactform-Section form label {
-			width:100%;
-			text-align: center;
-			padding: 2rem 0 1rem 0;
+		#contactform-Section aside h1 {
+			letter-spacing: 2px;
+			padding:.5rem 0;
 		}
 
-		.inputFields {
-			width: 100%;
-			border-radius: 1rem;
-			border:0;
+		#contactform-Section form {
+		width:100%;
+		display:flex;
+		flex-wrap:wrap;
+		padding:2rem 2rem;
+		background-color:var(--color5);
+		border-radius:2rem;
 		}
-
-			.email-InputFields {
-				height: 3rem;
+		
+			#contactform-Section form label {
+				width:100%;
+				text-align: center;
+				padding: 2rem 0 1rem 0;
 			}
-
-			.message-InputFields {
-				height: 15rem;
+		
+			.inputFields {
+				width: 100%;
+				border-radius: 1rem;
+				border:0;
 			}
-
-			.Submit-Button {
-				margin:2rem auto;
-			}
+		
+				.email-InputFields {
+					height: 3rem;
+				}
+		
+				.message-InputFields {
+					height: 15rem;
+				}
+		
+				.Submit-Button {
+					margin:2rem auto;
+				}
 
 /* FOOTER SECTION -------------------------------------------*/	
-	#page-Container footer {
-		padding: 2rem 1rem;
-	}
+		#page-Container footer {
+			padding: 2rem 1rem;
+		}
 
 /* -------------------------------------------*/
 /* -------------------------------------------*/
@@ -569,7 +583,7 @@ header nav figure {
 		}
 
 	figure {
-		max-width:50%;
+		/*max-width:50%;*/
 	}
 		
 /* HEADER SECTION -------------------------------------------*/	
@@ -642,7 +656,7 @@ header nav figure {
 	}
 	
 	#skills-Section figure {
-		max-width: 20%;
+		max-width: 10%;
 	}
 
 /* PROJECTS SECTION -------------------------------------------*/
@@ -905,7 +919,7 @@ header nav figure {
 		
 		#contactform-Section aside h1 {
 				font-size:var(--font2);
-		}
+			}
 		
 		#contactform-Section aside hgroup h1 span a {
 			max-width: 90%;
