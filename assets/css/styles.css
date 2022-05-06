@@ -304,10 +304,10 @@ header nav figure {
 		}
 
 	figure {
-		max-width:80%;
+		max-width:60%;
 	}
-		
-/* HEADER SECTION -------------------------------------------*/	
+	
+	/* HEADER SECTION -------------------------------------------*/	
 	header nav ul {
 		display:none;
 	}	
