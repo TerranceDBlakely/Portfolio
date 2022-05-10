@@ -32,14 +32,8 @@
 	--color3-5: rgb(224, 38, 106, .5);
 	
 	--colorW: white;
-<<<<<<< HEAD
-	--colorG1: rgb(207, 206, 206);
-	--colorG2: rgb(126, 126, 126);
-	--colorG3: rgb(61, 60, 60);
-=======
 	--colorG1: grey;
 	--colorG2: lightgrey;
->>>>>>> d42c904967fc731823b14f21a86c71307dd54956
 	--colorB: black;
 	
 /*MISC*/
@@ -57,18 +51,13 @@
 
 html {
 	font-size:62.5%;
-	background-color: var(--colorB);
 }
 
 body {
 	font-family: var(--font-Family2);
 	font-size:var(--font1);
-<<<<<<< HEAD
-	color:var(--colorW);
-=======
-	background-color:var(--colorW);
+	background-color:var(--colorG1);
 	color:var(--color4);
->>>>>>> d42c904967fc731823b14f21a86c71307dd54956
 	width:100%;
 	height:100%;
 }
@@ -78,40 +67,6 @@ img {
 	height:auto;
 }
 
-<<<<<<< HEAD
-
-/* - GLOBAL- ID's, CLASSES -------------------------------------------*/
-	#page-Container {
-		width:100%;
-		height:100vh;
-		display:flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-		#wrapper {
-			height:90%;
-			width:85%;
-			background-color:var(--colorW);
-			display: flex;
-		}
-		
-			#image-Section {
-				background-color: var(--colorG1);
-				flex:1;
-				height:100%;
-			}
-			
-			#about-Section {
-				background-color: var(--colorG2);
-				flex:1;
-				height:100%;
-			}
-
-
-
-
-=======
 a {
 	text-decoration: none;
 }
@@ -193,7 +148,6 @@ a {
 					background-image:url('../images/Photo1-W.png');
 				}
 			
->>>>>>> d42c904967fc731823b14f21a86c71307dd54956
 /* -------------------------------------------*/
 /* -------------------------------------------*/
 /* -------------------------------------------*/
