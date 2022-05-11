@@ -56,7 +56,7 @@ html {
 body {
 	font-family: var(--font-Family2);
 	font-size:var(--font1);
-	background-color:var(--colorW);
+	background-color:var(--colorG1);
 	color:var(--color4);
 	width:100%;
 	height:100%;
@@ -74,25 +74,32 @@ a {
 /* - GLOBAL- ID's, CLASSES -------------------------------------------*/
 #page-Container {
 	width:100%;
-	height:90vh;
+	height:85vh;
 	display:flex;
+	flex-direction:column;
 	justify-content:center;
 	align-items:center;
 }
 
 	#wrapper {
 		height:90%;
-		width:85%;
+		width:95%;
 		background-color:var(--colorW);
 		display:flex;
-		border:1rem solid var(--colorW);
+	}
+	
+	#logo {
+		/*background-color:var(--colorB);*/
+		background-image:url('../icons/Logo-1.PNG');
+		background-size:contain;
+		min-height:7rem;
+		min-width:7rem;
+		margin:2rem 0;
 	}
 	
 		.sides {
-			/*height:100%;*/
-			/*width:100%;*/
 			flex:1;
-			padding:1rem 6rem;
+			padding:0 6rem;	
 		}
 		
 			#sideA {
@@ -101,8 +108,6 @@ a {
 				flex-direction:column;
 				align-items:center;
 				justify-content:space-evenly;
-				border-bottom-left-radius: 1.5rem;
-				border-top-left-radius: 1.5rem;
 			}
 			
 				aside {
@@ -125,28 +130,35 @@ a {
 				#navigation-Menu {
 					display:flex;
 					font-size:var(--font1);
+					align-items:center;
 				}
 				
 					#navigation-Menu li {
 						list-style:none;
 						margin:0 1rem;
-						border: solid .1rem var(--colorB);
-						padding:1rem;
+						border: solid .1rem var(--colorG1);
 						border-radius:.5rem;
+						text-align: center;
+						padding:1rem .8rem;
 					}
+					
+					#navigation-Menu li:hover {
+						background-color:var(--colorG2);						
+					}
+					
+						#navigatiion-Menu li a {
+							color: var(--colorW);
+						}
 				
 			#sideB {
 				background-color:var(--colorW);
 				background-image:url('../images/Profile-img-1.jpg');
 				background-size:cover;
-				border-bottom-right-radius: 1.5rem;
-				border-top-right-radius: 1.5rem;
-				tr
 			}
 			
-				#sideB:hover {
+				/*#sideB:hover {
 					background-image:url('../images/Photo1-W.png');
-				}
+				}*/
 			
 /* -------------------------------------------*/
 /* -------------------------------------------*/
