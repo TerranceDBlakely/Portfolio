@@ -115,12 +115,12 @@ body {
 					}
 					
 						#figure-IMG {
-							height:75vh;
+							height:65vh;
 							background-color:#222222;
 						}
 						
 					#section-B {
-						padding: 2rem;
+						padding: 2rem 2rem 4rem 2rem;
 						background-color:#999999;
 					}
 						#section-B article {
@@ -277,12 +277,12 @@ body {
 					}
 		
 						#figure-IMG {
-							height: 70vh;
+							height: 65vh;
 							background-color: #222222;
 						}				 
 					
 					#section-B {
-						padding:4rem 0;
+						padding:2rem 0;
 						background-color: #999999;
 					}
 
