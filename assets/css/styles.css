@@ -72,6 +72,15 @@ header {
 	#logo:hover {
 		opacity:1;	
 	}
+	
+a {
+	text-decoration: none;
+	color:var(--color5);
+}
+
+	a:hover {
+		color:var(--color1);
+	}
 
 
 /* - GLOBAL- ID's, Classes -------------------------------------------*/
