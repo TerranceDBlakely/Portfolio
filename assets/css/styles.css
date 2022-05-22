@@ -59,6 +59,20 @@ header {
 	background-color:var(--colorX);
 }
 
+#footer aside p span {
+	color: var(--color4);
+}
+
+#logo {
+	background-image: url('../images/Logo-1.PNG');
+	background-size: contain;
+	opacity:.6;
+}
+
+	#logo:hover {
+		opacity:1;	
+	}
+
 
 /* - GLOBAL- ID's, Classes -------------------------------------------*/
 
@@ -206,7 +220,7 @@ header {
 						}
 					
 					#footer aside {
-						width: 95%;
+						width: 100%;
 						font-size:var(--font0);
 						padding: 1rem 0 0 0;
 						text-align: center;
@@ -547,6 +561,7 @@ header {
 						#footer aside p {
 							font-size:var(--font0);
 							}	
+			
 	
 }
 
@@ -559,16 +574,18 @@ header {
 @media (min-width:1024px) and (max-width:1599px) {
 		body {
 			height:100%;
-	}
+			width:100%;
+			display:flex;
+			justify-content:center;
+		}
 	
 	#page-Container {
-		width:100%;
+		width:80%;
 		height: 100%
 	}
 	
 		#wrapper {
-			width:80%; 
-			margin:0 auto;
+			width:100%; 
 			justify-content: center;
 			display:flex;
 			flex-direction: row-reverse;
@@ -577,6 +594,8 @@ header {
 		header {
 			display:flex;
 			position: relative;
+			justify-content:space-between;
+			align-items:center;
 		}
 		
 			#logo {
@@ -584,18 +603,11 @@ header {
 				min-width:6rem;
 				background-image: url('../images/Logo-1.PNG');
 				background-size: contain;
-				margin:0 auto;
 			}
 			
 			#navMenu {
-				background-color:#555555;
-				height:100%;
-				width:0;
 				z-index: 1;
-				position:fixed;
-				line-height: 3;
-				overflow-x: hidden;
-				display:none;
+				display:flex;
 			}
 			
 				#navMenuIcon {
@@ -605,14 +617,18 @@ header {
 				background-size: contain;
 				position: absolute;
 				top:6rem;
-				right:13rem;
+				right:20rem;
 				z-index: 1;
+				display:none;
 			}
 			
 				#navMenu li {
 					list-style:none;
-					text-align: right;
 					font-size:var(--font0);
+					padding:0 0 0 2rem;
+					font-weight:var(--font-weight2);
+					letter-spacing: .1rem;
+					text-transform: uppercase;
 				}
 				
 				#navMenu li:hover {
@@ -667,7 +683,6 @@ header {
 						}
 					
 				#footer {
-					width:80%;
 					padding:4rem 0;
 					line-height: 1.4;
 					display:flex;
@@ -716,6 +731,10 @@ header {
 						#footer aside p {
 							font-size:var(--font0);
 							}	
+							
+							#footer aside p span {
+								margin: 0 0 0 1rem;
+							}
 }
 
 /* -------------------------------------------*/
@@ -778,8 +797,10 @@ header {
 				#navMenu li {
 					list-style:none;
 					font-size:var(--font0);
-					padding:0 2rem;
+					padding:0 0 0 2rem;
 					font-weight:var(--font-weight2);
+					letter-spacing: .1rem;
+					text-transform: uppercase;
 				}
 				
 				#navMenu li:hover {
@@ -884,5 +905,9 @@ header {
 					}			
 						#footer aside p {
 							font-size:var(--font0);
+							}
+							
+							#footer aside p span {
+								margin: 0 0 0 1rem;
 							}
 }
