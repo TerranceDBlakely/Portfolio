@@ -63,7 +63,7 @@ body {
 /* -------------------------------------------*/
 /* -------------------------------------------*/
 /*IPHONE -------------------------------------------*/
-@media (min-width:320px) and (max-width:570px) { /* Mobile Portrait */
+@media (min-width:320px) and (max-width:480px) { /* Mobile Portrait */
 	body {
 		height:100%;
 	}
@@ -146,6 +146,7 @@ body {
 								}
 								
 								#section-B article p {
+									font-size: var(--font0);
 									line-height: 1.6;
 								}
 								
@@ -257,13 +258,12 @@ body {
 						}
 						
 			.page-Sections {
-				flex-grow:1;
+
 			}
 						
 			#wrapper {
-				height:100%;
 				text-align:center;
-				padding:1rem 0 0 0;
+				padding:2rem 0 0 0;
 				display:flex;
 				flex-direction:column;
 			}
@@ -277,13 +277,36 @@ body {
 					}
 		
 						#figure-IMG {
-							height: 100%;
+							height: 18rem;
 							background-color: #222222;
 						}				
 					
 					#section-B {
+						padding:4rem 0;
 						background-color: #999999;
 					}
+
+						#section-B article {
+							padding:0 4rem;
+							line-height: 2;
+						}
+
+						#section-B article hgroup {
+							line-height: 2;
+							padding:2rem 0;
+							text-transform: uppercase;
+						}
+
+							#section-B article hgroup h1 {
+								font-size:var(--font2);
+							}
+							#section-B article hgroup h3 {
+
+							}
+
+							#section-B article p {
+								font-size:var(--font0);
+							}
 			
 								
 			#footer {
