@@ -243,6 +243,14 @@ body {
 						top:3rem;
 						right:3rem;
 					}
+					
+					#navigation-Menu li:hover {
+						background-color:var(--colorG2);						
+					}
+					
+						#navigatiion-Menu li a {
+							color: var(--colorW);
+						}
 				
 						#navMenu {
 							display:none;
