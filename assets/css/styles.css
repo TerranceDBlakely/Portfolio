@@ -80,6 +80,7 @@ a {
 
 	a:hover {
 		color:var(--color1);
+		cursor: pointer;
 	}
 
 
