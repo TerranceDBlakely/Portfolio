@@ -1,18 +1,12 @@
-#page-Container {
-	width:100%;
-	height:100vh;
+#wrapper {
+	display:flex;
+	flex-direction:column;
 }
 
-	#wrapper {
-		width:85%;
-		height:100vh;
-	}
-	
-	#contact-Form {
-		margin:0 auto;	
-	}
+#section-B {
+	padding:4rem 0;
+}
 
-.hb-p-62402ccbbd712f0008679e47-1 {
-	width:90rem;
-	
+#section-A #figure-IMG {
+	height:40rem;
 }

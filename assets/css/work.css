@@ -1,4 +1,38 @@
+/* Global */
+aside ul li {
+		list-style: none;
+		border: .1rem solid var(--color2);
+		padding:1rem 1.5rem;
+		color:var(--color5);
+		font-weight:var(--font-weight2);
+		font-size:var(--font0);
+	}
+	
+aside ul li:hover {
+		color:var(--color2);
+		background-color:var(--color5);
+		border: .1rem solid var(--color4);
+		font-weight:var(--font-weight1);
+	}
+
 /*Media Querries*/
+
+/* Phones */
+
+@media(min-width:320px) {
+	aside ul {
+		display:flex;
+		width:100%;	
+		margin:4rem 0 0 0;
+		justify-content:space-between;
+	}
+	
+	aside ul li {
+		list-style: none;
+		padding:2rem 1.5rem;
+	}
+
+}
 
 /*- tablets*/
 
@@ -25,12 +59,7 @@
 		border: .1rem solid var(--color2);
 		padding:1rem 1.5rem;
 		color:var(--color5);
-	}
-	
-	aside ul li:hover {
-		color:var(--color2);
-		background-color:var(--color5);
-		border: .1rem solid var(--color4);
+		font-weight:var(--font-weight1);
 	}
 	
 	#section-B article p {
