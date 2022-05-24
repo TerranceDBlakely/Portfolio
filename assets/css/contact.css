@@ -5,6 +5,35 @@
 	flex-direction:row;
 }
 
+	#twitter-Contact {
+		background-color:#999999;
+	}
+	
+	#facebook-Contact {
+		background-color:#888888;
+	}
+	
+	#email-Contact {
+		background-color:#777777;
+	}
+	
+	#github-Contact {
+		background-color:#666666;
+	}
+	
+	#linkin-Contact {
+		background-color:#555555;
+	}
+	
+	#instagram-Contact {
+		background-color:#444444;
+	}
+	
+	#section-B article ul li:hover {
+		color: var(--color2);
+		background-color:var(--color4);
+	}
+
 /* Phones */
 
 @media (min-width:320px) {
@@ -19,25 +48,31 @@
 
 @media (min-width:1024px) {
 	#section-A {
-		height:100%;
-		/*justify-content: space-evenly;*/
 		padding:0 0 0 0;
 	}
 	
-		#section-A article {
+		.sections {
 			display:flex;
+		}
+	
+		#section-A article {
+			justify-content: center;
+			display:flex;
+			justify-content: space-evenly;
 			flex-direction:column;
 			text-align:right;
-			padding:0 4rem;
+			padding:0 4rem 0 0;
 			align-items:flex-end;
 		}
 	
 		#section-A article h1 {
-			font-size: var(--font5);
+			text-transform: uppercase;
+			font-size: var(--font6);
 			margin:2rem 0;
 		}
 		
 		#section-A article p {
+			font-size:var(--font1);
 			line-height: 1.6;
 		}
 	
@@ -49,18 +84,20 @@
 		}
 		
 		#section-B {
-			display:flex;
-			align-items: flex-start;
-			justify-content:center;
 		}
 			#section-B article {
-				
+				padding:2rem 4rem 2rem 4rem;
 			}
 			
 			#section-B article ul li {
+				margin:1.5rem 0;
+				padding:1rem 0 1rem 2rem;
 				list-style:none;
-				line-height:4;
-				font-size:var(--font2);
+				line-height:3;
+				font-size:var(--font1);
+				background-color:#000000;
+				color:var(--color1);	
+				box-shadow:0 .7rem .5rem var(--color4);
 			}
 		
 }
