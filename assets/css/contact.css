@@ -1,12 +1,68 @@
+/* Global */
+
 #wrapper {
 	display:flex;
-	flex-direction:column;
+	flex-direction:row;
 }
 
-#section-B {
-	padding:4rem 0;
+/* Phones */
+
+@media (min-width:320px) {
+
 }
 
-#section-A #figure-IMG {
-	height:40rem;
+@media (min-width:568px) {
+
 }
+
+/* Tablets */
+
+@media (min-width:1024px) {
+	#section-A {
+		height:100%;
+		/*justify-content: space-evenly;*/
+		padding:0 0 0 0;
+	}
+	
+		#section-A article {
+			display:flex;
+			flex-direction:column;
+			text-align:right;
+			padding:0 4rem;
+			align-items:flex-end;
+		}
+	
+		#section-A article h1 {
+			font-size: var(--font5);
+			margin:2rem 0;
+		}
+		
+		#section-A article p {
+			line-height: 1.6;
+		}
+	
+		#figure-IMG {
+			height:15rem;
+			width:15rem;
+			border-radius:24rem;
+			margin:0;
+		}
+		
+		#section-B {
+			display:flex;
+			align-items: flex-start;
+			justify-content:center;
+		}
+			#section-B article {
+				
+			}
+			
+			#section-B article ul li {
+				list-style:none;
+				line-height:4;
+				font-size:var(--font2);
+			}
+		
+}
+
+
