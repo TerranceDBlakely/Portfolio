@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Roboto+Slab:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&family=Comfortaa:wght@300;400;700&family=Roboto+Slab:wght@300;400;900&display=swap');
 
 /* VARIABLES /* -------------------------------------------*/
 :root {
@@ -10,17 +10,19 @@
 	--font4: 4.8rem;
 	--font5: 6rem;
 	--font6: 7.2rem;
+	--font7: 8.4rem;
 	
 /*FONT FAMILIES*/
 	--font-Family1:"Roboto Slab", serif;
 	--font-Family2:'Comfortaa', cursive;
+	--font-Family3: 'Baloo Tamma 2', cursive;
 	
 /*FONT WEIGHTS*/
 	--font-Weight1: lighter;
 	--font-weight2: bolder;
 	
 
-/* WEBSITE COLORS*/
+/* WEBSITE COLORS - DEMO */
 	--color1: white;
 	--color2: lightgrey;
 	--color3: rgb(141, 62, 231);
@@ -28,7 +30,13 @@
 	--color5: black;
 	--colorX:rgb(255,255,255, .2);
 
+/* WEBSITE COLORS - PALETTE */
+	--primaryColor:;
+	--secondaryColor:;
+	--accentColor:;
 }
+
+
 
 
 /*GENERALS /* -------------------------------------------*/
@@ -71,7 +79,9 @@ header {
 }
 
 	#logo:hover {
-		opacity:1;	
+		opacity:1;
+		padding:0;
+		border:0;	
 	}
 	
 a {
@@ -79,7 +89,7 @@ a {
 	color:var(--color5);
 }
 
-	#navMenu li:hover {
+	#navMenu li a:hover {
 		color:var(--color4);
 		cursor: pointer;
 		border-bottom:.2rem solid var(--color5);
