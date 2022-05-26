@@ -286,7 +286,7 @@
 
 @media (min-width:1024px)and (max-width:1200px) {
 	#section-A {
-		padding:0 0 0 0;
+		padding:4rem 0 0 0;
 	}
 	
 		.sections {
@@ -316,8 +316,8 @@
 		}
 	
 		#figure-IMG {
-			height:15rem;
-			width:15rem;
+			height:12rem;
+			width:12rem;
 			border-radius:24rem;
 			margin:0;
 			box-shadow:.1rem .5rem .4rem var(--color4);

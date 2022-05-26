@@ -143,8 +143,42 @@ a {
 					}
 				
 						#navMenu {
-							display:none;
+							background-color:var(--color5);
+							position:fixed;
+							height:100vh;
+							top:0;
+							left:0;
+							/*left:-100vw;*/
+							padding:2rem 4rem;
 						}
+						
+							#navMenu ul {
+								
+							}
+							
+								#navMenu li {
+									line-height: 4;
+									list-style: none;
+									text-align: left;
+									text-transform:uppercase;
+									letter-spacing:.1rem;
+									font-size:var(--font0);
+									
+								}
+								
+									#navMenu li a {
+										color:var(--color2);						
+									}
+									
+									#innerNav-logo {
+										text-align: left;
+										height:6rem;
+										width:6rem;
+										margin:0 0 2rem 0;
+										background-image:url("../images/Logo-1.PNG");
+										background-size:cover;
+									}
+									
 						
 			#wrapper {
 				text-align:center;
@@ -299,8 +333,41 @@ a {
 						}
 				
 						#navMenu {
-							display:none;
+							background-color:var(--color5);
+							position:fixed;
+							height:100vh;
+							top:0;
+							left:0;
+							/*left:-100vw;*/
+							padding:2rem 4rem;
 						}
+						
+							#navMenu ul {
+								
+							}
+							
+								#navMenu li {
+									line-height: 4;
+									list-style: none;
+									text-align: left;
+									text-transform:uppercase;
+									letter-spacing:.1rem;
+									font-size:var(--font0);
+									
+								}
+								
+									#navMenu li a {
+										color:var(--color2);						
+									}
+									
+									#innerNav-logo {
+										text-align: left;
+										height:6rem;
+										width:6rem;
+										margin:0 0 2rem 0;
+										background-image:url("../images/Logo-1.PNG");
+										background-size:cover;
+									}
 						
 			.page-Sections {
 
