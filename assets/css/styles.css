@@ -27,7 +27,7 @@
 	--color2: lightgrey;
 	--color3: rgb(141, 62, 231);
 	--color4: grey;
-	--color5: black;
+	--color5:rgb(55,55,55, .9);
 	--colorX:rgb(255,255,255, .2);
 
 /* WEBSITE COLORS - PALETTE */
@@ -87,11 +87,11 @@ header {
 a {
 	text-decoration: none;
 	color:var(--color5);
+	cursor: pointer;
 }
 
 	#navMenu li a:hover {
 		color:var(--color4);
-		cursor: pointer;
 		border-bottom:.2rem solid var(--color5);
 		padding-bottom: 1rem;
 	}
@@ -170,13 +170,19 @@ a {
 										color:var(--color2);						
 									}
 									
-									#innerNav-logo {
-										text-align: left;
-										height:6rem;
-										width:6rem;
-										margin:0 0 2rem 0;
-										background-image:url("../images/Logo-1.PNG");
-										background-size:cover;
+										#navMenu li a:hover {
+											color:var(--color1);
+											border-bottom:.2rem solid var(--color1);
+											padding-bottom: 1rem;
+											
+										}
+									
+									#navMenu li #innerNav-logo {
+											height:6rem;
+											width:6rem;
+											margin:0 0 5rem 0;
+											background-image:url("../images/Logo-1.PNG");
+											background-size:cover;
 									}
 									
 						
@@ -507,45 +513,67 @@ a {
 		}
 		
 			#logo {
-				min-height: 8rem;
-				min-width:8rem;
-				background-image: url('../images/Logo-1.PNG');
-				background-size: contain;
-				margin:0 auto;
-			}
-			
-			#navMenu {
-				height:100%;
-				width:0;
-				z-index: 1;
-				position:fixed;
-				padding:8rem 2rem 0 2rem;
-				line-height: 3;
-				overflow-x: hidden;
-				display:none;
-			}
-			
-				#navMenuIcon {
-				min-height:3rem;
-				min-width:3rem;
-				background-image: url('../images/Nav-Menu.PNG');
-				background-size: contain;
-				position: absolute;
-				top:8rem;
-				right:8rem;
-				margin: 1.5rem rem 0 0;
-				z-index: 1;
-			}
-			
-				#navMenu li {
-					list-style:none;
-					text-align: right;
-					font-size:var(--font0);
-				}
+						height:8rem;
+						width:8rem;
+						background-image:url("../images/Logo-1.PNG");
+						background-size:cover;
+						margin-left:8rem;
+					}
+					
+					#navMenuIcon {
+						height:3rem;
+						width:3rem;
+						background-image:url("../images/Nav-Menu.PNG");
+						background-size:cover;
+						position:absolute;
+						top:5rem;
+						right:8rem;
+					}
+					
+					#navigation-Menu li:hover {
+						background-color:var(--colorG2);						
+					}
+					
+						#navigatiion-Menu li a {
+							color: var(--colorW);
+						}
 				
-				#navMenu li:hover {
-					color:white;
-				}
+						#navMenu {
+							background-color:var(--color5);
+							position:fixed;
+							height:100vh;
+							top:0;
+							left:0;
+							left:-100vw;
+							padding:0 4rem;
+						}
+						
+							#navMenu ul {
+								
+							}
+							
+								#navMenu li {
+									line-height: 4;
+									list-style: none;
+									text-align: left;
+									text-transform:uppercase;
+									letter-spacing:.1rem;
+									font-size:var(--font1);
+									
+								}
+								
+									#navMenu li a {
+										color:var(--color2);						
+									}
+									
+									#innerNav-logo {
+										text-align: left;
+										height:10rem;
+										width:10rem;
+										margin:0 0 2rem 0;
+										background-image:url("../images/Logo-1.PNG");
+										background-size:cover;
+									}
 		
 			.sections {
 				flex:1;
