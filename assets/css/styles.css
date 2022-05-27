@@ -385,7 +385,6 @@ body {
 	
 		#wrapper {
 			width:80%;
-			height:80%; 
 			margin:0 auto;
 			justify-content: center;
 			background-color:#777777;
@@ -452,7 +451,7 @@ body {
 					#figure-IMG {
 						margin:0 auto 0 auto;
 						background-color:#111111;
-						height:100%;
+						height:;
 					}
 				
 				#section-B {
