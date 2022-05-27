@@ -1,0 +1,79 @@
+/* Global */
+aside ul li {
+		list-style: none;
+		border: .1rem solid var(--color2);
+		padding:1rem 1.5rem;
+		color:var(--color5);
+		font-weight:var(--font-weight2);
+		font-size:var(--font0);
+	}
+	
+aside ul li:hover {
+		color:var(--color2);
+		background-color:var(--color5);
+		border: .1rem solid var(--color4);
+		font-weight:var(--font-weight1);
+	}
+
+#section-B article hgroup h3 {
+		color:var(--color4);
+}
+	
+/*Media Querries*/
+
+/* Phones */
+
+@media(min-width:320px)and (max-width:760px) {
+
+}
+
+@media(min-width:760px)and (max-width:1024px) {
+
+}
+
+/*- tablets*/
+
+@media (min-width:1024px) and (max-width:1280px) {
+	#wrapper {
+		flex-direction:row;
+	}
+	
+	#section-B article {
+		height:100%;
+		display:flex;
+		margin:0;
+		flex-direction:column;
+		justify-content:center;
+		text-align:center;
+		padding:3rem 4rem;
+	}
+	
+	#section-B article hgroup {
+		margin:0 0;
+		line-height: 3;
+	}
+	
+	#section-B article hgroup h1 {
+		margin:0;
+		font-size:var(--font4);
+	}
+	
+	#section-B article hgroup h3 {
+		font-size:var(--font1);
+	}
+	
+	#section-B article p {
+		margin-top:2rem;
+		font-size:var(--font1);
+		padding:0 0;
+		line-height:1.5;
+	}
+	
+	#section-B article hgroup h3 {
+		color:var(--color4);	
+	}
+}
+
+@media(min-width:1280px)and (max-width:1600px) {
+
+}
