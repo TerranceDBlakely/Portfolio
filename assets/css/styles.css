@@ -143,47 +143,41 @@ a {
 					}
 				
 						#navMenu {
-							background-color:var(--color5);
-							position:fixed;
 							height:100vh;
+							width:0;
+							position:fixed;
 							top:0;
 							left:0;
-							/*left:-100vw;*/
-							padding:2rem 4rem;
+							z-index: 1;
+							padding:2rem 0 0 0;
+							background-color: var(--color5);
+							transition: 0.5s;
 						}
-						
-							#navMenu ul {
-								
+
+							#navMenu li {
+								list-style: none;
+							}
+							#navMenu li a {
+								font-size:var(--font1);
+								list-style: none;
+								text-transform:uppercase;
+								margin:0;
+								color:var(--color2);						
 							}
 							
-								#navMenu li {
-									line-height: 4;
-									list-style: none;
-									text-align: left;
-									text-transform:uppercase;
-									letter-spacing:.1rem;
-									font-size:var(--font0);
-									
+								#navMenu li a:hover {
+									color:var(--color1);
+									border-bottom:.2rem solid var(--color1);
+									padding-bottom: 1rem;
 								}
-								
-									#navMenu li a {
-										color:var(--color2);						
-									}
-									
-										#navMenu li a:hover {
-											color:var(--color1);
-											border-bottom:.2rem solid var(--color1);
-											padding-bottom: 1rem;
-											
-										}
-									
-									#navMenu li #innerNav-logo {
-											height:6rem;
-											width:6rem;
-											margin:0 0 5rem 0;
-											background-image:url("../images/Logo-1.PNG");
-											background-size:cover;
-									}
+							
+							#navMenu li #innerNav-logo {
+									height:6rem;
+									width:6rem;
+									margin:0 auto 0 auto;
+									background-image:url("../images/Logo-1.PNG");
+									background-size:cover;
+							}
 									
 						
 			#wrapper {
@@ -339,41 +333,9 @@ a {
 						}
 				
 						#navMenu {
-							background-color:var(--color5);
-							position:fixed;
-							height:100vh;
-							top:0;
-							left:0;
-							/*left:-100vw;*/
-							padding:2rem 4rem;
+							display:none;
 						}
 						
-							#navMenu ul {
-								
-							}
-							
-								#navMenu li {
-									line-height: 4;
-									list-style: none;
-									text-align: left;
-									text-transform:uppercase;
-									letter-spacing:.1rem;
-									font-size:var(--font0);
-									
-								}
-								
-									#navMenu li a {
-										color:var(--color2);						
-									}
-									
-									#innerNav-logo {
-										text-align: left;
-										height:6rem;
-										width:6rem;
-										margin:0 0 2rem 0;
-										background-image:url("../images/Logo-1.PNG");
-										background-size:cover;
-									}
 						
 			.page-Sections {
 
@@ -500,11 +462,7 @@ a {
 		}
 	
 		#wrapper {
-<<<<<<< HEAD
-			width:80%;
-=======
 			width:80%; 
->>>>>>> 7574ba208512aefabb609d84e95a030aad74daf5
 			margin:0 auto;
 			justify-content: center;
 			display:flex;
@@ -522,6 +480,10 @@ a {
 						background-image:url("../images/Logo-1.PNG");
 						background-size:cover;
 						margin-left:8rem;
+					}
+
+					#navMenu {
+						display:none;
 					}
 					
 					#navMenuIcon {
@@ -542,42 +504,6 @@ a {
 							color: var(--colorW);
 						}
 				
-						#navMenu {
-							background-color:var(--color5);
-							position:fixed;
-							height:100vh;
-							top:0;
-							left:0;
-							left:-100vw;
-							padding:0 4rem;
-						}
-						
-							#navMenu ul {
-								
-							}
-							
-								#navMenu li {
-									line-height: 4;
-									list-style: none;
-									text-align: left;
-									text-transform:uppercase;
-									letter-spacing:.1rem;
-									font-size:var(--font1);
-									
-								}
-								
-									#navMenu li a {
-										color:var(--color2);						
-									}
-									
-									#innerNav-logo {
-										text-align: left;
-										height:10rem;
-										width:10rem;
-										margin:0 0 2rem 0;
-										background-image:url("../images/Logo-1.PNG");
-										background-size:cover;
-									}
 		
 			.sections {
 				flex:1;
@@ -590,11 +516,7 @@ a {
 					#figure-IMG {
 						margin:0 auto 0 auto;
 						background-color:#111111;
-<<<<<<< HEAD
-						height:;
-=======
 						height:70vh;
->>>>>>> 7574ba208512aefabb609d84e95a030aad74daf5
 					}
 				
 				#section-B {
