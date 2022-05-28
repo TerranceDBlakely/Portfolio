@@ -150,15 +150,22 @@ a {
 							width:0;
 							position:fixed;
 							top:0;
-							left:0;
+							left:-50rem;		
 							z-index: 1;
 							padding:2rem 0 0 0;
 							background-color: var(--color5);
 							transition: 0.5s;
+							display:flex;
+							flex-direction:column;
+							text-align: right;
 						}
+						
+							
 
 							#navMenu li {
 								list-style: none;
+								padding:0rem 3rem;
+								line-height: 3;
 							}
 							#navMenu li a {
 								font-size:var(--font1);
@@ -177,13 +184,14 @@ a {
 							#navMenu li #innerNav-logo {
 									height:6rem;
 									width:6rem;
-									margin:0 auto 0 auto;
+									margin:0 auto 3rem auto;
 									background-image:url("../images/Logo-1.PNG");
 									background-size:cover;
 							}
 									
 						
 			#wrapper {
+				transition: margin-left .5s;
 				text-align:center;
 				padding:1rem 0 0 0;
 				display:flex;

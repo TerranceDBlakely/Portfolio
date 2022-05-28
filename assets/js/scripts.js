@@ -1,2 +1,3 @@
-let navMenu = document.getElementById('navMenu')
-navMenu
+function openNav() {
+	document.getElementById('navMenu').style.width = '20px'
+}
