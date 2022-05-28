@@ -1,3 +1,4 @@
 function openNav() {
-	document.getElementById('navMenu').style.width = '20px'
+    document.getElementById('navMenu').style.left = '10rem'
 }
+
