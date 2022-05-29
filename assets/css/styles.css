@@ -72,13 +72,13 @@ header {
 	color: var(--color4);
 }
 
-#logo {
+.logo {
 	background-image: url('../images/Logo-1.PNG');
 	background-size: contain;
 	opacity:.6;
 }
 
-	#logo:hover {
+	.logo:hover {
 		opacity:1;
 		padding:0;
 		border:0;	
@@ -90,13 +90,13 @@ a {
 	cursor: pointer;
 }
 
-	#navMenu li a:hover {
+	.navMenu li a:hover {
 		color:var(--color4);
 		border-bottom:.2rem solid var(--color5);
 		padding-bottom: 1rem;
 	}
 
-.closeBtn {
+.closeNavBtn {
 	height:2rem;
 	width:2rem;
 	background-image:url("../images/Nav-Menu.PNG");
@@ -134,7 +134,7 @@ a {
 					padding: 0 0;
 				}
 				
-					#logo {
+					.logo {
 						height:6rem;
 						width:6rem;
 						margin:0 auto;
@@ -142,7 +142,7 @@ a {
 						background-size:cover;
 					}
 					
-					#navMenuIcon {
+					.navMenuIcon {
 						height:3rem;
 						width:3rem;
 						background-image:url("../images/Nav-Menu.PNG");
@@ -152,7 +152,7 @@ a {
 						right:2.5rem;
 					}
 				
-						#navMenu {
+						.navMenu {
 							height:100vh;
 							width:15rem;
 							position:fixed;
@@ -164,10 +164,10 @@ a {
 							transition: 0.5s;
 						}
 
-							#navMenu li {
+							.navMenu li {
 								list-style: none;
 							}
-							#navMenu li a {
+							.navMenu li a {
 								font-size:var(--font0);
 								list-style: none;
 								text-transform:uppercase;
@@ -177,13 +177,13 @@ a {
 								padding:2rem;		
 							}
 							
-								#navMenu li a:hover {
+								.navMenu li a:hover {
 									color:var(--color1);
 									border-bottom:.2rem solid var(--color1);
 									padding-bottom: 1rem;
 								}
 							
-							#navMenu li #innerNav-logo {
+							.navMenu li .innerNav-logo {
 									height:4rem;
 									width:4rem;
 									margin:2rem auto 0 auto;
@@ -204,11 +204,11 @@ a {
 					flex: 1;
 				}
 							
-					#section-A {
+					.section-A {
 						flex: 3;
 					}
 					
-						#figure-IMG {
+						.figure-IMG {
 							height:62vh;
 							background-color:#222222;
 						}
@@ -319,7 +319,7 @@ a {
 					padding:0;
 				}
 				
-					#logo {
+					.logo {
 						height:6rem;
 						width:6rem;
 						margin:0 auto;
@@ -327,7 +327,7 @@ a {
 						background-size:cover;
 					}
 					
-					#navMenuIcon {
+					.navMenuIcon {
 						height:3rem;
 						width:3rem;
 						background-image:url("../images/Nav-Menu.PNG");
@@ -345,7 +345,7 @@ a {
 							color: var(--colorW);
 						}
 				
-						#navMenu {
+						.navMenu {
 							display:none;
 						}
 						
@@ -365,11 +365,11 @@ a {
 					flex:1;
 				}
 				
-					#section-A {
+					.section-A {
 						flex:3;						
 					}
 		
-						#figure-IMG {
+						.figure-IMG {
 							height: 65vh;
 							background-color: #222222;
 						}				 
@@ -487,7 +487,7 @@ a {
 			position: relative;
 		}
 		
-			#logo {
+			.logo {
 						height:8rem;
 						width:8rem;
 						background-image:url("../images/Logo-1.PNG");
@@ -495,11 +495,11 @@ a {
 						margin-left:8rem;
 					}
 
-					#navMenu {
+					.navMenu {
 						display:none;
 					}
 					
-					#navMenuIcon {
+					.navMenuIcon {
 						height:3rem;
 						width:3rem;
 						background-image:url("../images/Nav-Menu.PNG");
@@ -522,11 +522,11 @@ a {
 				flex:1;
 			}
 		
-				#section-A {
+				.section-A {
 					flex:2;
 				}
 			
-					#figure-IMG {
+					.figure-IMG {
 						margin:0 auto 0 auto;
 						background-color:#111111;
 						height:70vh;
@@ -659,19 +659,19 @@ a {
 			align-items:center;
 		}
 		
-			#logo {
+			.logo {
 				min-height: 6rem;
 				min-width:6rem;
 				background-image: url('../images/Logo-1.PNG');
 				background-size: contain;
 			}
 			
-			#navMenu {
+			.navMenu {
 				z-index: 1;
 				display:flex;
 			}
 			
-				#navMenuIcon {
+				.navMenuIcon {
 				min-height:3rem;
 				min-width:3rem;
 				background-image: url('../images/Nav-Menu.PNG');
@@ -683,7 +683,7 @@ a {
 				display:none;
 			}
 			
-				#navMenu li {
+				.navMenu li {
 					list-style:none;
 					font-size:var(--font0);
 					padding:0 0 0 2rem;
@@ -692,7 +692,7 @@ a {
 					text-transform: uppercase;
 				}
 				
-				#navMenu li:hover {
+				.navMenu li:hover {
 					color:white;
 				}
 		
@@ -700,11 +700,11 @@ a {
 				flex:1;
 			}
 		
-				#section-A {
+				.section-A {
 
 				}
 			
-					#figure-IMG {
+					.figure-IMG {
 						margin:0 auto 0 auto;
 						background-color:#111111;
 						height:62rem;
@@ -831,19 +831,19 @@ a {
 			align-items:center;
 		}
 		
-			#logo {
+			.logo {
 				min-height: 6rem;
 				min-width:6rem;
 				background-image: url('../images/Logo-1.PNG');
 				background-size: contain;
 			}
 			
-			#navMenu {
+			.navMenu {
 				z-index: 1;
 				display:flex;
 			}
 			
-				#navMenuIcon {
+				.navMenuIcon {
 				min-height:3rem;
 				min-width:3rem;
 				background-image: url('../images/Nav-Menu.PNG');
@@ -855,7 +855,7 @@ a {
 				display:none;
 			}
 			
-				#navMenu li {
+				.navMenu li {
 					list-style:none;
 					font-size:var(--font0);
 					margin:0 0 0 2rem;
@@ -864,7 +864,7 @@ a {
 					text-transform: uppercase;
 				}
 				
-				#navMenu li:hover {
+				.navMenu li:hover {
 					color:white;
 				}
 		
@@ -872,11 +872,11 @@ a {
 				flex:1;
 			}
 		
-				#section-A {
+				.section-A {
 
 				}
 			
-					#figure-IMG {
+					.figure-IMG {
 						margin:0 auto 0 auto;
 						background-color:#111111;
 						height:82rem;
