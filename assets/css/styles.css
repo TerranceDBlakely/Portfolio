@@ -107,6 +107,13 @@ a {
 	margin:2rem 2rem 0 0;
 }
 
+.closedNav {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 1;
+}
+
 /* - GLOBAL- ID's, Classes -------------------------------------------*/
 
 
@@ -158,6 +165,7 @@ a {
 							position:fixed;
 							top:0;
 							left:0;
+							margin-left:0;
 							z-index: 1;
 							padding:2rem 0 0 0;
 							background-color: var(--color5);

@@ -1,17 +1,12 @@
-let pageContainer = document.getElementById('page-Container')
-pageContainer.innerHTML = "Hello"
+let navMenuBar = document.getElementById('navMenuBar')
+let openNavBtn = document.getElementById('openNavBtn')
 
-let navNavMenuIconBtn = document.getElementById('navMenuIconBtn')
-let naveMenuBar = document.getElementById('navMenuBar')
-let closeNavBtn = document.getElementById('closeNavBtn')
+openNavBtn.addEventListener('click', openNavMenu)
 
 function openNavMenu() {
-
+    navMenuBar.style.marginLeft = '-15rem'
 }
 
-function closeNavMenu() {
-
-}
 
 
 
