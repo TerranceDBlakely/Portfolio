@@ -29,7 +29,7 @@
 		background-color:#444444;
 	}
 	
-	#section-B article ul li:hover {
+	.section-B article ul li:hover {
 		color: var(--color2);
 		background-color:var(--color4);
 	}
@@ -45,7 +45,7 @@
 		
 	}
 	
-	#section-A {
+	.section-A {
 		padding:0 0 0 0;
 		margin-bottom:4rem;
 	}
@@ -55,7 +55,7 @@
 			
 		}
 	
-		#section-A article {
+		.section-A article {
 			justify-content: center;
 			display:flex;
 			justify-content: space-evenly;
@@ -65,19 +65,19 @@
 			align-items:center;
 		}
 	
-		#section-A article h1 {
+		.section-A article h1 {
 			text-transform: uppercase;
 			font-size: var(--font5);
 			margin:2rem 0;
 			line-height: 1;
 		}
 		
-		#section-A article p {
+		.section-A article p {
 			font-size:var(--font1);
 			line-height: 1.8;
 		}
 	
-		#figure-IMG {
+		.figure-IMG {
 			height:15rem;
 			width:15rem;
 			border-radius:24rem;
@@ -85,14 +85,14 @@
 			box-shadow:.1rem .5rem .4rem var(--color4);
 		}
 		
-		#section-B {
+		.section-B {
 			display:flex;
 			justify-content:center;
 		}
-			#section-B article ul {
+			.section-B article ul {
 			}
 			
-			#section-B article ul li {
+			.section-B article ul li {
 				width:25rem;
 				margin:3rem 0;
 				padding:1rem 0 1rem 2rem;
@@ -124,7 +124,7 @@
 		
 	}
 	
-	#section-A {
+	.section-A {
 		padding:0 0 0 0;
 		margin-bottom:4rem;
 	}
@@ -134,7 +134,7 @@
 			
 		}
 	
-		#section-A article {
+		.section-A article {
 			justify-content: center;
 			display:flex;
 			justify-content: space-evenly;
@@ -144,19 +144,19 @@
 			align-items:center;
 		}
 	
-		#section-A article h1 {
+		.section-A article h1 {
 			text-transform: uppercase;
 			font-size: var(--font3);
 			margin:2rem 0;
 			line-height: 1;
 		}
 		
-		#section-A article p {
+		.section-A article p {
 			font-size:var(--font1);
 			line-height: 1.8;
 		}
 	
-		#figure-IMG {
+		.figure-IMG {
 			height:15rem;
 			width:15rem;
 			border-radius:24rem;
@@ -164,14 +164,14 @@
 			box-shadow:.1rem .5rem .4rem var(--color4);
 		}
 		
-		#section-B {
+		.section-B {
 			display:flex;
 			justify-content:center;
 		}
-			#section-B article ul {
+			.section-B article ul {
 			}
 			
-			#section-B article ul li {
+			.section-B article ul li {
 				width:40rem;
 				margin:3rem 0;
 				padding:1rem 0 1rem 2rem;
@@ -211,7 +211,7 @@
 		padding:2rem 0 0 0;
 	}
 	
-	#section-A {
+	.section-A {
 		padding:0 0 0 0;
 	}
 	
@@ -220,7 +220,7 @@
 			flex:1;
 		}
 	
-		#section-A article {
+		.section-A article {
 			justify-content: center;
 			display:flex;
 			justify-content: space-evenly;
@@ -230,19 +230,19 @@
 			align-items:flex-end;
 		}
 	
-		#section-A article h1 {
+		.section-A article h1 {
 			text-transform: uppercase;
 			font-size: var(--font6);
 			margin:2rem 0;
 			line-height: 1;
 		}
 		
-		#section-A article p {
+		.section-A article p {
 			font-size:var(--font1);
 			line-height: 1.6;
 		}
 	
-		#figure-IMG {
+		.figure-IMG {
 			height:15rem;
 			width:15rem;
 			border-radius:24rem;
@@ -250,14 +250,14 @@
 			box-shadow:.1rem .5rem .4rem var(--color4);
 		}
 		
-		#section-B {
+		.section-B {
 			flex:3;
 		}
-			#section-B article {
+			.section-B article {
 				padding:2rem 4rem 2rem 4rem;
 			}
 			
-			#section-B article ul li {
+			.section-B article ul li {
 				margin:3rem 0;
 				padding:1rem 0 1rem 2rem;
 				list-style:none;
@@ -285,7 +285,7 @@
 
 
 @media (min-width:1024px)and (max-width:1200px) {
-	#section-A {
+	.section-A {
 		padding:4rem 0 0 0;
 	}
 	
@@ -293,7 +293,7 @@
 			display:flex;
 		}
 	
-		#section-A article {
+		.section-A article {
 			justify-content: center;
 			display:flex;
 			justify-content: space-between;
@@ -303,19 +303,19 @@
 			align-items:flex-end;
 		}
 	
-		#section-A article h1 {
+		.section-A article h1 {
 			text-transform: uppercase;
 			font-size: var(--font6);
 			margin:4rem 0;
 			line-height: 1;
 		}
 		
-		#section-A article p {
+		.section-A article p {
 			font-size:var(--font2);
 			line-height: 1.6;
 		}
 	
-		#figure-IMG {
+		.figure-IMG {
 			height:12rem;
 			width:12rem;
 			border-radius:24rem;
@@ -323,13 +323,13 @@
 			box-shadow:.1rem .5rem .4rem var(--color4);
 		}
 		
-		#section-B {
+		.section-B {
 		}
-			#section-B article {
+			.section-B article {
 				padding:2rem 4rem 2rem 4rem;
 			}
 			
-			#section-B article ul li {
+			.section-B article ul li {
 				margin:3rem 0;
 				padding:1rem 0 1rem 2rem;
 				list-style:none;
@@ -367,7 +367,7 @@
 		padding:2rem 0 0 0;
 	}
 	
-	#section-A {
+	.section-A {
 		padding:0 0 0 0;
 	}
 	
@@ -375,7 +375,7 @@
 			display:flex;
 		}
 	
-		#section-A article {
+		.section-A article {
 			justify-content: center;
 			display:flex;
 			justify-content: space-evenly;
@@ -385,19 +385,19 @@
 			align-items:flex-end;
 		}
 	
-		#section-A article h1 {
+		.section-A article h1 {
 			text-transform: uppercase;
 			font-size: var(--font6);
 			margin:4rem 0;
 			line-height: 1;
 		}
 		
-		#section-A article p {
+		.section-A article p {
 			font-size:var(--font2);
 			line-height: 1.6;
 		}
 	
-		#figure-IMG {
+		.figure-IMG {
 			height:15rem;
 			width:15rem;
 			border-radius:24rem;
@@ -405,13 +405,13 @@
 			box-shadow:.1rem .5rem .4rem var(--color4);
 		}
 		
-		#section-B {
+		.section-B {
 		}
-			#section-B article {
+			.section-B article {
 				padding:2rem 4rem 2rem 4rem;
 			}
 			
-			#section-B article ul li {
+			.section-B article ul li {
 				margin:3rem 0;
 				padding:1rem 0 1rem 2rem;
 				list-style:none;
@@ -442,7 +442,7 @@
 		height: 100%;
 	}
 	
-	#section-A, #section-B {
+	.section-A, .section-B {
 		padding:12rem 0 0 0;
 	}
 	
@@ -450,7 +450,7 @@
 			display:flex;
 		}
 	
-		#section-A article {
+		.section-A article {
 			justify-content: flex-start;
 			display:flex;
 			flex-direction:column;
@@ -459,19 +459,19 @@
 			align-items:flex-end;
 		}
 	
-		#section-A article h1 {
+		.section-A article h1 {
 			text-transform: uppercase;
 			font-size: var(--font7);
 			margin:6rem 0;
 			line-height: 1;
 		}
 		
-		#section-A article p {
+		.section-A article p {
 			font-size:var(--font2);
 			line-height: 1.6;
 		}
 	
-		#figure-IMG {
+		.figure-IMG {
 			height:20rem;
 			width:20rem;
 			border-radius:24rem;
@@ -479,20 +479,20 @@
 			box-shadow:.1rem .5rem .4rem var(--color4);
 		}
 		
-		#section-B {
+		.section-B {
 			display:flex;
 		}
-			#section-B article {
+			.section-B article {
 				padding:2rem 12rem 2rem 12rem;
 			}
 			
-				#section-B article ul {
+				.section-B article ul {
 					display:flex;
 					flex-direction:column;
 					
 				}
 				
-				#section-B article ul li {
+				.section-B article ul li {
 					margin:3rem 0;
 					padding:1rem 0 1rem 2rem;
 					list-style:none;
@@ -519,3 +519,4 @@
 
 
 
+		
