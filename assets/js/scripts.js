@@ -1,22 +1,19 @@
+let navMenuBar = document.getElementById('navMenuBar')
 let openNavBtn = document.getElementById('openNavBtn')
-let navMenu = document.getElementById('navMenuBar')
 let closeNavBtn = document.getElementById('closeNavBtn')
 
-openNavBtn.addEventListener('click', openNavMenu)
+let openBtn = openNavBtn.addEventListener('click', openNavMenu)
+let closeBtn = closeNavBtn.addEventListener('click', closeNavMenu)
 
 function openNavMenu() {
-	event.preventDefault()
-	navMenu.style.marginLeft = '0'
-	console.log("Opening Navigation")	
-	// return false;
+		event.preventDefault()
+		navMenuBar.style.marginLeft = '0'
+		console.log("Opening Sidebar")	
 }
-
-closeNavBtn.addEventListener('click', closeNavMenu)
-
+	
 function closeNavMenu() {
 	event.preventDefault()
-	navMenu.style.marginLeft = '-15rem'
-	console.log("Closing Navigation")
+	navMenuBar.style.marginLeft = '-15rem'
+	console.log("Closing Sidebar")
 }
-
 

@@ -156,7 +156,7 @@ a {
 							z-index: 1;
 							padding:2rem 0 0 0;
 							background-color: var(--color5);
-							transition: 0.5s;
+							transition: 0.3s;
 							display:flex;
 							flex-direction:column;
 						}
