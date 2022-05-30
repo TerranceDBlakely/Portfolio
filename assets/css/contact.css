@@ -86,12 +86,20 @@
 		.section-B {
 			display:flex;
 			justify-content:center;
+			width:100%;
 		}
-			.section-B article ul {
-				
+			.section-B article {
+				width: 100%;
 			}
+		
+			.section-B article ul {
+				width:100%;
+			}
+
+			
 			
 			.section-B article ul li {
+				width:100%;
 				margin:3rem 0;
 				padding:1rem 0 1rem 2rem;
 				list-style:none;
