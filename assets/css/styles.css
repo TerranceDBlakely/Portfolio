@@ -64,7 +64,7 @@ header {
 	padding:2rem 0;
 }
 
-#section-B {
+.section-B {
 	background-color:var(--colorX);
 }
 
@@ -213,32 +213,32 @@ a {
 							background-color:#222222;
 						}
 						
-					#section-B {
+					.section-B {
 						padding: 2rem 2rem 4rem 2rem;
 					}
-						#section-B article {
+						.section-B article {
 							display:flex;
 							flex-direction:column;
 						}
 						
-							#section-B article hgroup {
+							.section-B article hgroup {
 								line-height:2;
 								text-transform:uppercase;
 								padding: 1rem 0;
 							}
 							
-								#section-B article hgroup h1 {
+								.section-B article hgroup h1 {
 									font-size:var(--font1);
 									font-weight: var(--font-weight2);
 								}
 								
-								#section-B article hgroup h3 {
+								.section-B article hgroup h3 {
 									letter-spacing: .3rem;
 									font-size:var(--font0);
 									font-weight: var(--font-weight1);
 								}
 								
-								#section-B article p {
+								.section-B article p {
 									font-size: var(--font0);
 									line-height: 1.6;
 								}
@@ -374,29 +374,29 @@ a {
 							background-color: #222222;
 						}				 
 					
-					#section-B {
+					.section-B {
 						padding:4rem 0;
 					}
 
-						#section-B article {
+						.section-B article {
 							padding:0 8rem;
 							line-height: 2;
 						}
 
-						#section-B article hgroup {
+						.section-B article hgroup {
 							line-height: 2;
 							padding:2rem 0;
 							text-transform: uppercase;
 						}
 
-							#section-B article hgroup h1 {
+							.section-B article hgroup h1 {
 								font-size:var(--font2);
 							}
-							#section-B article hgroup h3 {
+							.section-B article hgroup h3 {
 
 							}
 
-							#section-B article p {
+							.section-B article p {
 								font-size:var(--font0);
 							}
 			
@@ -532,14 +532,14 @@ a {
 						height:70vh;
 					}
 				
-				#section-B {
+				.section-B {
 					display:flex;
 					flex-direction:column;
 					text-align: center;
 					padding: 5rem 0;
 				}
 				
-					#section-B article {
+					.section-B article {
 						padding: 0 5.5rem;
 					}
 				
@@ -548,7 +548,7 @@ a {
 						text-transform:uppercase;
 						}
 					
-						#section-B h1 {
+						.section-B h1 {
 							font-size:var(--font3);
 							margin: 2rem 0;
 							font-weight:var(--font-weight2);
@@ -557,12 +557,12 @@ a {
 							
 						}	
 						
-						#section-B article hgroup h3 {
+						.section-B article hgroup h3 {
 							text-transform:uppercase;
 							letter-spacing: .3rem;							
 						}
 					
-						#section-B p {
+						.section-B p {
 							line-height: 1.8;
 							padding:8rem 0 0 0;
 							font-size:var(--font1);		
@@ -710,12 +710,12 @@ a {
 						height:62rem;
 					}
 				
-				#section-B {
+				.section-B {
 					display:flex;
 					flex-direction:column;
 				}
 				
-					#section-B article {
+					.section-B article {
 						padding: 0 5.5rem;
 					}
 				
@@ -724,7 +724,7 @@ a {
 						text-transform:uppercase;
 						}
 					
-						#section-B h1 {
+						.section-B h1 {
 							font-size:var(--font3);
 							margin: 2rem 0;
 							font-weight:var(--font-weight2);
@@ -732,12 +732,12 @@ a {
 							line-height: 1.5;
 						}	
 						
-						#section-B article hgroup h3 {
+						.section-B article hgroup h3 {
 							text-transform:uppercase;
 							letter-spacing: .3rem;							
 						}
 					
-						#section-B p {
+						.section-B p {
 							line-height: 1.8;
 							padding:8rem 0 0 0;
 							font-size:var(--font1);		
@@ -884,12 +884,12 @@ a {
 						height:82rem;
 					}
 				
-				#section-B {
+				.section-B {
 					display:flex;
 					flex-direction:column;
 				}
 				
-					#section-B article {
+					.section-B article {
 						padding: 0 8rem;
 						text-align: left;
 					}
@@ -899,7 +899,7 @@ a {
 						text-transform:uppercase;
 						}
 					
-						#section-B h1 {
+						.section-B h1 {
 							font-size:var(--font4);
 							margin: 2rem 0;
 							font-weight:var(--font-weight2);
@@ -907,12 +907,12 @@ a {
 							line-height: 1.5;
 						}	
 						
-						#section-B article hgroup h3 {
+						.section-B article hgroup h3 {
 							text-transform:uppercase;
 							letter-spacing: .3rem;							
 						}
 					
-						#section-B p {
+						.section-B p {
 							line-height: 2;
 							padding:8rem 0 0 0;
 							font-size:var(--font2);

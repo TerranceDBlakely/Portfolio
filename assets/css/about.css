@@ -15,7 +15,7 @@ aside ul li:hover {
 		font-weight:var(--font-weight1);
 	}
 
-#section-B article hgroup h3 {
+.section-B article hgroup h3 {
 		color:var(--color4);
 }
 	
@@ -38,7 +38,7 @@ aside ul li:hover {
 		flex-direction:row;
 	}
 	
-	#section-B article {
+	.section-B article {
 		height:100%;
 		display:flex;
 		margin:0;
@@ -48,28 +48,28 @@ aside ul li:hover {
 		padding:3rem 4rem;
 	}
 	
-	#section-B article hgroup {
+	.section-B article hgroup {
 		margin:0 0;
 		line-height: 3;
 	}
 	
-	#section-B article hgroup h1 {
+	.section-B article hgroup h1 {
 		margin:0;
 		font-size:var(--font4);
 	}
 	
-	#section-B article hgroup h3 {
+	.section-B article hgroup h3 {
 		font-size:var(--font1);
 	}
 	
-	#section-B article p {
+	.section-B article p {
 		margin-top:2rem;
 		font-size:var(--font1);
 		padding:0 0;
 		line-height:1.5;
 	}
 	
-	#section-B article hgroup h3 {
+	.section-B article hgroup h3 {
 		color:var(--color4);	
 	}
 }

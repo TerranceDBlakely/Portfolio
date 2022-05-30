@@ -41,7 +41,7 @@ aside ul li:hover {
 		flex-direction:row;
 	}
 	
-	#section-B article {
+	.section-B article {
 		height:100%;
 		display:flex;
 		flex-direction:column;
@@ -62,11 +62,11 @@ aside ul li:hover {
 		font-weight:var(--font-weight1);
 	}
 	
-	#section-B article p {
+	.section-B article p {
 		padding:0 0;
 	}
 	
-	#section-B article hgroup h3 {
+	.section-B article hgroup h3 {
 		color:var(--color4);	
 	}
 }
@@ -76,7 +76,7 @@ aside ul li:hover {
 		flex-direction:row;
 	}
 	
-	#section-B article {
+	.section-B article {
 		height:100%;
 		display:flex;
 		flex-direction:column;
@@ -97,11 +97,11 @@ aside ul li:hover {
 		font-weight:var(--font-weight1);
 	}
 	
-	#section-B article p {
+	.section-B article p {
 		padding:0 0;
 	}
 	
-	#section-B article hgroup h3 {
+	.section-B article hgroup h3 {
 		color:var(--color4);	
 	}
 }
@@ -111,7 +111,7 @@ aside ul li:hover {
 		flex-direction:row;
 	}
 	
-	#section-B article {
+	.section-B article {
 		height:100%;
 		display:flex;
 		flex-direction:column;
@@ -133,11 +133,11 @@ aside ul li:hover {
 		font-size: 2rem;	
 	}
 	
-	#section-B article p {
+	.section-B article p {
 		padding:0 0;
 	}
 	
-	#section-B article hgroup h3 {
+	.section-B article hgroup h3 {
 		color:var(--color4);	
 	}
 }
@@ -147,7 +147,7 @@ aside ul li:hover {
 		flex-direction:row;
 	}
 	
-	#section-B article {
+	.section-B article {
 		height:100%;
 		display:flex;
 		flex-direction:column;
@@ -168,11 +168,11 @@ aside ul li:hover {
 		font-weight:var(--font-weight1);
 	}
 	
-	#section-B article p {
+	.section-B article p {
 		padding:0 0;
 	}
 	
-	#section-B article hgroup h3 {
+	.section-B article hgroup h3 {
 		color:var(--color4);	
 	}
 }
@@ -182,7 +182,7 @@ aside ul li:hover {
 		flex-direction:row;
 	}
 	
-	#section-B article {
+	.section-B article {
 		height:100%;
 		display:flex;
 		flex-direction:column;
@@ -204,11 +204,11 @@ aside ul li:hover {
 		font-size: 2rem;	
 	}
 	
-	#section-B article p {
+	.section-B article p {
 		padding:0 0;
 	}
 	
-	#section-B article hgroup h3 {
+	.section-B article hgroup h3 {
 		color:var(--color4);	
 	}
 }
