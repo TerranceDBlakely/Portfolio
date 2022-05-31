@@ -124,6 +124,20 @@ a {
 						background-image:url("../images/Logo-1.PNG");
 						background-size:cover;
 					}
+					.navMenu {
+							height:100%;
+							width:15rem;
+							position:fixed;
+							top:0;
+							left:0;
+							margin-left:-15rem;
+							z-index: 1;
+							padding:2rem 0 0 0;
+							background-color: var(--color5);
+							transition: 0.3s;
+							display:flex;
+							flex-direction:column;
+						}
 					
 					.navMenuIcon {
 						height:3rem;
@@ -145,51 +159,35 @@ a {
 						right:0;
 						margin:2rem 2rem 0 0;
 					}
-				
-						.navMenu {
-							height:100vh;
-							width:15rem;
-							position:fixed;
-							top:0;
-							left:0;
-							margin-left:-15rem;
-							z-index: 1;
-							padding:2rem 0 0 0;
-							background-color: var(--color5);
-							transition: 0.3s;
-							display:flex;
-							flex-direction:column;
-						}
 
-							.navMenu li {
-								list-style: none;
-								text-align: right;
-								margin:0 auto;
-							}
-							.navMenu li a {
-								font-size:var(--font0);
-								list-style: none;
-								text-transform:uppercase;
-								margin:0;
-								color:var(--color2);	
-								line-height: 3;			
-								padding:0;		
-								
-							}
-							
-								.navMenu li a:hover {
-									color:var(--color1);
-									border-bottom: 1px solid var(--color2);
-									padding-bottom:1rem;
-								}
-							
-							.navMenu li .innerNav-logo {
-									height:4rem;
-									width:4rem;
-									margin:4rem auto 2rem auto;
-									background-image:url("../images/Logo-1.PNG");
-									background-size:cover;
-							}
+					.navMenu li {
+						list-style: none;
+						text-align: right;
+						margin:0 auto;
+					}
+					.navMenu li a {
+						font-size:var(--font0);
+						list-style: none;
+						text-transform:uppercase;
+						margin:0;
+						color:var(--color2);	
+						line-height: 3;			
+						padding:0;										
+					}
+					
+						.navMenu li a:hover {
+							color:var(--color1);
+							border-bottom: 1px solid var(--color2);
+							padding-bottom:1rem;
+						}
+					
+					.navMenu li .innerNav-logo {
+							height:4rem;
+							width:4rem;
+							margin:4rem auto 2rem auto;
+							background-image:url("../images/Logo-1.PNG");
+							background-size:cover;
+					}
 									
 						
 			#wrapper {
@@ -337,19 +335,61 @@ a {
 						right:2.5rem;
 					}
 					
-					#navigation-Menu li:hover {
-						background-color:var(--colorG2);						
+					.navMenu {
+							height:100%;
+							width:15rem;
+							position:fixed;
+							top:0;
+							left:0;
+							margin-left:-15rem;
+							z-index: 1;
+							padding:2rem 0 0 0;
+							background-color: var(--color5);
+							transition: 0.3s;
+							display:flex;
+							flex-direction:column;
+						}
+						
+						.closeNavBtn {
+						height:2rem;
+						width:2rem;
+						background-image:url("../images/Nav-Menu.PNG");
+						background-size:cover;
+						position:absolute;
+						top:0;
+						right:0;
+						margin:2rem 2rem 0 0;
+					}
+
+					.navMenu li {
+						list-style: none;
+						text-align: right;
+						margin:0 auto;
+					}
+					.navMenu li a {
+						font-size:var(--font0);
+						list-style: none;
+						text-transform:uppercase;
+						margin:0;
+						color:var(--color2);	
+						line-height: 3;			
+						padding:0;										
 					}
 					
-						#navigatiion-Menu li a {
-							color: var(--colorW);
+						.navMenu li a:hover {
+							color:var(--color1);
+							border-bottom: 1px solid var(--color2);
+							padding-bottom:1rem;
 						}
-				
-						.navMenu {
-							display:none;
+					
+					.navMenu li .innerNav-logo {
+							height:4rem;
+							width:4rem;
+							margin:4rem auto 2rem auto;
+							background-image:url("../images/Logo-1.PNG");
+							background-size:cover;
 						}
-						
-						
+					
 			.page-Sections {
 
 			}
@@ -488,36 +528,77 @@ a {
 		}
 		
 			.logo {
-						height:8rem;
-						width:8rem;
-						background-image:url("../images/Logo-1.PNG");
-						background-size:cover;
-						margin-left:8rem;
-					}
-
-					.navMenu {
-						display:none;
-					}
-					
-					.navMenuIcon {
-						height:3rem;
-						width:3rem;
+				height:8rem;
+				width:8rem;
+				background-image:url("../images/Logo-1.PNG");
+				background-size:cover;
+				margin-left:8rem;
+			}
+				.navMenuIcon {
+					height:3rem;
+					width:3rem;
+					background-image:url("../images/Nav-Menu.PNG");
+					background-size:cover;
+					position:absolute;
+					top:5rem;
+					right:8rem;
+				}
+				
+				.navMenu {
+					height:100%;
+					width:30rem;
+					position:fixed;
+					top:0;
+					left:0;
+					margin-left:-30rem;
+					z-index: 1;
+					padding:2rem 0 0 0;
+					background-color: var(--color5);
+					transition: 0.3s;
+					display:flex;
+					flex-direction:column;
+				}
+				
+				.closeNavBtn {
+						height:4rem;
+						width:4rem;
 						background-image:url("../images/Nav-Menu.PNG");
 						background-size:cover;
 						position:absolute;
-						top:5rem;
-						right:8rem;
+						top:0;
+						right:0;
+						margin:3rem 3rem 0 0;
+					}
+
+					.navMenu li {
+						list-style: none;
+						text-align: right;
+						margin:0 auto;
+					}
+					.navMenu li a {
+						font-size:var(--font2);
+						list-style: none;
+						text-transform:uppercase;
+						margin:0;
+						color:var(--color2);	
+						line-height: 3;			
+						padding:0;										
 					}
 					
-					#navigation-Menu li:hover {
-						background-color:var(--colorG2);						
-					}
+						.navMenu li a:hover {
+							color:var(--color1);
+							border-bottom: 1px solid var(--color2);
+							padding-bottom:1rem;
+						}
 					
-						#navigatiion-Menu li a {
-							color: var(--colorW);
+					.navMenu li .innerNav-logo {
+							height:6rem;
+							width:6rem;
+							margin:4rem auto 2rem auto;
+							background-image:url("../images/Logo-1.PNG");
+							background-size:cover;
 						}
 				
-		
 			.sections {
 				flex:1;
 			}
@@ -862,12 +943,16 @@ a {
 					font-weight:var(--font-weight2);
 					letter-spacing: .1rem;
 					text-transform: uppercase;
+					
 				}
-				
+			
 				.navMenu li a:hover {
-					color:var(--color4);
+					background-color:rgb(40,40,40, .8);
 					border-bottom:.2rem solid var(--color5);
-					padding-bottom: 1rem;
+					padding: 1rem 2rem 2rem 2rem;
+					border-radius: .5rem;
+					color:var(--color1);
+					
 				}
 		
 			.sections {

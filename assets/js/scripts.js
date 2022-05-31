@@ -13,7 +13,7 @@ function openNavMenu() {
 	
 function closeNavMenu() {
 	event.preventDefault()
-	navMenuBar.style.marginLeft = '-15rem'
+	navMenuBar.style.marginLeft = '-30rem'
 	console.log("Closing Sidebar")
 }
 

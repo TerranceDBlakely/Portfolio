@@ -4,30 +4,6 @@
 	display:flex;
 	flex-direction:row;
 }
-
-	#twitter-Contact {
-		background-color:#999999;
-	}
-	
-	#facebook-Contact {
-		background-color:#888888;
-	}
-	
-	#email-Contact {
-		background-color:#777777;
-	}
-	
-	#github-Contact {
-		background-color:#666666;
-	}
-	
-	#linkin-Contact {
-		background-color:#555555;
-	}
-	
-	#instagram-Contact {
-		background-color:#444444;
-	}
 	
 	.section-B article ul li:hover {
 		color: var(--color2);
@@ -42,7 +18,7 @@
 		padding:2rem 1rem 0 1rem;
 		display:flex;
 		flex-direction:column;
-		
+
 	}
 	
 	.section-A {
@@ -95,17 +71,15 @@
 			.section-B article ul {
 				width:100%;
 			}
-
-			
 			
 			.section-B article ul li {
 				width:100%;
-				margin:3rem 0;
-				padding:1rem 0 1rem 2rem;
+				margin:1.5rem 0;
+				padding:.5rem 0 .5rem 1rem;
 				list-style:none;
-				line-height:3;
+				line-height:1;
 				font-size:var(--font1);
-				background-color:#000000;
+				background-color:var(--color5);
 				color:var(--color1);	
 				box-shadow:0 .7rem .5rem var(--color4);
 				display:flex;
