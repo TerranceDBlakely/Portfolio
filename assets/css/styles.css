@@ -90,6 +90,11 @@ a {
 	cursor: pointer;
 }
 
+#pageContainer {
+	transition: margin-left .5s;
+}
+
+
 /* - GLOBAL- ID's, Classes -------------------------------------------*/
 
 
@@ -107,7 +112,7 @@ a {
 		height:100%;
 	}
 	
-		#page-Container {
+		#pageContainer {
 			height:100%;
 			padding:2rem 2rem;
 		}
@@ -124,20 +129,6 @@ a {
 						background-image:url("../images/Logo-1.PNG");
 						background-size:cover;
 					}
-					.navMenu {
-							height:100%;
-							width:15rem;
-							position:fixed;
-							top:0;
-							left:0;
-							margin-left:-15rem;
-							z-index: 1;
-							padding:2rem 0 0 0;
-							background-color: var(--color5);
-							transition: 0.3s;
-							display:flex;
-							flex-direction:column;
-						}
 					
 					.navMenuIcon {
 						height:3rem;
@@ -147,55 +138,69 @@ a {
 						position:absolute;
 						top:4rem;
 						right:2.5rem;
-					}
+					}				
 					
-					.closeNavBtn {
-						height:2rem;
-						width:2rem;
-						background-image:url("../images/Nav-Menu.PNG");
-						background-size:cover;
-						position:absolute;
+					.navMenu {
+						height:100%;
+						width:15rem;
+						position:fixed;
 						top:0;
-						right:0;
-						margin:2rem 2rem 0 0;
-					}
-
-					.navMenu li {
-						list-style: none;
-						text-align: right;
-						margin:0 auto;
-					}
-					.navMenu li a {
-						font-size:var(--font0);
-						list-style: none;
-						text-transform:uppercase;
-						margin:0;
-						color:var(--color2);	
-						line-height: 3;			
-						padding:0;										
+						left:0;
+						z-index: 1;
+						padding:2rem 0 0 0;
+						background-color: var(--color5);
+						transition: 0.3s;
+						display:flex;
+						flex-direction:column;
 					}
 					
-						.navMenu li a:hover {
-							color:var(--color1);
-							border-bottom: 1px solid var(--color2);
-							padding-bottom:1rem;
-						}
-					
-					.navMenu li .innerNav-logo {
-							height:4rem;
-							width:4rem;
-							margin:4rem auto 2rem auto;
-							background-image:url("../images/Logo-1.PNG");
+						.closeNavBtn {
+							height:2rem;
+							width:2rem;
+							background-image:url("../images/Nav-Menu.PNG");
 							background-size:cover;
-					}
-									
+							position:absolute;
+							top:0;
+							right:0;
+							margin:2rem 2rem 0 0;
+						}
+						
+						.navMenu li {
+							list-style: none;
+							text-align: right;
+							margin:0 auto;
+						}
+						.navMenu li a {
+							font-size:var(--font0);
+							list-style: none;
+							text-transform:uppercase;
+							margin:0;
+							color:var(--color2);	
+							line-height: 3;			
+							padding:0;										
+						}
+						
+							.navMenu li a:hover {
+								color:var(--color1);
+								border-bottom: 1px solid var(--color2);
+								padding-bottom:1rem;
+							}
+						
+						.navMenu li .innerNav-logo {
+								height:4rem;
+								width:4rem;
+								margin:4rem auto 2rem auto;
+								background-image:url("../images/Logo-1.PNG");
+								background-size:cover;
+						}
+
+					
 						
 			#wrapper {
 				text-align:center;
 				padding:1rem 0 0 0;
 				display:flex;
 				flex-direction:column;
-				transition: margin-left .5s;
 			}
 						
 				.sections {
@@ -307,7 +312,7 @@ a {
 		height:100%;
 	}
 	
-		#page-Container {
+		#pageContainer {
 			height:100%;
 			padding:2rem 2rem;
 		}
@@ -336,21 +341,20 @@ a {
 					}
 					
 					.navMenu {
-							height:100%;
-							width:15rem;
-							position:fixed;
-							top:0;
-							left:0;
-							margin-left:-15rem;
-							z-index: 1;
-							padding:2rem 0 0 0;
-							background-color: var(--color5);
-							transition: 0.3s;
-							display:flex;
-							flex-direction:column;
-						}
-						
-						.closeNavBtn {
+					height:100%;
+					width:15rem;
+					position:fixed;
+					top:0;
+					left:0;
+					z-index: 1;
+					padding:2rem 0 0 0;
+					background-color: var(--color5);
+					transition: 0.3s;
+					display:flex;
+					flex-direction:column;
+				}
+				
+					.closeNavBtn {
 						height:2rem;
 						width:2rem;
 						background-image:url("../images/Nav-Menu.PNG");
@@ -360,7 +364,7 @@ a {
 						right:0;
 						margin:2rem 2rem 0 0;
 					}
-
+					
 					.navMenu li {
 						list-style: none;
 						text-align: right;
@@ -509,7 +513,7 @@ a {
 		height:100%;
 	}
 	
-		#page-Container {
+		#pageContainer {
 			width:100%;
 			height: 100%;
 		}
@@ -546,11 +550,10 @@ a {
 				
 				.navMenu {
 					height:100%;
-					width:30rem;
+					width:15rem;
 					position:fixed;
 					top:0;
 					left:0;
-					margin-left:-30rem;
 					z-index: 1;
 					padding:2rem 0 0 0;
 					background-color: var(--color5);
@@ -559,24 +562,24 @@ a {
 					flex-direction:column;
 				}
 				
-				.closeNavBtn {
-						height:4rem;
-						width:4rem;
+					.closeNavBtn {
+						height:2rem;
+						width:2rem;
 						background-image:url("../images/Nav-Menu.PNG");
 						background-size:cover;
 						position:absolute;
 						top:0;
 						right:0;
-						margin:3rem 3rem 0 0;
+						margin:2rem 2rem 0 0;
 					}
-
+					
 					.navMenu li {
 						list-style: none;
 						text-align: right;
 						margin:0 auto;
 					}
 					.navMenu li a {
-						font-size:var(--font2);
+						font-size:var(--font0);
 						list-style: none;
 						text-transform:uppercase;
 						margin:0;
@@ -592,8 +595,8 @@ a {
 						}
 					
 					.navMenu li .innerNav-logo {
-							height:6rem;
-							width:6rem;
+							height:4rem;
+							width:4rem;
 							margin:4rem auto 2rem auto;
 							background-image:url("../images/Logo-1.PNG");
 							background-size:cover;
@@ -721,7 +724,7 @@ a {
 			justify-content:center;
 		}
 	
-	#page-Container {
+	#pageContainer {
 		width:80%;
 		height: 100%
 	}
@@ -753,14 +756,6 @@ a {
 			}
 			
 				.navMenuIcon {
-				min-height:3rem;
-				min-width:3rem;
-				background-image: url('../images/Nav-Menu.PNG');
-				background-size: contain;
-				position: absolute;
-				top:6rem;
-				right:20rem;
-				z-index: 1;
 				display:none;
 			}
 			
@@ -893,7 +888,7 @@ a {
 			justify-content:center;
 	}
 	
-	#page-Container {
+	#pageContainer {
 		width:80%;
 		height: 100%
 	}
@@ -924,19 +919,7 @@ a {
 				display:flex;
 			}
 			
-				.navMenuIcon {
-				min-height:3rem;
-				min-width:3rem;
-				background-image: url('../images/Nav-Menu.PNG');
-				background-size: contain;
-				position: absolute;
-				top:6rem;
-				right:20rem;
-				z-index: 1;
-				display:none;
-			}
-			
-				.navMenu li {
+			.navMenu li {
 					list-style:none;
 					font-size:var(--font0);
 					margin:0 0 0 2rem;
@@ -952,7 +935,6 @@ a {
 					padding: 1rem 2rem 2rem 2rem;
 					border-radius: .5rem;
 					color:var(--color1);
-					
 				}
 		
 			.sections {
