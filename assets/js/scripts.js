@@ -1,32 +1,33 @@
+// Navigation Script 
 let navMenuBar = document.getElementById('navMenuBar')
-let openNavBtn = document.getElementById('openNavBtn').addEventListener('click', openNavMenu)
-let closeNavBtn = document.getElementById('closeNavBtn').addEventListener('click', closeNavMenu)
+let openNavBtn = document.getElementById('openNavBtn')
+let closeNavBtn = document.getElementById('closeNavBtn')
 let pageContainer = document.getElementById('pageContainer')
 
-// 1
-// - 
 
-// 2
-// - If the navbar open
-// - Then make the openNavBtn not display itself
-navMenuBar.style.marginLeft = '-15rem'
+navMenuBar.style.marginLeft = '-25rem'
 
-function openNavMenu() {
-		event.preventDefault()
-		navMenuBar.style.marginLeft = '0'
-		// pageContainer.style.marginLeft = '15rem'
-		console.log("Opening Sidebar")	
-}
-	
-function closeNavMenu() {
+
+openNavBtn.addEventListener('click', openNavigationBar, false)
+
+function openNavigationBar() {
+	navMenuBar.style.marginLeft = '0'
 	event.preventDefault()
-	navMenuBar.style.marginLeft = '-15rem'
-	// pageContainer.style.marginLeft = '0'
-	console.log("Closing Sidebar")
+	pageContainer.style.marginLeft = '15rem'
 }
 
-// if (navMenuBar.style.width = '30rem') {
-// 	console.log('Your Menu is not showing right now')
-// } else
+closeNavBtn.addEventListener('click', closeNavigationBar, false)
+
+function closeNavigationBar() {
+	navMenuBar.style.marginLeft = '-25rem'
+	event.preventDefault()
+	pageContainer.style.marginLeft = '0'
+}
+
+
+
+
+
+
 
 

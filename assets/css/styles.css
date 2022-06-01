@@ -94,6 +94,15 @@ a {
 	transition: margin-left .5s;
 }
 
+.navMenu {
+	z-index: 99;
+}
+
+p {
+	
+}
+
+
 
 /* - GLOBAL- ID's, Classes -------------------------------------------*/
 
@@ -142,12 +151,10 @@ a {
 					
 					.navMenu {
 						height:100%;
-						width:15rem;
 						position:fixed;
 						top:0;
 						left:0;
-						z-index: 1;
-						padding:2rem 0 0 0;
+						padding:2rem 2rem;
 						background-color: var(--color5);
 						transition: 0.3s;
 						display:flex;
@@ -341,17 +348,16 @@ a {
 					}
 					
 					.navMenu {
-					height:100%;
-					width:15rem;
-					position:fixed;
-					top:0;
-					left:0;
-					z-index: 1;
-					padding:2rem 0 0 0;
-					background-color: var(--color5);
-					transition: 0.3s;
-					display:flex;
-					flex-direction:column;
+						height:100%;
+						position:fixed;
+						top:0;
+						left:0;
+						z-index: 1;
+						padding:2rem 2rem;
+						background-color: var(--color5);
+						transition: 0.3s;
+						display:flex;
+						flex-direction:column;
 				}
 				
 					.closeNavBtn {
@@ -548,30 +554,29 @@ a {
 					right:8rem;
 				}
 				
+				.closeNavBtn {
+					height:4rem;
+					width:4rem;
+					background-image:url("../images/Nav-Menu.PNG");
+					background-size:cover;
+					position:absolute;
+					top:0;
+					right:0;
+					margin:2rem 2rem 0 0;
+					}
+				
 				.navMenu {
 					height:100%;
-					width:15rem;
 					position:fixed;
 					top:0;
 					left:0;
 					z-index: 1;
-					padding:2rem 0 0 0;
+					padding:4rem 4rem;
 					background-color: var(--color5);
 					transition: 0.3s;
 					display:flex;
 					flex-direction:column;
 				}
-				
-					.closeNavBtn {
-						height:2rem;
-						width:2rem;
-						background-image:url("../images/Nav-Menu.PNG");
-						background-size:cover;
-						position:absolute;
-						top:0;
-						right:0;
-						margin:2rem 2rem 0 0;
-					}
 					
 					.navMenu li {
 						list-style: none;
@@ -579,12 +584,12 @@ a {
 						margin:0 auto;
 					}
 					.navMenu li a {
-						font-size:var(--font0);
+						font-size:var(--font2);
 						list-style: none;
 						text-transform:uppercase;
 						margin:0;
 						color:var(--color2);	
-						line-height: 3;			
+						line-height: 2;			
 						padding:0;										
 					}
 					
@@ -595,9 +600,9 @@ a {
 						}
 					
 					.navMenu li .innerNav-logo {
-							height:4rem;
-							width:4rem;
-							margin:4rem auto 2rem auto;
+							height:6rem;
+							width:6rem;
+							margin:2rem auto;
 							background-image:url("../images/Logo-1.PNG");
 							background-size:cover;
 						}
