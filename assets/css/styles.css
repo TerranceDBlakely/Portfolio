@@ -160,7 +160,6 @@ p {
 						transition: 0.3s;
 						display:flex;
 						flex-direction:column;
-						display:none;
 					}
 					
 						.closeNavBtn {
