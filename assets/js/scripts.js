@@ -2,65 +2,13 @@
 
 let navMenuBar = document.getElementById('navMenuBar')
 let openNavBtn = document.getElementById('openNavBtn')
-let closeNavBtn = document.getElementById('closeNavBtn')
 
+function toggleNavigationMenu() {
+	if(navMenuBar.className = 'navMenu'){
+			navMenuBar.className = 'navMenuClosed'
+			console.log('nav menu has changed to "NavMenuClosed" ')
+		}
+}
 
-let closed = navMenuBar.style.display = 'none'
-
-openNavBtn.addEventListener('click', openMenu(){
-	let open = navMenuBar.style.diplay = 'block'
-}, false)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+openNavBtn.addEventListener('click', toggleNavigationMenu, false)
 
