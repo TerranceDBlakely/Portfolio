@@ -160,14 +160,15 @@ p {
 						transition: 0.3s;
 						display:flex;
 						flex-direction:column;
+						/*margin-left:-20rem;*/
 					}
-						.navMenuClosed {
+						/*.navMenuClosed {
 							margin-left:-20rem;	
 						}
 						
 						.navMenuOpen {
 							margin-left:0;
-						}
+						}*/
 					
 						.closeNavBtn {
 							height:2rem;
