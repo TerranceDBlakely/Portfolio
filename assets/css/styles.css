@@ -240,55 +240,41 @@ header {
 	
 	/* RECENT WORKS CONTAINER */
 	.recentWorksContainer {
-		display:flex;
+		/*display:flex;*/
 		width:100%;
 		background-color:var(--color4);
+		padding:4rem 0;
 	}
-	
-	.recentworkSections {
-		flex:1;
-	}
-	
+		
 		/* RECENT WORK SECTION HEADERS  */
-			.section1Header,.section2Header {
+			.sectionHeader {
 				text-align: center;
 				padding:2rem 0;
 				text-transform: lowercase;
 				letter-spacing: 2px;
 				font-weight:lighter;
+				
 			}
 		
-		/* RECENT WORK SECTION 1 */	
-			.section1Container {
+		/* RECENT WORK SECTION */	
+			.projectContainer {
+			}
+			
+			/* PROJECTS */
+			.projectList {
 				display:flex;
-				flex-wrap:wrap;
-				row-gap:2rem;
-				padding:2rem 2rem;
-				justify-content: space-between;
+				flex-direction:column;
 			}
 			
-				.websites {
+				.projects {
 					background-color:var(--color5);
-					min-height: 5rem;
-					min-width:10rem;
+					min-height: 10rem;
+					min-width:60rem;
 					color:var(--color1);
+					border-radius: 1rem;
+					list-style: none;
 				}
-			
-		/* RECENT WORK SECTION 2 */
-		.section2Container {
-			display:flex;
-			flex-wrap:wrap;
-			row-gap:2rem;
-			padding:2rem 3rem;
-			justify-content:space-evenly;
-		}
-		
-			.webApps {
-				min-height: 8rem;
-				min-width: 6rem;
-				background-color:var(--color2);
-				margin:0 1rem;
-			}
+				
 /* ---------------------------------------------------------- */
 /* ABOUT SECTION */
 .about {
