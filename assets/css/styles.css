@@ -38,7 +38,6 @@
 	--color3: rgb(141, 62, 231);
 	--color4: grey;
 	--color5:rgb(55,55,55, .9);
-	--colorX:rgb(255,255,255, .2);
 
 /* WEBSITE COLORS - PALETTE */
 	--primaryColor:;
@@ -67,15 +66,8 @@ body {
 	height:100%;
 }
 
-header {		
-	padding:2rem 0;
-}
 
-.section-B {
-	background-color:var(--colorX);
-}
-
-#footer aside p span {
+footer aside p span {
 	color: var(--color4);
 }
 
@@ -124,6 +116,7 @@ header {
 	position: relative;
 	justify-content:space-between;
 	align-items:center;
+	padding:2rem 0;
 }
 
 	.logo {
@@ -156,16 +149,21 @@ header {
 			color:white;
 		}
 	
-/* Recent Work Headers */
+/* HEADERS */
 .headers {
 	font-size:var(--font3);
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: lighter;
 	padding:2rem 0;
-	margin:5rem 0;
+	margin:10rem 0;
 	background-color:var(--color2);
 	letter-spacing: 1rem;
+}
+
+/* PAGE SECTIONS */
+.page-Sections {
+	margin: 10rem 0;
 }
 
 /* ---------------------------------------------------------- */
@@ -183,12 +181,15 @@ header {
 		
 				.figure-IMG {
 					margin:0 auto 0 auto;
-					background-color:#111111;
 					height:62rem;
-					background-image: url("../images/FeatureImage1.JPG");
+					/*background-image: url("../images/FeatureImage1.JPG");*/
 					background-position: center;
 					background-size: cover;
-					
+					background-color:var(--color1);
+					display:flex;
+					align-items:center;
+					justify-content:center;
+					border-radius:2rem;
 				}
 				
 				.figure-IMG img {
@@ -242,6 +243,7 @@ header {
 	.recentWorksContainer {
 		/*display:flex;*/
 		width:100%;
+		border-radius:2rem;
 		background-color:var(--color4);
 		padding:4rem 0;
 	}
@@ -258,19 +260,24 @@ header {
 		
 		/* RECENT WORK SECTION */	
 			.projectContainer {
+				padding:0 2rem;
 			}
 			
 			/* PROJECTS */
 			.projectList {
 				display:flex;
-				flex-direction:column;
+				align-items:center;
+				justify-content:space-evenly;
 			}
 			
 				.projects {
-					background-color:var(--color5);
-					min-height: 10rem;
-					min-width:60rem;
-					color:var(--color1);
+					background-color:var(--color1);
+					display:flex;
+					align-items:center;
+					justify-content:center;
+					min-height: 15rem;
+					min-width:30%;
+					margin:2rem 0;
 					border-radius: 1rem;
 					list-style: none;
 				}
@@ -285,21 +292,25 @@ header {
 .aboutPhoto {
 	min-height:40rem;
 	max-width:100%;
-	background-image: url(../images/aboutPhoto.png);
+	/*background-image: url(../images/aboutPhoto.png);*/
+	background-color:var(--color1);
 	background-size: cover;
 	background-position: center;
 	margin-bottom: 4rem;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-radius:2rem;
 }
 
 .aboutParagraphs {
-	display:flex;
-	padding: 0 2rem;
+	padding: 0 8rem;
+	color:rgba(100,100,100, 1);
 }
 
 	.about p {
 		line-height: 2;
-		margin: 1.5rem 1rem;
-		font-size:1.4rem;
+		font-size:1.6rem;
 	}
 
 /* ---------------------------------------------------------- */	
@@ -311,25 +322,29 @@ header {
  .contact .contactPhoto {
 	min-height:45rem;
 	max-width:100%;
-	background-image: url(../images/contactPhoto.png);
+	/*background-image: url(../images/contactPhoto.png);*/
+	background-color:var(--color1);
 	background-size: cover;
 	background-position: center;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-radius:2rem;
 }
 
-/* ---------------------------------------------------------- */		
 /* FOOTER */
-#footer {
+footer {
 	padding:4rem 0;
 	line-height: 1.4;
 	display:flex;
 	justify-content:space-between;
 }
 	
-	#footer ul {
+	footer ul {
 		display:flex;
 	}
 	
-		#footer ul li {
+		footer ul li {
 			list-style:none;
 			margin: 0 2rem 0 0;
 		}
@@ -360,14 +375,14 @@ header {
 					background-image: url("../images/Logo-1.PNG");
 				}
 				
-	#footer aside {
+	footer aside {
 		display:flex;
 	}			
-		#footer aside p {
+		footer aside p {
 			font-size:var(--font0);
 			}	
 			
-			#footer aside p span {
+			footer aside p span {
 				margin: 0 0 0 1rem;
 			}
 
