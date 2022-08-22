@@ -56,7 +56,6 @@
 html {
 	font-size:62.5%;
 	height:100%;
-	background-color:var(--color2);
 }
 
 body {
@@ -157,7 +156,6 @@ header {
 	font-weight: lighter;
 	padding:2rem 0;
 	margin:10rem 0;
-	background-color:var(--color2);
 	letter-spacing: 1rem;
 }
 
@@ -185,7 +183,8 @@ header {
 					/*background-image: url("../images/FeatureImage1.JPG");*/
 					background-position: center;
 					background-size: cover;
-					background-color:var(--color1);
+					background-color:var(--color4);
+					color:white;
 					display:flex;
 					align-items:center;
 					justify-content:center;
@@ -200,7 +199,7 @@ header {
 			.section-B {
 				display:flex;
 				flex-direction:column;
-				text-align: right;
+				text-align: left;
 			}
 			
 				.section-B article {
@@ -241,10 +240,9 @@ header {
 	
 	/* RECENT WORKS CONTAINER */
 	.recentWorksContainer {
-		/*display:flex;*/
 		width:100%;
 		border-radius:2rem;
-		background-color:var(--color4);
+		background-color:var(--color2);
 		padding:4rem 0;
 	}
 		
@@ -271,7 +269,8 @@ header {
 			}
 			
 				.projects {
-					background-color:var(--color1);
+					background-color:var(--color4);
+					color:white;
 					display:flex;
 					align-items:center;
 					justify-content:center;
@@ -293,7 +292,7 @@ header {
 	min-height:40rem;
 	max-width:100%;
 	/*background-image: url(../images/aboutPhoto.png);*/
-	background-color:var(--color1);
+	background-color:var(--color4);
 	background-size: cover;
 	background-position: center;
 	margin-bottom: 4rem;
@@ -301,6 +300,7 @@ header {
 	align-items:center;
 	justify-content:center;
 	border-radius:2rem;
+	color:white;
 }
 
 .aboutParagraphs {
@@ -323,7 +323,8 @@ header {
 	min-height:45rem;
 	max-width:100%;
 	/*background-image: url(../images/contactPhoto.png);*/
-	background-color:var(--color1);
+	background-color:var(--color4);
+	color:white;
 	background-size: cover;
 	background-position: center;
 	display:flex;
@@ -347,6 +348,12 @@ footer {
 		footer ul li {
 			list-style:none;
 			margin: 0 2rem 0 0;
+			background-color:var(--color2);
+			border-radius:3rem;
+			display:flex;
+			justify-content:center;
+			align-content:center;
+			padding:1rem;
 		}
 		
 			.icons {
